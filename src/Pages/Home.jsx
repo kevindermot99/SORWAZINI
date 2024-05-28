@@ -13,6 +13,9 @@ import {
   Values,
   AboutUs,
 } from "../Content/Content";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+import { Fade } from "react-awesome-reveal";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -27,6 +30,19 @@ function Home() {
       }, 1000);
     });
   };
+
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+    filter: blur(5px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
   return (
     <div className=" bg-light-body-color min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
@@ -98,6 +114,7 @@ function Home() {
         </div>
       </div>
 
+      {/* <Fade duration={1000} triggerOnce> */}
       {/* Menu */}
       <div className=" h-fit w-full flex items-center bg-light-body-color/70 backdrop-blur-md justify-between gap-4 py-5 px-[24px] fixed top-0 z-20">
         <Link
@@ -149,120 +166,129 @@ function Home() {
           </button>
         </span>
       </div>
+      {/* </Fade> */}
 
       {/* Content */}
       <div className="h-full mt-[100px] max-sm:mt-[50px] w-full flex items-center justify-start flex-col">
         {/* Hero */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
-          <h1 className="text-center max-w-[900px] font-bold text-[70px] max-sm:text-[50px] leading-[80px] max-sm:leading-[55px]   tracking-tighter">
-            {HeroText.Big}
-          </h1>
-          <p className="font-medium max-w-[500px] text-center pt-5 max-sm:pt-2 tracking-tight leading-5 ">
-            {HeroText.Small}
-          </p>
-
+          <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
+            <h1 className="text-center max-w-[900px] font-bold text-[70px] max-sm:text-[50px] leading-[80px] max-sm:leading-[55px] tracking-tighter">
+              {HeroText.Big}
+            </h1>
+            <p className="font-medium max-w-[500px] text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+              {HeroText.Small}
+            </p>
+          </Reveal>
           {/* Members Grid */}
           <div className="w-full h-fit flex flex-col items-center justify-start gap-3 max-w-[1200px] mt-5">
             {/* Mapping members by countries */}
-            <div className=" my-8 ">
+            <div className=" my-8 max-sm:px-3 ">
               {SORWAZINI.map((member, index) => (
-                <div className="flex gap-3 max-sm: flex-wrap items-center justify-center" key={index}>
-                  {/* SO */}
-                  <div className="w-fit flex flex-col gap-3 relative">
-                    <div className="w-full text-center">
-                      <h1 className="font-bold ">SO</h1>
-                      <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
-                    </div>
-                    <div className="flex gap-3">
-                      {member.SO.map((person, index) => (
-                        <div
-                          key={index}
-                          className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
-                        >
-                          <img src="" alt="" />
-                          <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
-                            <span key={index}>{person.name}</span>
+                <div
+                  className="flex gap-3 max-sm: flex-wrap items-center justify-center"
+                  key={index}
+                >
+                  <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
+                    {/* SO */}
+                    <div className="w-fit flex flex-col gap-3 relative">
+                      <div className="w-full text-center">
+                        <h1 className="font-bold ">SO</h1>
+                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                      </div>
+                      <div className="flex gap-3">
+                        {member.SO.map((person, index) => (
+                          <div
+                            key={index}
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                          >
+                            <img src="" alt="" />
+                            <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                              <span key={index}>{person.name}</span>
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                  {/* RWA */}
-                  <div className="w-fit flex flex-col gap-3 relative">
-                    <div className="w-full text-center">
-                      <h1 className="font-bold ">RWA</h1>
-                      <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
-                    </div>
-                    <div className="flex gap-3">
-                      {member.RWA.map((person, index) => (
-                        <div
-                          key={index}
-                          className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
-                        >
-                          <img src="" alt="" />
-                          <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
-                            <span key={index}>{person.name}</span>
+                    {/* RWA */}
+                    <div className="w-fit flex flex-col gap-3 relative">
+                      <div className="w-full text-center">
+                        <h1 className="font-bold ">RWA</h1>
+                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                      </div>
+                      <div className="flex gap-3">
+                        {member.RWA.map((person, index) => (
+                          <div
+                            key={index}
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                          >
+                            <img src="" alt="" />
+                            <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                              <span key={index}>{person.name}</span>
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                  {/* ZI */}
-                  <div className="w-fit flex flex-col gap-3 relative">
-                    <div className="w-full text-center">
-                      <h1 className="font-bold ">ZI</h1>
-                      <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
-                    </div>
-                    <div className="flex gap-3">
-                      {member.ZI.map((person, index) => (
-                        <div
-                          key={index}
-                          className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
-                        >
-                          <img src="" alt="" />
-                          <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
-                            <span key={index}>{person.name}</span>
+                    {/* ZI */}
+                    <div className="w-fit flex flex-col gap-3 relative">
+                      <div className="w-full text-center">
+                        <h1 className="font-bold ">ZI</h1>
+                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                      </div>
+                      <div className="flex gap-3">
+                        {member.ZI.map((person, index) => (
+                          <div
+                            key={index}
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                          >
+                            <img src="" alt="" />
+                            <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                              <span key={index}>{person.name}</span>
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                  {/* NI */}
-                  <div className="w-fit flex flex-col gap-3 relative">
-                    <div className="w-full text-center">
-                      <h1 className="font-bold ">NI</h1>
-                      <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
-                    </div>
-                    <div className="flex gap-3">
-                      {member.NI.map((person, index) => (
-                        <div
-                          key={index}
-                          className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
-                        >
-                          <img src="" alt="" />
-                          <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
-                            <span key={index}>{person.name}</span>
+                    {/* NI */}
+                    <div className="w-fit flex flex-col gap-3 relative">
+                      <div className="w-full text-center">
+                        <h1 className="font-bold ">NI</h1>
+                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                      </div>
+                      <div className="flex gap-3">
+                        {member.NI.map((person, index) => (
+                          <div
+                            key={index}
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                          >
+                            <img src="" alt="" />
+                            <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                              <span key={index}>{person.name}</span>
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  </Reveal>
                 </div>
               ))}
             </div>
-            <div className="flex items-center gap-8 text-dark-body-color pt-3 text-sm font-medium px-4 max-sm:gap-0 ">
-              <h1>
-                <strong>SO: </strong>🇿🇦 South Africa
-              </h1>
-              <h1>
-                <strong>RWA: </strong>🇷🇼 Rwanda
-              </h1>
-              <h1>
-                <strong>ZI: </strong>🇿🇼 Zimbambwe
-              </h1>
-              <h1>
-                <strong>NI: </strong>🇳🇬 Nigeria
-              </h1>
+            <div className="flex items-center gap-8 text-dark-body-color pt-3 text-sm font-medium px-4 max-sm:gap-0 max-sm:px-8 ">
+              <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
+                <h1>
+                  <strong>SO: </strong>🇿🇦 South Africa
+                </h1>
+                <h1>
+                  <strong>RWA: </strong>🇷🇼 Rwanda
+                </h1>
+                <h1>
+                  <strong>ZI: </strong>🇿🇼 Zimbambwe
+                </h1>
+                <h1>
+                  <strong>NI: </strong>🇳🇬 Nigeria
+                </h1>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -273,6 +299,7 @@ function Home() {
         {/* Projects */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-start">
           <div className=" flex flex-col items-center justify-start  max-sm:px-2">
+            <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
             <h3 className="uppercase font-bold text-xs pb-3 ">
               {Projects.SectionName}
             </h3>
@@ -282,9 +309,12 @@ function Home() {
             <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
               {Projects.SectionStatus}
             </p>
+            </Reveal>
           </div>
 
           {/* Project countdown */}
+
+          <Reveal keyframes={customAnimation} duration={1200} cascade damping={.05} triggerOnce className="w-full">
           <div className="p-[1px] bg-gradient-to-b from-dark-body-color/40 to-transparent mt-10 w-full h-fit rounded-t-3xl max-w-[90%] mx-auto relative flex justify-center items-center flex-col">
             <div className="w-full h-full bg-white rounded-t-3xl p-10 max-sm:pb-16 flex justify-center items-start flex-col">
               <div className="pointer-events-none absolute top-[-25px] left-[40px] h-[50px] w-[50px] rounded-full border-[1px] border-dark-body-color/40 text-dark-body-color bg-white font-bold text-xl flex justify-center items-center ">
@@ -301,6 +331,7 @@ function Home() {
               </p>
             </div>
           </div>
+          </Reveal>
         </div>
 
         {/* separator */}
@@ -310,15 +341,17 @@ function Home() {
         <div className="w-full h-fit pt-16 flex flex-col items-center justify-center relative  max-sm:px-5">
           <div class=" h-full w-full flex justify-center items-center flex-col py-4">
             <div className=" flex flex-col items-center justify-start">
-              <h3 className="uppercase font-bold text-xs pb-3 ">
+            <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
+              <h3 className="uppercase font-bold text-xs pb-2 ">
                 {Mission.SectionName}
               </h3>
               <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
                 {Mission.SectionTitle}
               </h1>
-              <p className="font-medium max-w-[900px] text-base text-center pt-3 tracking-tight leading-5">
+              <p className="font-medium max-w-[900px] text-base text-center pt-4 tracking-tight leading-5">
                 {Mission.SectionDescription}
               </p>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -326,29 +359,31 @@ function Home() {
         <div className="w-full h-fit flex flex-col items-center justify-center relative pt-5">
           <div class=" h-full w-full flex justify-center items-center flex-col ">
             <div className=" flex flex-col items-center justify-start">
+            <Reveal keyframes={customAnimation} duration={1000} cascade damping={.1} triggerOnce>
               <h3 className="uppercase font-bold text-xs pb-3 ">
                 {Values.SectionName}
               </h3>
               <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
                 {Values.SectionTitle}
               </h1>
+              </Reveal>
               <div className="pt-4 pb-10 w-full h-fit flex gap-3 flex-wrap items-center justify-center  max-sm:px-5">
+              <Reveal keyframes={customAnimation} duration={1000} cascade damping={.1} triggerOnce>
                 {Values.values.map((value, index) => (
-                  <div key={index} className="min-h-[230px] w-[190px] max-sm:w-full max-sm:min-h-fit  max-sm:gap-4 bg-stone-200 rounded-xl p-6 text-dark-body-color flex flex-col justify-between items-start">
-                  <div>
-                    <h1 className="font-bold text-xl break-words  pb-2">
-                      {value.name}
-                    </h1>
-                    <p className="text-base leading-5">
-                      {value.description}
-                    </p>
+                  <div
+                    key={index}
+                    className="min-h-[230px] w-[190px] max-sm:w-full max-sm:min-h-fit  max-sm:gap-4 bg-stone-200 rounded-xl p-6 text-dark-body-color flex flex-col justify-between items-start"
+                  >
+                    <div>
+                      <h1 className="font-bold text-xl break-words  pb-2">
+                        {value.name}
+                      </h1>
+                      <p className="text-base leading-5">{value.description}</p>
+                    </div>
+                    <div className=" text-2xl ">{<value.icon />}</div>
                   </div>
-                  <div className=" text-2xl ">
-                    {<value.icon />}
-                  </div>
-                </div>
                 ))}
-                
+                </Reveal>
               </div>
             </div>
           </div>
@@ -360,6 +395,7 @@ function Home() {
         {/* About us */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-start  max-sm:px-5">
           <div className=" flex flex-col items-center justify-start">
+          <Reveal keyframes={customAnimation} duration={1000} cascade damping={.1} triggerOnce>
             <h3 className="uppercase font-bold text-xs pb-3 ">
               {AboutUs.SectionName}
             </h3>
@@ -369,8 +405,10 @@ function Home() {
             <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
               {AboutUs.SectionDescription}
             </p>
+            </Reveal>
           </div>
           <div className="w-full h-fit flex flex-wrap items-center justify-center gap-7 mt-8 px-14 ">
+          <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
             {Members.map((member, index) => (
               <div
                 key={index}
@@ -388,6 +426,7 @@ function Home() {
                 </p>
               </div>
             ))}
+            </Reveal>
           </div>
         </div>
       </div>

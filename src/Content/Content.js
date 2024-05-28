@@ -63,28 +63,23 @@ export const SORWAZINI = [
 
 export const Members = [
   {
+    name: "K. Honourgod Levison",
+    country: "NI",
+    picture: "",
+    aboutMe: "Dedicated to humanitarian causes and volunteering to make a difference.",
+  },
+  {
     name: "Lineo Sylvia Muso",
     country: "SO",
     picture: "",
     aboutMe: "Passionate about empowering communities through education and social entrepreneurship.",
   },
-  {
-    name: "M. Kaneza Kevin",
-    country: "RWA",
-    picture: "",
-    aboutMe: "Dedicated to sustainable development and environmental conservation.",
-  },
+  
   {
     name: "G. Rwema Christian",
     country: "RWA",
     picture: "",
     aboutMe: "Committed to fostering cross-cultural understanding and promoting peace.",
-  },
-  {
-    name: "Anitha Uwimpuhwe",
-    country: "RWA",
-    picture: "",
-    aboutMe: "Driven by a desire to advocate for gender equality and women's empowerment.",
   },
   {
     name: "T. Gift Marufu",
@@ -93,17 +88,25 @@ export const Members = [
     aboutMe: "Passionate about community development and grassroots initiatives.",
   },
   {
+    name: "Anitha Uwimpuhwe",
+    country: "RWA",
+    picture: "",
+    aboutMe: "Driven by a desire to advocate for gender equality and women's empowerment.",
+  },
+  
+  {
     name: "C. Chinyeaka Eke",
     country: "NI",
     picture: "",
     aboutMe: "Committed to creativity and artistic expression for social change.",
   },
   {
-    name: "K. Honourgod Levison",
-    country: "NI",
+    name: "M. Kaneza Kevin",
+    country: "RWA",
     picture: "",
-    aboutMe: "Dedicated to humanitarian causes and volunteering to make a difference.",
+    aboutMe: "Dedicated to sustainable development and environmental conservation.",
   },
+  
 ];
 
 
