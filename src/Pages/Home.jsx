@@ -35,7 +35,7 @@ function Home() {
   from {
     opacity: 0;
     transform: translateY(80px);
-    filter: blur(5px)
+    // filter: blur(5px)
   }
 
   to {
