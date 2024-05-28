@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
-import { HeroText, Members } from "../Content/Content";
+import { Contacts, HeroText, Members, Projects } from "../Content/Content";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -41,7 +41,7 @@ function Home() {
           <h1 className=" font-medium text-base">Contact us via </h1>
           <div className="py-4 flex gap-2 items-start justify-start max-sm:flex-wrap">
             <a
-              href={"https://wa.me/+250785614800"}
+              href={`https://wa.me/${Contacts.WhatsAppNumber}`}
               target="_blank"
               className=" w-full h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
             >
@@ -51,7 +51,7 @@ function Home() {
               <p className="font-medium text-sm ">WhatsApp</p>
             </a>
             <a
-              href={"https://www.instagram.com/sorwazini7/"}
+              href={`https://www.instagram.com/${Contacts.InstagramUsername}/`}
               target="_blank"
               className=" w-full h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
             >
@@ -61,7 +61,7 @@ function Home() {
               <p className="font-medium text-sm ">Instagram</p>
             </a>
             <a
-              href={"mailto:mbonimpayekevin@gmail.com"}
+              href={`mailto:${Contacts.Gmail}`}
               target="_blank"
               className=" w-full h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
             >
@@ -72,7 +72,7 @@ function Home() {
             </a>
           </div>
           <div className="w-full h-full flex flex-col ">
-            <h1 className=" pt-5 font-medium text-base">Share Link </h1>
+            <h1 className=" pt-5 font-medium text-base">Share The Link </h1>
             <input
               type="text"
               readOnly
@@ -90,13 +90,13 @@ function Home() {
       </div>
 
       {/* Menu */}
-      <div className=" h-fit w-full flex items-center border-light-body-color/50 backdrop-blur-md justify-between gap-4 py-5 px-[24px] sticky top-0">
+      <div className=" h-fit w-full flex items-center bg-light-body-color/60 backdrop-blur-md justify-between gap-4 py-5 px-[24px] fixed top-0 z-20">
         <Link
           className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color`}
         >
           SORWAZINI
           <span className="font-medium text-sm opacity-65">
-            E-lab Think Tank
+            E-Lab Think Tank
           </span>
         </Link>
 
@@ -115,6 +115,11 @@ function Home() {
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
             Our Mission
+          </Link>
+          <Link
+            className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
+          >
+            Values
           </Link>
           <Link
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
@@ -142,7 +147,7 @@ function Home() {
       </div>
 
       {/* Content */}
-      <div className="h-full  w-full flex items-center justify-start flex-col px-5">
+      <div className="h-full mt-[100px] w-full flex items-center justify-start flex-col px-5">
         {/* Hero */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
           <h1 className="text-center max-w-[900px] font-bold text-[70px] leading-[80px] tracking-tighter">
@@ -168,7 +173,7 @@ function Home() {
                       {member.SO.map((person, index) => (
                         <div
                           key={index}
-                          className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                          className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
                         >
                           <img src="" alt="" />
                           <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
@@ -188,7 +193,7 @@ function Home() {
                       {member.RWA.map((person, index) => (
                         <div
                           key={index}
-                          className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                          className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
                         >
                           <img src="" alt="" />
                           <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
@@ -208,7 +213,7 @@ function Home() {
                       {member.ZI.map((person, index) => (
                         <div
                           key={index}
-                          className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                          className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
                         >
                           <img src="" alt="" />
                           <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
@@ -228,7 +233,7 @@ function Home() {
                       {member.NI.map((person, index) => (
                         <div
                           key={index}
-                          className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                          className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
                         >
                           <img src="" alt="" />
                           <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
@@ -241,7 +246,7 @@ function Home() {
                 </div>
               ))}
             </div>
-            <div className="flex items-center gap-4 text-dark-body-color pt-3 text-sm font-medium ">
+            <div className="flex items-center gap-8 text-dark-body-color pt-3 text-sm font-medium ">
               <h1>
                 <strong>SO: </strong>South Africa
               </h1>
@@ -258,6 +263,22 @@ function Home() {
           </div>
         </div>
 
+        {/* separator */}
+        <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
+
+        {/* Projects */}
+        <div className="w-full h-fit py-16 flex flex-col items-center justify-start">
+          <div className=" flex flex-col items-center justify-start">
+            <h3 className="uppercase font-bold text-xs pb-3 ">{Projects.SectionName}</h3>
+            <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">{Projects.SectionTitle}</h1>
+            <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">{Projects.SectionStatus}</p>
+          </div>
+
+          {/* Project countdown */}
+          <div className="ring-4 ring-dark-body-color mt-10 w-full h-fit min-h-[300px] rounded-3xl max-w-[90%] mx-auto relative" >
+
+          </div>
+        </div>
       </div>
 
       {/* Footer */}
