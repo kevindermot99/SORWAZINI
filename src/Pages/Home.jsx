@@ -127,26 +127,30 @@ function Home() {
         </Link>
 
         <span className="space-x-8 max-md:hidden  ">
-          <Link
+          <a
+            href="#Home"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
-            Members
-          </Link>
-          <Link
+            Home
+          </a>
+          <a
+            href="#Projects"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
             Projects
-          </Link>
-          <Link
+          </a>
+          <a
+            href="#Mission"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
             Our Mission
-          </Link>
-          <Link
+          </a>
+          <a
+            href="#Aboutus"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
             About Us
-          </Link>
+          </a>
         </span>
         <span className="space-x-6 flex ">
           <Link
@@ -169,7 +173,7 @@ function Home() {
       {/* </Fade> */}
 
       {/* Content */}
-      <div className="h-full mt-[100px] max-sm:mt-[50px] w-full flex items-center justify-start flex-col">
+      <div id="Home" className="h-full mt-[100px] scroll-m-20 max-sm:mt-[50px] w-full flex items-center justify-start flex-col">
         {/* Hero */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
           <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
@@ -297,7 +301,7 @@ function Home() {
         <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
 
         {/* Projects */}
-        <div className="w-full h-fit py-16 flex flex-col items-center justify-start">
+        <div id="Projects" className="w-full h-fit py-16 scroll-m-14  flex flex-col items-center justify-start">
           <div className=" flex flex-col items-center justify-start  max-sm:px-2">
             <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
             <h3 className="uppercase font-bold text-xs pb-3 ">
@@ -338,7 +342,7 @@ function Home() {
         <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2 "></div>
 
         {/* Our Mission */}
-        <div className="w-full h-fit pt-16 flex flex-col items-center justify-center relative  max-sm:px-5">
+        <div id="Mission" className="w-full h-fit pt-16 scroll-m-10 flex flex-col items-center justify-center relative  max-sm:px-5">
           <div class=" h-full w-full flex justify-center items-center flex-col py-4">
             <div className=" flex flex-col items-center justify-start">
             <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
@@ -372,7 +376,7 @@ function Home() {
                 {Values.values.map((value, index) => (
                   <div
                     key={index}
-                    className="min-h-[230px] w-[190px] max-sm:w-full max-sm:min-h-fit  max-sm:gap-4 bg-stone-200 rounded-xl p-6 text-dark-body-color flex flex-col justify-between items-start"
+                    className="min-h-[230px] w-[190px] max-sm:w-full max-sm:min-h-fit  max-sm:gap-4 bg-gradient-to-tr from-stone-300/50 to-stone-50 rounded-xl p-6 text-dark-body-color flex flex-col justify-between items-start"
                   >
                     <div>
                       <h1 className="font-bold text-xl break-words  pb-2">
@@ -393,7 +397,7 @@ function Home() {
         <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
 
         {/* About us */}
-        <div className="w-full h-fit py-16 flex flex-col items-center justify-start  max-sm:px-5">
+        <div id="Aboutus" className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5">
           <div className=" flex flex-col items-center justify-start">
           <Reveal keyframes={customAnimation} duration={1000} cascade damping={.1} triggerOnce>
             <h3 className="uppercase font-bold text-xs pb-3 ">
