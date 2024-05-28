@@ -38,34 +38,37 @@ function Home() {
           } `}
         >
           <h1 className=" font-medium text-base">Contact us via </h1>
-          <div className="py-4 flex gap-7 items-start justify-start flex-wrap">
-            <Link
-              to={"/"}
-              className=" w-fit h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
+          <div className="py-4 flex gap-2 items-start justify-start max-sm:flex-wrap">
+            <a
+              href={"https://wa.me/+250785614800"}
+              target="_blank"
+              className=" w-full h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
             >
-              <div className="p-2 w-fit bg-dark-body-color text-text-light-color rounded-full text-[30px]">
+              <div className="p-2 w-fit transition bg-green-700 text-text-light-color rounded-full text-[30px]">
                 <FaWhatsapp />
               </div>
               <p className="font-medium text-sm ">WhatsApp</p>
-            </Link>
-            <Link
-              to={"/"}
-              className=" w-fit h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
+            </a>
+            <a
+              href={"https://www.instagram.com/sorwazini7/"}
+              target="_blank"
+              className=" w-full h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
             >
-              <div className="p-2 w-fit bg-dark-body-color text-text-light-color rounded-full text-[30px]">
+              <div className="p-2 w-fit bg-red-500  text-text-light-color rounded-full text-[30px]">
                 <IoLogoInstagram />
               </div>
               <p className="font-medium text-sm ">Instagram</p>
-            </Link>
-            <Link
-              to={"/"}
-              className=" w-fit h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
+            </a>
+            <a
+              href={"mailto:mbonimpayekevin@gmail.com"}
+              target="_blank"
+              className=" w-full h-fit flex items-center justify-start flex-col gap-1 cursor-pointer"
             >
-              <div className="p-2 w-fit bg-dark-body-color text-text-light-color rounded-full text-[30px]">
+              <div className="p-2 w-fit bg-blue-500  text-text-light-color rounded-full text-[30px]">
                 <MdOutlineEmail />
               </div>
               <p className="font-medium text-sm ">Gmail</p>
-            </Link>
+            </a>
           </div>
           <div className="w-full h-full flex flex-col ">
             <h1 className=" pt-5 font-medium text-base">Share Link </h1>
