@@ -3,7 +3,16 @@ import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
-import { Contacts, HeroText, Members, Projects } from "../Content/Content";
+import {
+  Contacts,
+  HeroText,
+  Members,
+  SORWAZINI,
+  Projects,
+  Mission,
+  Values,
+  AboutUs,
+} from "../Content/Content";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -20,7 +29,7 @@ function Home() {
   };
 
   return (
-    <div className=" bg-light-body-color h-[100vh] w-full text-text-dark-color flex flex-col relative ">
+    <div className=" bg-light-body-color min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
       {/* Contact Overlay */}
       <div
         className={`fixed top-0 left-0 w-full h-full backdrop-blur-sm flex items-center justify-center ${
@@ -90,12 +99,12 @@ function Home() {
       </div>
 
       {/* Menu */}
-      <div className=" h-fit w-full flex items-center bg-light-body-color/60 backdrop-blur-md justify-between gap-4 py-5 px-[24px] fixed top-0 z-20">
+      <div className=" h-fit w-full flex items-center bg-light-body-color/70 backdrop-blur-md justify-between gap-4 py-5 px-[24px] fixed top-0 z-20">
         <Link
           className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color`}
         >
           SORWAZINI
-          <span className="font-medium text-sm opacity-65">
+          <span className="font-medium text-sm opacity-65 tracking-wide">
             E-Lab Think Tank
           </span>
         </Link>
@@ -115,11 +124,6 @@ function Home() {
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
             Our Mission
-          </Link>
-          <Link
-            className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
-          >
-            Values
           </Link>
           <Link
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
@@ -147,7 +151,7 @@ function Home() {
       </div>
 
       {/* Content */}
-      <div className="h-full mt-[100px] w-full flex items-center justify-start flex-col px-5">
+      <div className="h-full mt-[100px] w-full flex items-center justify-start flex-col">
         {/* Hero */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
           <h1 className="text-center max-w-[900px] font-bold text-[70px] leading-[80px] tracking-tighter">
@@ -161,7 +165,7 @@ function Home() {
           <div className="w-full h-fit flex flex-col items-center justify-start gap-3 max-w-[1200px] mt-5">
             {/* Mapping members by countries */}
             <div className=" my-8 ">
-              {Members.map((member, index) => (
+              {SORWAZINI.map((member, index) => (
                 <div className="flex gap-3" key={index}>
                   {/* SO */}
                   <div className="w-fit flex flex-col gap-3 relative">
@@ -248,16 +252,16 @@ function Home() {
             </div>
             <div className="flex items-center gap-8 text-dark-body-color pt-3 text-sm font-medium ">
               <h1>
-                <strong>SO: </strong>South Africa
+                <strong>SO: </strong>🇿🇦 South Africa
               </h1>
               <h1>
-                <strong>RWA: </strong>Rwanda
+                <strong>RWA: </strong>🇷🇼 Rwanda
               </h1>
               <h1>
-                <strong>ZI: </strong>Zimbambwe
+                <strong>ZI: </strong>🇿🇼 Zimbambwe
               </h1>
               <h1>
-                <strong>NI: </strong>Nigeria
+                <strong>NI: </strong>🇳🇬 Nigeria
               </h1>
             </div>
           </div>
@@ -281,25 +285,121 @@ function Home() {
           </div>
 
           {/* Project countdown */}
-          <div className="ring-1 ring-stone-200 mt-10 w-full h-fit min-h-[300px] rounded-3xl max-w-[90%] mx-auto relative flex justify-center items-center flex-col">
-            <div className="pointer-events-none absolute top-[-25px] left-[10px] h-[50px] w-[50px] rounded-full border-[2px] border-dark-body-color text-dark-body-color bg-white font-bold text-xl flex justify-center items-center ">
-              {Projects.CurrentProject.ProjectNumber}
+          <div className="p-[1px] bg-gradient-to-b from-dark-body-color/40 to-transparent mt-10 w-full h-fit rounded-t-3xl max-w-[90%] mx-auto relative flex justify-center items-center flex-col">
+            <div className="w-full h-full bg-white rounded-t-3xl p-10 flex justify-center items-start flex-col">
+              <div className="pointer-events-none absolute top-[-25px] left-[40px] h-[50px] w-[50px] rounded-full border-[1px] border-dark-body-color/40 text-dark-body-color bg-white font-bold text-xl flex justify-center items-center ">
+                {Projects.CurrentProject.ProjectNumber}
+              </div>
+              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center capitalize">
+                {Projects.CurrentProject.ProjectName}
+              </h1>
+              <p className="font-medium max-w-[400px] text-base text-left pt-3 tracking-tight leading-5">
+                {Projects.CurrentProject.ProjectDescription}
+              </p>
+              <p className="absolute top-3 pointer-events-none right-3 bg-dark-body-color text-text-light-color rounded-full px-4 py-2 font-medium max-w-[400px] text-sm tracking-tight leading-5">
+                {Projects.CurrentProject.TimeLeft}
+              </p>
             </div>
-            <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center capitalize">
-              {Projects.CurrentProject.ProjectName}
+          </div>
+        </div>
+
+        {/* separator */}
+        <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
+
+        {/* Our Mission */}
+        <div className="w-full h-fit pt-16 flex flex-col items-center justify-center relative">
+          <div class=" h-full w-full flex justify-center items-center flex-col py-4">
+            <div className=" flex flex-col items-center justify-start">
+              <h3 className="uppercase font-bold text-xs pb-3 ">
+                {Mission.SectionName}
+              </h3>
+              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+                {Mission.SectionTitle}
+              </h1>
+              <p className="font-medium max-w-[900px] text-base text-center pt-3 tracking-tight leading-5">
+                {Mission.SectionDescription}
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Our Values */}
+        <div className="w-full h-fit flex flex-col items-center justify-center relative pt-5">
+          <div class=" h-full w-full flex justify-center items-center flex-col ">
+            <div className=" flex flex-col items-center justify-start">
+              <h3 className="uppercase font-bold text-xs pb-3 ">
+                {Values.SectionName}
+              </h3>
+              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+                {Values.SectionTitle}
+              </h1>
+              <div className="pt-4 pb-10 w-full h-fit flex gap-3 flex-wrap items-center justify-center">
+                {Values.values.map((value, index) => (
+                  <div className="min-h-[230px] w-[190px] bg-stone-200 rounded-xl p-6 text-dark-body-color flex flex-col justify-between items-start">
+                  <div>
+                    <h1 className="font-bold text-xl break-words  pb-2">
+                      {value.name}
+                    </h1>
+                    <p className="text-base leading-5">
+                      {value.description}
+                    </p>
+                  </div>
+                  <div className=" text-2xl ">
+                    {<value.icon />}
+                  </div>
+                </div>
+                ))}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* separator */}
+        <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
+
+        {/* About us */}
+        <div className="w-full h-fit py-16 flex flex-col items-center justify-start">
+          <div className=" flex flex-col items-center justify-start">
+            <h3 className="uppercase font-bold text-xs pb-3 ">
+              {AboutUs.SectionName}
+            </h3>
+            <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+              {AboutUs.SectionTitle}
             </h1>
             <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
-              {Projects.CurrentProject.ProjectDescription}
+              {AboutUs.SectionDescription}
             </p>
-            <p className="absolute bottom-3 pointer-events-none right-3 bg-dark-body-color text-text-light-color rounded-full px-4 py-2 font-medium max-w-[400px] text-sm text-center tracking-tight leading-5">
-              {Projects.CurrentProject.TimeLeft}
-            </p>
+          </div>
+          <div className="w-full h-fit flex flex-wrap items-center justify-center gap-7 mt-8 px-14 ">
+            {Members.map((member, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-start"
+              >
+                <img
+                  src={``}
+                  className="h-28 aspect-square rounded-full bg-stone-200"
+                />
+                <h1 className="font-bold max-w-[400px] text-lg text-center pt-3 tracking-tight leading-5">
+                  {member.name}
+                </h1>
+                <p className="font-normal max-w-[230px] text-base text-center pt-1 tracking-tight leading-5">
+                  {member.aboutMe}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* Footer */}
-      <div></div>
+      {/* separator */}
+      <div className="w-full max-w-[90%] mx-auto border-b-[1px] border-stone-200 mb-2"></div>
+
+      {/* footer */}
+      <div className="flex text-xs text-text-dark-color/50 font-medium items-center justify-between py-6 px-12 ">
+        <div>SORWAZINI. &copy; 2024</div>
+        <a href="https://www.alueducation.com">African Leadership university</a>
+      </div>
     </div>
   );
 }
