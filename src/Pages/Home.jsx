@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
+import { HeroText, Members } from "../Content/Content";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -145,59 +146,118 @@ function Home() {
         {/* Hero */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
           <h1 className="text-center max-w-[900px] font-bold text-[70px] leading-[80px] tracking-tighter">
-            Building Tomorrow's Solutions Today
+            {HeroText.Big}
           </h1>
-          <p className="font-medium max-w-[500px] text-center py-5 tracking-tight leading-5 ">
-            We strive to create innovative solutions today, shaping a better and
-            brighter future for all.
+          <p className="font-medium max-w-[500px] text-center pt-5 tracking-tight leading-5 ">
+            {HeroText.Small}
           </p>
-          <div className="w-full h-fit flex items-start justify-center gap-3 max-w-[1200px] mt-3">
-            <div className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group">
-              <img src="" alt="" />
-              <div className="absolute top-[110%] left-[-50%] right-[-50%] mx-auto w-fit h-fit px-1 py-1 rounded-xl opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0">
-                Kevin
-              </div>
+
+          {/* Members Grid */}
+          <div className="w-full h-fit flex flex-col items-center justify-start gap-3 max-w-[1200px] mt-5">
+            {/* Mapping members by countries */}
+            <div className=" my-8 ">
+              {Members.map((member, index) => (
+                <div className="flex gap-3" key={index}>
+                  {/* SO */}
+                  <div className="w-fit flex flex-col gap-3 relative">
+                    <div className="w-full text-center">
+                      <h1 className="font-bold ">SO</h1>
+                      <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                    </div>
+                    <div className="flex gap-3">
+                      {member.SO.map((person, index) => (
+                        <div
+                          key={index}
+                          className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                        >
+                          <img src="" alt="" />
+                          <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                            <span key={index}>{person.name}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {/* RWA */}
+                  <div className="w-fit flex flex-col gap-3 relative">
+                    <div className="w-full text-center">
+                      <h1 className="font-bold ">RWA</h1>
+                      <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                    </div>
+                    <div className="flex gap-3">
+                      {member.RWA.map((person, index) => (
+                        <div
+                          key={index}
+                          className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                        >
+                          <img src="" alt="" />
+                          <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                            <span key={index}>{person.name}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {/* ZI */}
+                  <div className="w-fit flex flex-col gap-3 relative">
+                    <div className="w-full text-center">
+                      <h1 className="font-bold ">ZI</h1>
+                      <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                    </div>
+                    <div className="flex gap-3">
+                      {member.ZI.map((person, index) => (
+                        <div
+                          key={index}
+                          className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                        >
+                          <img src="" alt="" />
+                          <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                            <span key={index}>{person.name}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {/* NI */}
+                  <div className="w-fit flex flex-col gap-3 relative">
+                    <div className="w-full text-center">
+                      <h1 className="font-bold ">NI</h1>
+                      <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                    </div>
+                    <div className="flex gap-3">
+                      {member.NI.map((person, index) => (
+                        <div
+                          key={index}
+                          className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                        >
+                          <img src="" alt="" />
+                          <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                            <span key={index}>{person.name}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
-            <div className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group">
-              <img src="" alt="" />
-              <div className="absolute top-[110%] left-[-50%] right-[-50%] mx-auto w-fit h-fit px-1 py-1 rounded-xl opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0">
-                Kevin
-              </div>
-            </div>
-            <div className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group">
-              <img src="" alt="" />
-              <div className="absolute top-[110%] left-[-50%] right-[-50%] mx-auto w-fit h-fit px-1 py-1 rounded-xl opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0">
-                Kevin
-              </div>
-            </div>
-            <div className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group">
-              <img src="" alt="" />
-              <div className="absolute top-[110%] left-[-50%] right-[-50%] mx-auto w-fit h-fit px-1 py-1 rounded-xl opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0">
-                Kevin
-              </div>
-            </div>
-            <div className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group">
-              <img src="" alt="" />
-              <div className="absolute top-[110%] left-[-50%] right-[-50%] mx-auto w-fit h-fit px-1 py-1 rounded-xl opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0">
-                Kevin
-              </div>
-            </div>
-            <div className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group">
-              <img src="" alt="" />
-              <div className="absolute top-[110%] left-[-50%] right-[-50%] mx-auto w-fit h-fit px-1 py-1 rounded-xl opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0">
-                Kevin
-              </div>
-            </div>
-            <div className="w-[70px] aspect-square bg-stone-100 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group">
-              <img src="" alt="" />
-              <div className="absolute top-[110%] left-[-50%] right-[-50%] mx-auto w-fit h-fit px-1 py-1 rounded-xl opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0">
-                Kevin
-              </div>
+            <div className="flex items-center gap-4 text-dark-body-color pt-3 text-sm font-medium ">
+              <h1>
+                <strong>SO: </strong>South Africa
+              </h1>
+              <h1>
+                <strong>RWA: </strong>Rwanda
+              </h1>
+              <h1>
+                <strong>ZI: </strong>Zimbambwe
+              </h1>
+              <h1>
+                <strong>NI: </strong>Nigeria
+              </h1>
             </div>
           </div>
         </div>
 
-        {/*  */}
       </div>
 
       {/* Footer */}
