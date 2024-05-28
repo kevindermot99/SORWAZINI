@@ -7,11 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Michroma: ['Michroma', 'sans-serif']
+        Kanit: ['Kanit', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
+        NotoSansElymaic: ['Noto Sans Elymaic', 'sans-serif'],
       },
       colors: {
         // "main-color": "#181d27",
-        "light-body-color": "#E0DFE2",
+        "light-body-color": "#FFFFFF",
         "dark-body-color": "#181d27",
         "text-dark-color": "#1E1F22",
         "text-light-color": "#ebebeb",
