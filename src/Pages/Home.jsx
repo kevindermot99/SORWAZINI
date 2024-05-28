@@ -269,14 +269,31 @@ function Home() {
         {/* Projects */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-start">
           <div className=" flex flex-col items-center justify-start">
-            <h3 className="uppercase font-bold text-xs pb-3 ">{Projects.SectionName}</h3>
-            <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">{Projects.SectionTitle}</h1>
-            <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">{Projects.SectionStatus}</p>
+            <h3 className="uppercase font-bold text-xs pb-3 ">
+              {Projects.SectionName}
+            </h3>
+            <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+              {Projects.SectionTitle}
+            </h1>
+            <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
+              {Projects.SectionStatus}
+            </p>
           </div>
 
           {/* Project countdown */}
-          <div className="ring-4 ring-dark-body-color mt-10 w-full h-fit min-h-[300px] rounded-3xl max-w-[90%] mx-auto relative" >
-
+          <div className="ring-1 ring-stone-200 mt-10 w-full h-fit min-h-[300px] rounded-3xl max-w-[90%] mx-auto relative flex justify-center items-center flex-col">
+            <div className="pointer-events-none absolute top-[-25px] left-[10px] h-[50px] w-[50px] rounded-full border-[2px] border-dark-body-color text-dark-body-color bg-white font-bold text-xl flex justify-center items-center ">
+              {Projects.CurrentProject.ProjectNumber}
+            </div>
+            <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center capitalize">
+              {Projects.CurrentProject.ProjectName}
+            </h1>
+            <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
+              {Projects.CurrentProject.ProjectDescription}
+            </p>
+            <p className="absolute bottom-3 pointer-events-none right-3 bg-dark-body-color text-text-light-color rounded-full px-4 py-2 font-medium max-w-[400px] text-sm text-center tracking-tight leading-5">
+              {Projects.CurrentProject.TimeLeft}
+            </p>
           </div>
         </div>
       </div>
