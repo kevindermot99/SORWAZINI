@@ -23,7 +23,7 @@ function Home() {
   const location = useLocation();
 
   const handleLinkCopy = () => {
-    navigator.clipboard.writeText(location.pathname).then(() => {
+    navigator.clipboard.writeText(window.location.href).then(() => {
       SetCopyButtonText("Copied!");
       setTimeout(() => {
         SetCopyButtonText("Copy");
@@ -101,7 +101,7 @@ function Home() {
             <input
               type="text"
               readOnly
-              value={location.pathname}
+              value={window.location.href}
               className=" my-2 py-2 px-4 font-medium w-full text-sm  bg-stone-200 rounded-full max-w-[300px]"
             />
             <button
