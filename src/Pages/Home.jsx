@@ -367,9 +367,9 @@ function Home() {
               <h3 className="uppercase font-bold text-xs pb-3 ">
                 {Values.SectionName}
               </h3>
-              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+              {/* <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
                 {Values.SectionTitle}
-              </h1>
+              </h1> */}
               </Reveal>
               <div className="pt-4 pb-10 w-full h-fit flex gap-3 flex-wrap items-center justify-center  max-sm:px-5">
               <Reveal keyframes={customAnimation} duration={1000} cascade damping={.1} triggerOnce>

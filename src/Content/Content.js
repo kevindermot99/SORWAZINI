@@ -140,8 +140,7 @@ export const Mission = {
 
 // Section values
 export const Values = {
-  SectionName: "Our Values",
-  SectionTitle: "5 Things We Value.",
+  SectionName: "5 Things we Value",
   values: [
     {
       name: "Teamwork",
