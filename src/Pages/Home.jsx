@@ -359,7 +359,7 @@ function Home() {
               <h3 className="uppercase font-bold text-xs pb-2 ">
                 {Mission.SectionName}
               </h3>
-              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+              <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
                 {Mission.SectionTitle}
               </h1>
               <p className="font-medium max-w-[900px] text-base text-center pt-4 tracking-tight leading-5">
@@ -430,7 +430,7 @@ function Home() {
               >
                 <img
                   src={``}
-                  className="h-28 aspect-square rounded-full bg-stone-200"
+                  className="h-32 aspect-square rounded-full bg-stone-200"
                 />
                 <h1 className="font-bold max-w-[400px] text-lg text-center pt-3 tracking-tight leading-5">
                   {member.name}

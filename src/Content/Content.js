@@ -66,7 +66,7 @@ export const Members = [
     name: "K. Honourgod Levison",
     country: "NI",
     picture: "",
-    Role: "Group President",  
+    Role: "",  
   },
   {
     name: "Lineo Sylvia Muso",
@@ -82,6 +82,12 @@ export const Members = [
     Role: "",  
   },
   {
+    name: "C. Chinyeaka Eke",
+    country: "NI",
+    picture: "",
+    Role: "Tech Lead",  
+  },
+  {
     name: "T. Gift Marufu",
     country: "ZI",
     picture: "",
@@ -92,13 +98,6 @@ export const Members = [
     country: "RWA",
     picture: "",
     Role: "Social Media Manager",  
-  },
-  
-  {
-    name: "C. Chinyeaka Eke",
-    country: "NI",
-    picture: "",
-    Role: "Tech Lead",  
   },
   {
     name: "M. Kaneza Kevin",
@@ -134,7 +133,7 @@ export const Projects = {
 // Section Projects
 export const Mission = {
   SectionName: "Our Mission",
-  SectionTitle: "Creating Impactful Technological Solutions",
+  SectionTitle: "Creating Solutions",
   SectionDescription: "At the heart of our team lies a collective commitment to crafting innovative technological solutions that address pressing challenges faced by communities worldwide. With a shared vision of creating positive change, we harness our diverse skills and perspectives to develop projects that not only solve problems but also empower individuals and transform societies. Our mission extends beyond mere innovation; it is about leveraging technology as a force for good, driving sustainable progress, and fostering inclusivity. Each project we undertake is driven by a passion for making a meaningful impact and leaving a lasting legacy of positive change. Through collaboration, creativity, and unwavering dedication, we strive to build a brighter future where technology serves as a catalyst for social transformation and human flourishing."
 };
 
