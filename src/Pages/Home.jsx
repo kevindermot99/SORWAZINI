@@ -151,6 +151,12 @@ function Home() {
           >
             About Us
           </a>
+          <a
+            href="#Aboutus"
+            className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
+          >
+            Gallery
+          </a>
         </span>
         <span className="space-x-6 flex ">
           <Link
@@ -175,9 +181,9 @@ function Home() {
       {/* Content */}
       <div id="Home" className="h-full mt-[100px] scroll-m-20 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col">
         {/* bubbles */}
-        <div className="absolute top-0 left-0 w-full h-full max-h-[500px] -z-0 bg-red-400 ">
-
-        </div>
+        {/* <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
+            <div className="absolute top-[200px] right-20 h-10 w-3 bg-black/80 rotate-6  "></div>
+        </div> */}
         {/* Hero */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
           <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
