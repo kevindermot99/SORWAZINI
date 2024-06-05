@@ -173,7 +173,11 @@ function Home() {
       {/* </Fade> */}
 
       {/* Content */}
-      <div id="Home" className="h-full mt-[100px] scroll-m-20 max-sm:mt-[50px] w-full flex items-center justify-start flex-col">
+      <div id="Home" className="h-full mt-[100px] scroll-m-20 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col">
+        {/* bubbles */}
+        <div className="absolute top-0 left-0 w-full h-full max-h-[500px] -z-0 bg-red-400 ">
+
+        </div>
         {/* Hero */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
           <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
