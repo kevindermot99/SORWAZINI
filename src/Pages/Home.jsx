@@ -421,12 +421,12 @@ function Home() {
             </p>
             </Reveal>
           </div>
-          <div className="w-full h-fit flex flex-wrap items-center justify-center gap-7 mt-8 px-14 ">
+          <div className="w-full h-fit flex flex-wrap items-start justify-center gap-6 mt-8 px-14 ">
           <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
             {Members.map((member, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-start"
+                className="flex flex-col items-center justify-start px-10"
               >
                 <img
                   src={``}
@@ -436,7 +436,7 @@ function Home() {
                   {member.name}
                 </h1>
                 <p className="font-normal max-w-[230px] text-base text-center pt-1 tracking-tight leading-5">
-                  {member.aboutMe}
+                  {member.Role}
                 </p>
               </div>
             ))}
