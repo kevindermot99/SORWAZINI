@@ -66,45 +66,45 @@ export const Members = [
     name: "K. Honourgod Levison",
     country: "NI",
     picture: "",
-    aboutMe: "Dedicated to humanitarian causes and volunteering to make a difference.",
+    Role: "Group President",  
   },
   {
     name: "Lineo Sylvia Muso",
     country: "SO",
     picture: "",
-    aboutMe: "Passionate about empowering communities through education and social entrepreneurship.",
+    Role: "",  
   },
   
   {
     name: "G. Rwema Christian",
     country: "RWA",
     picture: "",
-    aboutMe: "Committed to fostering cross-cultural understanding and promoting peace.",
+    Role: "",  
   },
   {
     name: "T. Gift Marufu",
     country: "ZI",
     picture: "",
-    aboutMe: "Passionate about community development and grassroots initiatives.",
+    Role: "",  
   },
   {
     name: "Anitha Uwimpuhwe",
     country: "RWA",
     picture: "",
-    aboutMe: "Driven by a desire to advocate for gender equality and women's empowerment.",
+    Role: "Social Media Manager",  
   },
   
   {
     name: "C. Chinyeaka Eke",
     country: "NI",
     picture: "",
-    aboutMe: "Committed to creativity and artistic expression for social change.",
+    Role: "Tech Lead",  
   },
   {
     name: "M. Kaneza Kevin",
     country: "RWA",
     picture: "",
-    aboutMe: "Dedicated to sustainable development and environmental conservation.",
+    Role: "Tech Lead",  
   },
   
 ];
