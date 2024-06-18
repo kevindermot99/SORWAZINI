@@ -16,6 +16,7 @@ import {
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { Fade } from "react-awesome-reveal";
+import SorwaziniLogo from '../assets/SORWAZINI-Logo-1.png'
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -118,12 +119,10 @@ function Home() {
       {/* Menu */}
       <div className=" h-fit w-full flex items-center bg-light-body-color/70 backdrop-blur-md justify-between gap-4 py-5 px-[24px] fixed top-0 z-20">
         <Link
-          className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color`}
+          className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color justify-center items-start `}
         >
-          SORWAZINI
-          <span className="font-medium text-sm opacity-65 tracking-wide">
-            E-Lab Think Tank
-          </span>
+          <img src={SorwaziniLogo} className="w-[180px]" />
+          <p className="text-sm pt-1 tracking-wide font-bold text-dark-body-color">E-lab Think Tank</p>
         </Link>
 
         <span className="space-x-8 max-md:hidden  ">
@@ -334,10 +333,10 @@ function Home() {
         {/* Our Mission */}
         <div
           id="Mission"
-          className="w-full h-fit pt-16 scroll-m-10 flex flex-col items-center justify-center relative  max-sm:px-5"
+          className="w-full h-fit min-h-[700px] pt-16 scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5"
         >
-          <div class=" h-full min-h-[700px] w-full flex justify-start items-center flex-col">
-            <div className=" flex flex-col items-center justify-start">
+          <div class=" h-full w-full flex justify-start items-center flex-col ">
+            <div className=" flex flex-col items-center justify-start ">
               <Reveal
                 keyframes={customAnimation}
                 duration={1000}
@@ -351,15 +350,14 @@ function Home() {
                 <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
                   {Mission.SectionTitle}
                 </h1>
-                <p className="font-medium max-w-[900px] text-base text-center pt-4 tracking-tight leading-5">
-                  {Mission.SectionDescription}
-                </p>
+                
               </Reveal>
+              div
             </div>
           </div>
 
-          <div>
-            
+          <div className="w-full h-full items-center justify-center py-16 grid grid-cols-2">
+              
           </div>
         </div>
 

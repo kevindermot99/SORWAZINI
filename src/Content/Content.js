@@ -132,8 +132,8 @@ export const Projects = {
 
 // Section Projects
 export const Mission = {
-  SectionName: "Our Mission",
-  SectionTitle: "Creating Solutions",
+  SectionName: "About us",
+  SectionTitle: "Get to know the team",
   SectionDescription: "At the heart of our team lies a collective commitment to crafting innovative technological solutions that address pressing challenges faced by communities worldwide. With a shared vision of creating positive change, we harness our diverse ."
 };
 
