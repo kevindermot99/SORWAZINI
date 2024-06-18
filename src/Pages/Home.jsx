@@ -229,7 +229,7 @@ function Home() {
                         {member.SO.map((person, index) => (
                           <div
                             key={index}
-                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group"
                           >
                             <img src="" alt="" />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
@@ -249,9 +249,9 @@ function Home() {
                         {member.RWA.map((person, index) => (
                           <div
                             key={index}
-                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group overflow-hidden"
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group flex justify-center items-center  "
                           >
-                            <img src={person.picture} className="w-full h-full object-cover" />
+                            <img src={person.picture} className="min-w-[100%] max-h-[100%] object-cover rounded-full" />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
@@ -269,7 +269,7 @@ function Home() {
                         {member.ZI.map((person, index) => (
                           <div
                             key={index}
-                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group"
                           >
                             <img src="" alt="" />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
@@ -289,7 +289,7 @@ function Home() {
                         {member.NI.map((person, index) => (
                           <div
                             key={index}
-                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group"
                           >
                             <img src="" alt="" />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">

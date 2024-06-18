@@ -25,37 +25,37 @@ export const SORWAZINI = [
   {
     SO: [
       {
-        name: "Lineo Sylvia Muso",
+        name: "L. Sylvia",
         picture: "",
       },
     ],
     RWA: [
       {
-        name: "M. Kaneza Kevin",
+        name: "M. Kevin",
         picture: "",
       },
       {
-        name: "G. Rwema Christian",
+        name: "R. Christian",
         picture: ChrisPfp,
       },
       {
-        name: "Anitha Uwimpuhwe",
+        name: "U. Anitha",
         picture: "",
       },
     ],
     ZI: [
       {
-        name: "T. Gift Marufu",
+        name: "T. Gift",
         picture: "",
       },
     ],
     NI: [
       {
-        name: "C. Chinyeaka Eke",
+        name: "C. Eke",
         picture: "",
       },
       {
-        name: "K. Honourgod Levison",
+        name: "K. Honourgod",
         picture: "",
       },
     ],
