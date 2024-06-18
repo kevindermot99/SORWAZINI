@@ -179,14 +179,23 @@ function Home() {
       {/* </Fade> */}
 
       {/* Content */}
-      <div id="Home" className="h-full mt-[100px] scroll-m-20 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col">
+      <div
+        id="Home"
+        className="h-full mt-[100px] scroll-m-20 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
+      >
         {/* bubbles */}
         {/* <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
             <div className="absolute top-[200px] right-20 h-10 w-3 bg-black/80 rotate-6  "></div>
         </div> */}
         {/* Hero */}
         <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
-          <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
+          <Reveal
+            keyframes={customAnimation}
+            duration={1000}
+            cascade
+            damping={0.05}
+            triggerOnce
+          >
             <h1 className="text-center max-w-[900px] font-bold text-[70px] max-sm:text-[50px] leading-[80px] max-sm:leading-[55px] tracking-tighter">
               {HeroText.Big}
             </h1>
@@ -203,7 +212,13 @@ function Home() {
                   className="flex gap-3 max-sm: flex-wrap items-center justify-center"
                   key={index}
                 >
-                  <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
+                  <Reveal
+                    keyframes={customAnimation}
+                    duration={1000}
+                    cascade
+                    damping={0.05}
+                    triggerOnce
+                  >
                     {/* SO */}
                     <div className="w-fit flex flex-col gap-3 relative">
                       <div className="w-full text-center">
@@ -289,7 +304,13 @@ function Home() {
               ))}
             </div>
             <div className="flex items-center gap-8 text-dark-body-color pt-3 text-sm font-medium px-4 max-sm:gap-0 max-sm:px-8 ">
-              <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
+              <Reveal
+                keyframes={customAnimation}
+                duration={1000}
+                cascade
+                damping={0.05}
+                triggerOnce
+              >
                 <h1>
                   <strong>SO: </strong>🇿🇦 South Africa
                 </h1>
@@ -308,138 +329,150 @@ function Home() {
         </div>
 
         {/* separator */}
+        <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2 "></div>
+
+        {/* Our Mission */}
+        <div
+          id="Mission"
+          className="w-full h-fit pt-16 scroll-m-10 flex flex-col items-center justify-center relative  max-sm:px-5"
+        >
+          <div class=" h-full min-h-[700px] w-full flex justify-start items-center flex-col">
+            <div className=" flex flex-col items-center justify-start">
+              <Reveal
+                keyframes={customAnimation}
+                duration={1000}
+                cascade
+                damping={0.05}
+                triggerOnce
+              >
+                <h3 className="uppercase font-bold text-xs pb-2 ">
+                  {Mission.SectionName}
+                </h3>
+                <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+                  {Mission.SectionTitle}
+                </h1>
+                <p className="font-medium max-w-[900px] text-base text-center pt-4 tracking-tight leading-5">
+                  {Mission.SectionDescription}
+                </p>
+              </Reveal>
+            </div>
+          </div>
+
+          <div>
+            
+          </div>
+        </div>
+
+        {/* separator */}
         <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
 
         {/* Projects */}
-        <div id="Projects" className="w-full h-fit py-16 scroll-m-14  flex flex-col items-center justify-start">
+        <div
+          id="Projects"
+          className="w-full h-fit py-16 scroll-m-14  flex flex-col items-center justify-start"
+        >
           <div className=" flex flex-col items-center justify-start  max-sm:px-2">
-            <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
-            <h3 className="uppercase font-bold text-xs pb-3 ">
-              {Projects.SectionName}
-            </h3>
-            <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
-              {Projects.SectionTitle}
-            </h1>
-            <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
-              {Projects.SectionStatus}
-            </p>
+            <Reveal
+              keyframes={customAnimation}
+              duration={1000}
+              cascade
+              damping={0.05}
+              triggerOnce
+            >
+              <h3 className="uppercase font-bold text-xs pb-3 ">
+                {Projects.SectionName}
+              </h3>
+              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+                {Projects.SectionTitle}
+              </h1>
+              <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
+                {Projects.SectionStatus}
+              </p>
             </Reveal>
           </div>
 
           {/* Project countdown */}
 
-          <Reveal keyframes={customAnimation} duration={1200} cascade damping={.05} triggerOnce className="w-full">
-          <div className="p-[1px] bg-gradient-to-b from-dark-body-color/40 to-transparent mt-10 w-full h-fit rounded-t-3xl max-w-[90%] mx-auto relative flex justify-center items-center flex-col">
-            <div className="w-full h-full bg-white rounded-t-3xl p-10 max-sm:pb-16 flex justify-center items-start flex-col">
-              <div className="pointer-events-none absolute top-[-25px] left-[40px] h-[50px] w-[50px] rounded-full border-[1px] border-dark-body-color/40 text-dark-body-color bg-white font-bold text-xl flex justify-center items-center ">
-                {Projects.CurrentProject.ProjectNumber}
+          <Reveal
+            keyframes={customAnimation}
+            duration={1200}
+            cascade
+            damping={0.05}
+            triggerOnce
+            className="w-full"
+          >
+            <div className="p-[1px] bg-gradient-to-b from-dark-body-color/40 to-transparent mt-10 w-full h-fit rounded-t-3xl max-w-[90%] mx-auto relative flex justify-center items-center flex-col">
+              <div className="w-full h-full bg-white rounded-t-3xl p-10 max-sm:pb-16 flex justify-center items-start flex-col">
+                <div className="pointer-events-none absolute top-[-25px] left-[40px] h-[50px] w-[50px] rounded-full border-[1px] border-dark-body-color/40 text-dark-body-color bg-white font-bold text-xl flex justify-center items-center ">
+                  {Projects.CurrentProject.ProjectNumber}
+                </div>
+                <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center capitalize">
+                  {Projects.CurrentProject.ProjectName}
+                </h1>
+                <p className="font-medium max-w-[400px] text-base text-left pt-3 tracking-tight leading-5">
+                  {Projects.CurrentProject.ProjectDescription}
+                </p>
+                <p className="absolute sm:top-3 max-sm:bottom-3 pointer-events-none right-3 bg-dark-body-color text-text-light-color rounded-full px-4 py-2 font-medium max-w-[400px] text-sm tracking-tight leading-5">
+                  {Projects.CurrentProject.TimeLeft}
+                </p>
               </div>
-              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center capitalize">
-                {Projects.CurrentProject.ProjectName}
-              </h1>
-              <p className="font-medium max-w-[400px] text-base text-left pt-3 tracking-tight leading-5">
-                {Projects.CurrentProject.ProjectDescription}
-              </p>
-              <p className="absolute sm:top-3 max-sm:bottom-3 pointer-events-none right-3 bg-dark-body-color text-text-light-color rounded-full px-4 py-2 font-medium max-w-[400px] text-sm tracking-tight leading-5">
-                {Projects.CurrentProject.TimeLeft}
-              </p>
             </div>
-          </div>
           </Reveal>
         </div>
-
-        {/* separator */}
-        <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2 "></div>
-
-        {/* Our Mission */}
-        <div id="Mission" className="w-full h-fit pt-16 scroll-m-10 flex flex-col items-center justify-center relative  max-sm:px-5">
-          <div class=" h-full w-full flex justify-center items-center flex-col py-4">
-            <div className=" flex flex-col items-center justify-start">
-            <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
-              <h3 className="uppercase font-bold text-xs pb-2 ">
-                {Mission.SectionName}
-              </h3>
-              <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
-                {Mission.SectionTitle}
-              </h1>
-              <p className="font-medium max-w-[900px] text-base text-center pt-4 tracking-tight leading-5">
-                {Mission.SectionDescription}
-              </p>
-              </Reveal>
-            </div>
-          </div>
-        </div>
-        {/* Our Values */}
-        <div className="w-full h-fit flex flex-col items-center justify-center relative pt-5">
-          <div class=" h-full w-full flex justify-center items-center flex-col ">
-            <div className=" flex flex-col items-center justify-start">
-            <Reveal keyframes={customAnimation} duration={1000} cascade damping={.1} triggerOnce>
-              <h3 className="uppercase font-bold text-xs pb-3 ">
-                {Values.SectionName}
-              </h3>
-              {/* <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
-                {Values.SectionTitle}
-              </h1> */}
-              </Reveal>
-              <div className="pt-4 pb-10 w-full h-fit flex gap-3 flex-wrap items-center justify-center  max-sm:px-5">
-              <Reveal keyframes={customAnimation} duration={1000} cascade damping={.1} triggerOnce>
-                {Values.values.map((value, index) => (
-                  <div
-                    key={index}
-                    className="min-h-[230px] w-[190px] max-sm:w-full max-sm:min-h-fit  max-sm:gap-4 bg-gradient-to-tr from-stone-300/50 to-stone-50 rounded-xl p-6 text-dark-body-color flex flex-col justify-between items-start"
-                  >
-                    <div>
-                      <h1 className="font-bold text-xl break-words  pb-2">
-                        {value.name}
-                      </h1>
-                      <p className="text-base leading-5">{value.description}</p>
-                    </div>
-                    <div className=" text-2xl ">{<value.icon />}</div>
-                  </div>
-                ))}
-                </Reveal>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         {/* separator */}
         <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
 
         {/* About us */}
-        <div id="Aboutus" className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5">
+        <div
+          id="Aboutus"
+          className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5"
+        >
           <div className=" flex flex-col items-center justify-start">
-          <Reveal keyframes={customAnimation} duration={1000} cascade damping={.1} triggerOnce>
-            <h3 className="uppercase font-bold text-xs pb-3 ">
-              {AboutUs.SectionName}
-            </h3>
-            <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
-              {AboutUs.SectionTitle}
-            </h1>
-            <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
-              {AboutUs.SectionDescription}
-            </p>
+            <Reveal
+              keyframes={customAnimation}
+              duration={1000}
+              cascade
+              damping={0.1}
+              triggerOnce
+            >
+              <h3 className="uppercase font-bold text-xs pb-3 ">
+                {AboutUs.SectionName}
+              </h3>
+              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+                {AboutUs.SectionTitle}
+              </h1>
+              <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
+                {AboutUs.SectionDescription}
+              </p>
             </Reveal>
           </div>
           <div className="w-full h-fit flex flex-wrap items-start justify-center gap-6 mt-8 px-14 ">
-          <Reveal keyframes={customAnimation} duration={1000} cascade damping={.05} triggerOnce>
-            {Members.map((member, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center justify-start px-10"
-              >
-                <img
-                  src={``}
-                  className="h-32 aspect-square rounded-full bg-stone-200"
-                />
-                <h1 className="font-bold max-w-[400px] text-lg text-center pt-3 tracking-tight leading-5">
-                  {member.name}
-                </h1>
-                <p className="font-normal max-w-[230px] text-base text-center pt-1 tracking-tight leading-5">
-                  {member.Role}
-                </p>
-              </div>
-            ))}
+            <Reveal
+              keyframes={customAnimation}
+              duration={1000}
+              cascade
+              damping={0.05}
+              triggerOnce
+            >
+              {Members.map((member, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center justify-start px-10"
+                >
+                  <img
+                    src={``}
+                    className="h-32 aspect-square rounded-full bg-stone-200"
+                  />
+                  <h1 className="font-bold max-w-[400px] text-lg text-center pt-3 tracking-tight leading-5">
+                    {member.name}
+                  </h1>
+                  <p className="font-normal max-w-[230px] text-base text-center pt-1 tracking-tight leading-5">
+                    {member.Role}
+                  </p>
+                </div>
+              ))}
             </Reveal>
           </div>
         </div>

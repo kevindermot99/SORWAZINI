@@ -134,7 +134,7 @@ export const Projects = {
 export const Mission = {
   SectionName: "Our Mission",
   SectionTitle: "Creating Solutions",
-  SectionDescription: "At the heart of our team lies a collective commitment to crafting innovative technological solutions that address pressing challenges faced by communities worldwide. With a shared vision of creating positive change, we harness our diverse skills and perspectives to develop projects that not only solve problems but also empower individuals and transform societies. Our mission extends beyond mere innovation; it is about leveraging technology as a force for good, driving sustainable progress, and fostering inclusivity. Each project we undertake is driven by a passion for making a meaningful impact and leaving a lasting legacy of positive change. Through collaboration, creativity, and unwavering dedication, we strive to build a brighter future where technology serves as a catalyst for social transformation and human flourishing."
+  SectionDescription: "At the heart of our team lies a collective commitment to crafting innovative technological solutions that address pressing challenges faced by communities worldwide. With a shared vision of creating positive change, we harness our diverse ."
 };
 
 // Section values
