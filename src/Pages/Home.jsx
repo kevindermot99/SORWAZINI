@@ -18,6 +18,7 @@ import { keyframes } from "@emotion/react";
 import { Fade } from "react-awesome-reveal";
 import SorwaziniLogo from '../assets/SORWAZINI-Logo-1.png'
 
+
 function Home() {
   const [showContact, setShowContact] = useState(false);
   const [copyButtonText, SetCopyButtonText] = useState("Copy");
@@ -248,9 +249,9 @@ function Home() {
                         {member.RWA.map((person, index) => (
                           <div
                             key={index}
-                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group"
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-2 ring-dark-body-color relative group overflow-hidden"
                           >
-                            <img src="" alt="" />
+                            <img src={person.picture} className="w-full h-full object-cover" />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
@@ -302,7 +303,7 @@ function Home() {
                 </div>
               ))}
             </div>
-            <div className="flex items-center gap-8 text-dark-body-color pt-3 text-sm font-medium px-4 max-sm:gap-0 max-sm:px-8 ">
+            <div className="flex items-center gap-14 text-dark-body-color text-sm font-medium px-4 max-sm:gap-0 max-sm:px-8 ">
               <Reveal
                 keyframes={customAnimation}
                 duration={1000}
@@ -311,16 +312,16 @@ function Home() {
                 triggerOnce
               >
                 <h1>
-                  <strong>SO: </strong>🇿🇦 South Africa
+                  🇿🇦 South Africa
                 </h1>
                 <h1>
-                  <strong>RWA: </strong>🇷🇼 Rwanda
+                  🇷🇼 Rwanda
                 </h1>
                 <h1>
-                  <strong>ZI: </strong>🇿🇼 Zimbambwe
+                  🇿🇼 Zimbambwe
                 </h1>
                 <h1>
-                  <strong>NI: </strong>🇳🇬 Nigeria
+                  🇳🇬 Nigeria
                 </h1>
               </Reveal>
             </div>
@@ -336,7 +337,7 @@ function Home() {
           className="w-full h-fit min-h-[700px] pt-16 scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5"
         >
           <div class=" h-full w-full flex justify-start items-center flex-col ">
-            <div className=" flex flex-col items-center justify-start ">
+            <div className=" flex flex-col items-center justify-start w-full">
               <Reveal
                 keyframes={customAnimation}
                 duration={1000}
@@ -352,7 +353,15 @@ function Home() {
                 </h1>
                 
               </Reveal>
-              div
+              <div className="flex w-full max-w-[85%] h-fit p-10 bg-stone-100 mt-6 ">
+                <div className="flex flex-col gap-3">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat molestias expedita beatae nobis laborum, soluta perspiciatis, accusantium numquam eligendi reprehenderit consequatur asperiores est enim dolorem quo. Autem, quam veniam?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus pariatur animi reprehenderit numquam? Repudiandae delectus rerum sequi quos aspernatur quidem dolore aperiam molestiae deleniti, libero laborum ratione deserunt quis.</p>
+                </div>
+                <div className="bg-stone-300 w-full hfull">
+
+                </div>
+              </div>
             </div>
           </div>
 

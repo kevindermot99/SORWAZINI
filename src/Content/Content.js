@@ -3,6 +3,7 @@ import { FaRegLightbulb } from "react-icons/fa6";
 import { LuSmile } from "react-icons/lu";
 import { RiUserVoiceLine } from "react-icons/ri";
 import { TbPlant2 } from "react-icons/tb";
+import ChrisPfp from '../assets/pfp/chris.jpg'
 
 // Function that gets day remaining
 function daysLeft(inputDate) {
@@ -35,7 +36,7 @@ export const SORWAZINI = [
       },
       {
         name: "G. Rwema Christian",
-        picture: "",
+        picture: ChrisPfp,
       },
       {
         name: "Anitha Uwimpuhwe",
