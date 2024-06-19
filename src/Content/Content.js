@@ -125,7 +125,7 @@ export const Contacts = {
 // Section Projects
 export const Projects = {
   SectionName: "Introducing",
-  SectionTitle: "Gerayo",
+  SectionTitle: "gerayo.",
   SectionStatus:
     "Buy, Book or Rent with ease.",
   CurrentProject: {

@@ -20,6 +20,7 @@ import { RiShakeHandsLine } from "react-icons/ri";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { FaRegHandPointUp } from "react-icons/fa6";
 import { AiOutlineTeam } from "react-icons/ai";
+import sample from "../assets/sample.png";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -337,7 +338,7 @@ function Home() {
         </div>
 
         {/* separator */}
-        <div className="w-full h-[60px] rounded-t-[50%] bg-gradient-to-b from-stone-100 to-white "></div>
+        <div className="w-full h-[60px] rounded-t-[50%] bg-gradient-to-b from-stone-100 to-white"></div>
 
         {/* AboutUs */}
         <div
@@ -391,36 +392,10 @@ function Home() {
         </div>
 
         {/* separator */}
-        <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
+        {/* <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div> */}
 
         {/* Projects */}
-        <div
-          id="Projects"
-          className="w-full h-[600px] py-16 scroll-m-14 flex flex-col items-center justify-start relative"
-        >
-          <div className="h-full absolute top-0 left-[-150px] w-[300px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white "></div>
-          <div className="h-full absolute top-0 right-[-150px] w-[300px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white "></div>
-
-          <div className=" flex flex-col items-center justify-start  max-sm:px-2">
-            <Reveal
-              keyframes={customAnimation}
-              duration={1000}
-              cascade
-              damping={0.05}
-              triggerOnce
-            >
-              <h1 className="text-[50px] max-w-[500px] leading-[57px] font-bold tracking-tighter text-center">
-                {Projects.SectionTitle}
-              </h1>
-              <p className="font-medium max-w-[500px] text-dark-body-color/60 text-base text-center pt-3 tracking-tight leading-5">
-                {Projects.SectionStatus}
-              </p>
-            </Reveal>
-          </div>
-
-          {/* Project countdown */}
-
-          {/* <Reveal
+        {/* <Reveal
             keyframes={customAnimation}
             duration={1200}
             cascade
@@ -445,13 +420,54 @@ function Home() {
               </div>
             </div>
           </Reveal> */}
+
+        <div className="w-full h-[100vh] scroll-m-10 flex items-center justify-center max-sm:px-5 bg-white sticky top-0">
+          <Fade >
+            <h1 className="text-[70px] max-w-[500px] leading-[67px] font-bold tracking-tighter text-center  ">
+              Introducing..
+            </h1>
+          </Fade>
+        </div>
+
+        <div
+          id="Projects"
+          className="w-full min-h-[600px] scroll-m-32 py-10 flex flex-col items-center justify-start relative bg-white/95 backdrop-blur-xl z-10"
+        >
+          <div className="h-full absolute top-0 left-[-300px] w-[600px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white blur-md "></div>
+          <div className="h-full absolute top-0 right-[-300px] w-[600px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white blur-md "></div>
+
+          <div className=" flex flex-col items-center justify-start  max-sm:px-2">
+            <Reveal
+              keyframes={customAnimation}
+              duration={1000}
+              cascade
+              damping={0.05}
+              triggerOnce
+            >
+              <h1 className="text-[50px] max-w-[500px] leading-[57px] text-[#399E5A] font-bold tracking-tighter text-center">
+                {Projects.SectionTitle}
+              </h1>
+              <p className="font-medium max-w-[500px] text-dark-body-color/60 text-base text-center pt-3 tracking-tight leading-5">
+                {Projects.SectionStatus}
+              </p>
+              <button className="max-md:hidden font-medium mt-4 cursor-pointer bg-[#399E5A] text-light-body-color transition active:scale-95 text-sm py-2 px-5 rounded-full ">
+                Open Live Demo
+              </button>
+              <img
+                src={sample}
+                className="mt-10 h-fit w-full max-w-[90%] mx-auto shadow-lg object-cover rounded-3xl bg-stone-100/40 p-2 "
+              />
+            </Reveal>
+          </div>
+
+          {/* Project countdown */}
         </div>
 
         {/* separator */}
         <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
 
         {/* About us */}
-        <div
+        {/* <div
           id="Aboutus"
           className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5"
         >
@@ -501,7 +517,7 @@ function Home() {
               ))}
             </Reveal>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* separator */}
