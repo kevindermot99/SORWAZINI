@@ -124,19 +124,19 @@ export const Contacts = {
 
 // Section Projects
 export const Projects = {
-  SectionName: "Projects",
-  SectionTitle: "Exploring Tomorrow's Solutions",
+  SectionName: "Introducing",
+  SectionTitle: "Gerayo",
   SectionStatus:
-    "Currently working on our First project to shape a brighter future. Stay tuned for updates!",
+    "Buy, Book or Rent with ease.",
   CurrentProject: {
     ProjectNumber: "01",
-    ProjectName: "Project Name",
-    ProjectDescription: "About the project",
-    TimeLeft: daysLeft("2024-08-30") + " Days Remaining",
+    ProjectName: "Gerayo",
+    ProjectDescription: "an online platform for booking bus tickets in Rwanda, enabling easy route searches, seat reservations, and secure payments for convenient travel.",
+    // TimeLeft: daysLeft("2024-08-30") + " Days Remaining",
   },
 };
 
-// Section Projects
+// Section About US
 export const AboutUs = {
   SectionName: "Get to know us",
 };

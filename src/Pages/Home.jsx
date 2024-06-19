@@ -120,7 +120,7 @@ function Home() {
 
       {/* <Fade duration={1000} triggerOnce> */}
       {/* Menu */}
-      <div className=" h-fit w-full flex items-center bg-light-body-color/90 backdrop-blur-md justify-between gap-4 py-4 px-[24px] fixed top-0 z-20">
+      <div className=" h-fit w-full flex items-center bg-light-body-color/95 backdrop-blur-lg   justify-between gap-4 py-4 px-[24px] fixed top-0 z-20">
         <Link
           className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color justify-center items-start `}
         >
@@ -147,7 +147,7 @@ function Home() {
             href="#AboutUs"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
-            Challenges
+            E-Lab Challenges
           </a>
           <a
             href="#Aboutus"
@@ -337,7 +337,7 @@ function Home() {
         </div>
 
         {/* separator */}
-        <div className="w-full h-[60px] rounded-t-[50%] bg-gradient-to-b from-stone-100 to-white z-10 "></div>
+        <div className="w-full h-[60px] rounded-t-[50%] bg-gradient-to-b from-stone-100 to-white "></div>
 
         {/* AboutUs */}
         <div
@@ -345,9 +345,9 @@ function Home() {
           className="w-full h-fit min-h-[600px] scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
         >
           {/* bubbles */}
-        <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
+          <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
             <div className="absolute top-[50px] left-0 right-0 mx-auto h-[300px] w-[300px] blur-[100px] bg-stone-100 "></div>
-        </div>
+          </div>
           <div class=" h-full w-full flex justify-start items-center flex-col ">
             <div className=" flex flex-col items-center justify-start w-full">
               <Reveal
@@ -396,8 +396,11 @@ function Home() {
         {/* Projects */}
         <div
           id="Projects"
-          className="w-full h-fit py-16 scroll-m-14  flex flex-col items-center justify-start"
+          className="w-full h-[600px] py-16 scroll-m-14 flex flex-col items-center justify-start relative"
         >
+          <div className="h-full absolute top-0 left-[-150px] w-[300px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white "></div>
+          <div className="h-full absolute top-0 right-[-150px] w-[300px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white "></div>
+
           <div className=" flex flex-col items-center justify-start  max-sm:px-2">
             <Reveal
               keyframes={customAnimation}
@@ -406,13 +409,10 @@ function Home() {
               damping={0.05}
               triggerOnce
             >
-              <h3 className="uppercase font-bold text-xs pb-3 ">
-                {Projects.SectionName}
-              </h3>
-              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+              <h1 className="text-[50px] max-w-[500px] leading-[57px] font-bold tracking-tighter text-center">
                 {Projects.SectionTitle}
               </h1>
-              <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
+              <p className="font-medium max-w-[500px] text-dark-body-color/60 text-base text-center pt-3 tracking-tight leading-5">
                 {Projects.SectionStatus}
               </p>
             </Reveal>
@@ -420,7 +420,7 @@ function Home() {
 
           {/* Project countdown */}
 
-          <Reveal
+          {/* <Reveal
             keyframes={customAnimation}
             duration={1200}
             cascade
@@ -444,7 +444,7 @@ function Home() {
                 </p>
               </div>
             </div>
-          </Reveal>
+          </Reveal> */}
         </div>
 
         {/* separator */}
