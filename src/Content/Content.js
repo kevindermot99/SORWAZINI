@@ -7,6 +7,7 @@ import ChrisPfp from '../assets/pfp/chris.jpg'
 import honourGod from '../assets/pfp/honourGod.jpg'
 import eke from '../assets/pfp/eke.jpg'
 import kevin from '../assets/pfp/kevin.jpg'
+import anita from '../assets/pfp/anita.png'
 
 // Function that gets day remaining
 function daysLeft(inputDate) {
@@ -43,7 +44,7 @@ export const SORWAZINI = [
       },
       {
         name: "U. Anitha",
-        picture: "",
+        picture: anita,
       },
     ],
     ZI: [
