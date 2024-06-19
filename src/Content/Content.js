@@ -8,6 +8,7 @@ import honourGod from '../assets/pfp/honourGod.jpg'
 import eke from '../assets/pfp/eke.jpg'
 import kevin from '../assets/pfp/kevin.jpg'
 import anita from '../assets/pfp/anita.png'
+import sylvia from '../assets/pfp/sylvia.jpeg'
 
 // Function that gets day remaining
 function daysLeft(inputDate) {
@@ -30,7 +31,7 @@ export const SORWAZINI = [
     SO: [
       {
         name: "L. Sylvia",
-        picture: "",
+        picture: sylvia,
       },
     ],
     RWA: [
