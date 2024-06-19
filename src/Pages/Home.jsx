@@ -16,8 +16,7 @@ import {
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { Fade } from "react-awesome-reveal";
-import SorwaziniLogo from '../assets/SORWAZINI-Logo-1.png'
-
+import SorwaziniLogo from "../assets/SORWAZINI-Logo-1.png";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -118,12 +117,14 @@ function Home() {
 
       {/* <Fade duration={1000} triggerOnce> */}
       {/* Menu */}
-      <div className=" h-fit w-full flex items-center bg-light-body-color/70 backdrop-blur-md justify-between gap-4 py-5 px-[24px] fixed top-0 z-20">
+      <div className=" h-fit w-full flex items-center bg-light-body-color/90 backdrop-blur-md justify-between gap-4 py-5 px-[24px] fixed top-0 z-20">
         <Link
           className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color justify-center items-start `}
         >
           <img src={SorwaziniLogo} className="w-[180px]" />
-          <p className="text-sm pt-1 tracking-wide font-bold text-dark-body-color">E-lab Think Tank</p>
+          <p className="text-sm pt-1 tracking-wide font-bold text-dark-body-color">
+            E-lab Think Tank
+          </p>
         </Link>
 
         <span className="space-x-8 max-md:hidden  ">
@@ -251,7 +252,10 @@ function Home() {
                             key={index}
                             className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group flex justify-center items-center  "
                           >
-                            <img src={person.picture} className="min-w-[100%] max-h-[100%] object-cover rounded-full" />
+                            <img
+                              src={person.picture}
+                              className="min-w-[100%] max-h-[100%] object-cover rounded-full"
+                            />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
@@ -311,18 +315,10 @@ function Home() {
                 damping={0.05}
                 triggerOnce
               >
-                <h1>
-                  🇿🇦 South Africa
-                </h1>
-                <h1>
-                  🇷🇼 Rwanda
-                </h1>
-                <h1>
-                  🇿🇼 Zimbambwe
-                </h1>
-                <h1>
-                  🇳🇬 Nigeria
-                </h1>
+                <h1>🇿🇦 South Africa</h1>
+                <h1>🇷🇼 Rwanda</h1>
+                <h1>🇿🇼 Zimbambwe</h1>
+                <h1>🇳🇬 Nigeria</h1>
               </Reveal>
             </div>
           </div>
@@ -345,21 +341,19 @@ function Home() {
                 damping={0.05}
                 triggerOnce
               >
-                <h3 className="uppercase font-bold text-xs pb-2 ">
-                  {Mission.SectionName}
-                </h3>
                 <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
-                  {Mission.SectionTitle}
+                  {Mission.SectionName}
                 </h1>
-                
+                <div className="bg-white w-fit min-w-fit h-[45px] max-w-[400px] mt-5 rounded-full shadow p-1 flex items-center justify-center gap-1">
+                  <button className="px-6 bg-dark-body-color text-white h-full whitespace-nowrap rounded-full font-semibold text-sm">Who we are</button>
+                  <button className="px-6 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm">Mission</button>
+                  <button className="px-6 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm">Team</button>
+                </div>
               </Reveal>
-              
             </div>
           </div>
 
-          <div className="w-full h-full items-center justify-center py-16 grid grid-cols-2">
-              
-          </div>
+          <div className="w-full h-full items-center justify-center py-16 grid grid-cols-2"></div>
         </div>
 
         {/* separator */}
@@ -418,7 +412,6 @@ function Home() {
             </div>
           </Reveal>
         </div>
-        
 
         {/* separator */}
         <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
