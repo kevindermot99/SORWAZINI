@@ -9,9 +9,8 @@ import {
   Members,
   SORWAZINI,
   Projects,
-  Mission,
-  Values,
   AboutUs,
+  Values,
 } from "../Content/Content";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -186,14 +185,14 @@ function Home() {
       {/* Content */}
       <div
         id="Home"
-        className="h-full mt-[100px] scroll-m-20 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
+        className="h-full pt-[100px] max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
         {/* bubbles */}
         {/* <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
             <div className="absolute top-[200px] right-20 h-10 w-3 bg-black/80 rotate-6  "></div>
         </div> */}
         {/* Hero */}
-        <div className="w-full h-fit py-16 flex flex-col items-center justify-center">
+        <div className="w-full h-fit py-16 flex flex-col items-center justify-center sticky">
           <Reveal
             keyframes={customAnimation}
             duration={1000}
@@ -338,13 +337,17 @@ function Home() {
         </div>
 
         {/* separator */}
-        <div className="w-full border-b-[1px] border-stone-200 "></div>
+        <div className="w-full h-[60px] rounded-t-[50%] bg-gradient-to-b from-stone-100 to-white z-10 "></div>
 
         {/* AboutUs */}
         <div
           id="AboutUs"
-          className="w-full h-fit min-h-[700px] pt-16 scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5 bg-stone-100"
+          className="w-full h-fit min-h-[600px] scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
         >
+          {/* bubbles */}
+        <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
+            <div className="absolute top-[50px] left-0 right-0 mx-auto h-[300px] w-[300px] blur-[100px] bg-stone-100 "></div>
+        </div>
           <div class=" h-full w-full flex justify-start items-center flex-col ">
             <div className=" flex flex-col items-center justify-start w-full">
               <Reveal
@@ -355,7 +358,7 @@ function Home() {
                 triggerOnce
               >
                 <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center ">
-                  {Mission.SectionName}
+                  {AboutUs.SectionName}
                 </h1>
                 <div className="bg-white w-full h-[45px] max-w-fit mt-5 rounded-full shadow p-1 flex items-center justify-center">
                   <button className="px-5 bg-dark-body-color text-white h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
@@ -374,6 +377,11 @@ function Home() {
                     <AiOutlineTeam className="text-[20px]" />
                     Team
                   </button>
+                </div>
+                <div className="mt-2">
+                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                    {HeroText.Small}
+                  </p>
                 </div>
               </Reveal>
             </div>
