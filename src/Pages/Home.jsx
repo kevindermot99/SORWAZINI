@@ -17,6 +17,10 @@ import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { Fade } from "react-awesome-reveal";
 import SorwaziniLogo from "../assets/SORWAZINI-Logo-1.png";
+import { RiShakeHandsLine } from "react-icons/ri";
+import { IoBriefcaseOutline } from "react-icons/io5";
+import { FaRegHandPointUp } from "react-icons/fa6";
+import { AiOutlineTeam } from "react-icons/ai";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -117,7 +121,7 @@ function Home() {
 
       {/* <Fade duration={1000} triggerOnce> */}
       {/* Menu */}
-      <div className=" h-fit w-full flex items-center bg-light-body-color/90 backdrop-blur-md justify-between gap-4 py-5 px-[24px] fixed top-0 z-20">
+      <div className=" h-fit w-full flex items-center bg-light-body-color/90 backdrop-blur-md justify-between gap-4 py-4 px-[24px] fixed top-0 z-20">
         <Link
           className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color justify-center items-start `}
         >
@@ -127,7 +131,7 @@ function Home() {
           </p>
         </Link>
 
-        <span className="space-x-8 max-md:hidden  ">
+        <span className="space-x-6 max-md:hidden  ">
           <a
             href="#Home"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
@@ -141,10 +145,10 @@ function Home() {
             Projects
           </a>
           <a
-            href="#Mission"
+            href="#AboutUs"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
-            Our Mission
+            Challenges
           </a>
           <a
             href="#Aboutus"
@@ -336,9 +340,9 @@ function Home() {
         {/* separator */}
         <div className="w-full border-b-[1px] border-stone-200 "></div>
 
-        {/* Our Mission */}
+        {/* AboutUs */}
         <div
-          id="Mission"
+          id="AboutUs"
           className="w-full h-fit min-h-[700px] pt-16 scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5 bg-stone-100"
         >
           <div class=" h-full w-full flex justify-start items-center flex-col ">
@@ -350,13 +354,26 @@ function Home() {
                 damping={0.05}
                 triggerOnce
               >
-                <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
+                <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center ">
                   {Mission.SectionName}
                 </h1>
-                <div className="bg-white w-fit min-w-fit h-[45px] max-w-[400px] mt-5 rounded-full shadow p-1 flex items-center justify-center gap-1">
-                  <button className="px-6 bg-dark-body-color text-white h-full whitespace-nowrap rounded-full font-semibold text-sm">Who we are</button>
-                  <button className="px-6 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm">Mission</button>
-                  <button className="px-6 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm">Team</button>
+                <div className="bg-white w-full h-[45px] max-w-fit mt-5 rounded-full shadow p-1 flex items-center justify-center">
+                  <button className="px-5 bg-dark-body-color text-white h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
+                    <RiShakeHandsLine className="text-[20px]" />
+                    Who we are
+                  </button>
+                  <button className="px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
+                    <IoBriefcaseOutline className="text-[20px]" />
+                    Mission
+                  </button>
+                  <button className="px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
+                    <FaRegHandPointUp className="text-[20px]" />
+                    Values
+                  </button>
+                  <button className="px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
+                    <AiOutlineTeam className="text-[20px]" />
+                    Team
+                  </button>
                 </div>
               </Reveal>
             </div>
