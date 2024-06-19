@@ -141,6 +141,13 @@ export const AboutUs = {
   SectionName: "Get to know us",
 };
 
+// Section Challenges
+export const Challenges = {
+  SectionName: "Challenges",
+  SectionTitle: "E-lab Challenges",
+  SectionDescription: "We were assigned 6 challenges, each transforming into an unforgettable journey that provided valuable learning experiences ",
+};
+
 // Section values
 export const Values = {
   SectionName: "5 Things we Value",

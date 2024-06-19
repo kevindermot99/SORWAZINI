@@ -11,6 +11,7 @@ import {
   Projects,
   AboutUs,
   Values,
+  Challenges,
 } from "../Content/Content";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -142,7 +143,7 @@ function Home() {
             href="#Projects"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
-            Projects
+            Our Project
           </a>
           <a
             href="#AboutUs"
@@ -343,7 +344,7 @@ function Home() {
         {/* AboutUs */}
         <div
           id="AboutUs"
-          className="w-full h-fit min-h-[600px] scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
+          className="w-full h-fit min-h-[600px] scroll-m-24 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
         >
           {/* bubbles */}
           <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
@@ -421,6 +422,7 @@ function Home() {
             </div>
           </Reveal> */}
 
+        {/* Introducing */}
         <div className="w-full h-[100vh] scroll-m-10 flex items-center justify-center max-sm:px-5 bg-white sticky top-0">
           <Fade >
             <h1 className="text-[70px] max-w-[500px] leading-[67px] font-bold tracking-tighter text-center  ">
@@ -464,12 +466,12 @@ function Home() {
         </div>
 
         {/* separator */}
-        <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div>
+        {/* <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 "></div> */}
 
         {/* About us */}
-        {/* <div
+        <div
           id="Aboutus"
-          className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5"
+          className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5 bg-white z-10"
         >
           <div className=" flex flex-col items-center justify-start">
             <Reveal
@@ -479,45 +481,22 @@ function Home() {
               damping={0.1}
               triggerOnce
             >
-              <h3 className="uppercase font-bold text-xs pb-3 ">
-                {AboutUs.SectionName}
-              </h3>
+              {/* <h3 className="uppercase font-bold text-xs pb-3 ">
+                
+              </h3> */}
               <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
-                {AboutUs.SectionTitle}
+                
+              {Challenges.SectionTitle}
               </h1>
-              <p className="font-medium max-w-[400px] text-base text-center pt-3 tracking-tight leading-5">
-                {AboutUs.SectionDescription}
+              <p className="font-medium max-w-[500px] text-base text-center pt-3 tracking-tight leading-5">
+                {Challenges.SectionDescription}
               </p>
             </Reveal>
           </div>
           <div className="w-full h-fit flex flex-wrap items-start justify-center gap-6 mt-8 px-14 ">
-            <Reveal
-              keyframes={customAnimation}
-              duration={1000}
-              cascade
-              damping={0.05}
-              triggerOnce
-            >
-              {Members.map((member, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center justify-start px-10"
-                >
-                  <img
-                    src={``}
-                    className="h-32 aspect-square rounded-full bg-stone-200"
-                  />
-                  <h1 className="font-bold max-w-[400px] text-lg text-center pt-3 tracking-tight leading-5">
-                    {member.name}
-                  </h1>
-                  <p className="font-normal max-w-[230px] text-base text-center pt-1 tracking-tight leading-5">
-                    {member.Role}
-                  </p>
-                </div>
-              ))}
-            </Reveal>
+            
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* separator */}
