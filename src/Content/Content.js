@@ -4,6 +4,9 @@ import { LuSmile } from "react-icons/lu";
 import { RiUserVoiceLine } from "react-icons/ri";
 import { TbPlant2 } from "react-icons/tb";
 import ChrisPfp from '../assets/pfp/chris.jpg'
+import honourGod from '../assets/pfp/honourGod.jpg'
+import eke from '../assets/pfp/eke.jpg'
+import kevin from '../assets/pfp/kevin.jpg'
 
 // Function that gets day remaining
 function daysLeft(inputDate) {
@@ -32,7 +35,7 @@ export const SORWAZINI = [
     RWA: [
       {
         name: "M. Kevin",
-        picture: "",
+        picture: kevin,
       },
       {
         name: "R. Christian",
@@ -52,11 +55,11 @@ export const SORWAZINI = [
     NI: [
       {
         name: "C. Eke",
-        picture: "",
+        picture: eke,
       },
       {
         name: "K. Honourgod",
-        picture: "",
+        picture: honourGod,
       },
     ],
   },
