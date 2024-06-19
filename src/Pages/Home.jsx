@@ -231,7 +231,7 @@ function Home() {
                             key={index}
                             className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group"
                           >
-                            <img src={person.picture} className="min-w-[100%] max-h-[100%] object-cover rounded-full" />
+                            <img src="" alt="" />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
@@ -271,7 +271,7 @@ function Home() {
                             key={index}
                             className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group"
                           >
-                            <img src={person.picture} className="min-w-[100%] max-h-[100%] object-cover rounded-full" />
+                            <img src="" alt="" />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
@@ -291,7 +291,7 @@ function Home() {
                             key={index}
                             className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group"
                           >
-                            <img src={person.picture} className="min-w-[100%] max-h-[100%] object-cover rounded-full" />
+                            <img src="" alt="" />
                             <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
@@ -329,12 +329,12 @@ function Home() {
         </div>
 
         {/* separator */}
-        <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2 "></div>
+        <div className="w-full border-b-[1px] border-stone-200 "></div>
 
         {/* Our Mission */}
         <div
           id="Mission"
-          className="w-full h-fit min-h-[700px] pt-16 scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5"
+          className="w-full h-fit min-h-[700px] pt-16 scroll-m-10 flex flex-col items-start justify-start relative  max-sm:px-5 bg-stone-100"
         >
           <div class=" h-full w-full flex justify-start items-center flex-col ">
             <div className=" flex flex-col items-center justify-start w-full">
@@ -353,15 +353,7 @@ function Home() {
                 </h1>
                 
               </Reveal>
-              <div className="flex w-full max-w-[85%] h-fit p-10 bg-stone-100 mt-6 ">
-                <div className="flex flex-col gap-3">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat molestias expedita beatae nobis laborum, soluta perspiciatis, accusantium numquam eligendi reprehenderit consequatur asperiores est enim dolorem quo. Autem, quam veniam?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus pariatur animi reprehenderit numquam? Repudiandae delectus rerum sequi quos aspernatur quidem dolore aperiam molestiae deleniti, libero laborum ratione deserunt quis.</p>
-                </div>
-                <div className="bg-stone-300 w-full hfull">
-
-                </div>
-              </div>
+              
             </div>
           </div>
 

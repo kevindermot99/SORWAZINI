@@ -178,7 +178,7 @@ export const Values = {
 // Section values
 export const AboutUs = {
   SectionName: "About us",
-  SectionTitle: "Meat the team !",
+  SectionTitle: "Let's Get to know each other!",
   SectionDescription: "We are a diverse team driven by innovation, creating solutions for a better future."
 };
 
