@@ -408,6 +408,7 @@ function Home() {
                   <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
                     Team
                   </p>
+                  
                 </div>
               </Reveal>
             </div>
@@ -481,7 +482,7 @@ function Home() {
               </button>
               <img
                 src={sample}
-                className="Project-Image mt-10 h-fit w-full max-w-[75%] mx-auto shadow-lg object-cover rounded-3xl bg-stone-100/40 p-2 "
+                className="Project-Image mt-10 h-fit w-full max-w-[78%] mx-auto shadow-lg object-cover rounded-3xl bg-stone-300/20 ring-1 ring-stone-100 p-1"
               />
             </Reveal>
           </div>
