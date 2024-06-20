@@ -27,6 +27,7 @@ function Home() {
   const [showContact, setShowContact] = useState(false);
   const [copyButtonText, SetCopyButtonText] = useState("Copy");
   const location = useLocation();
+  const [aboutUs, setAboutUs] = useState(1)
 
   const handleLinkCopy = () => {
     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -363,26 +364,49 @@ function Home() {
                   {AboutUs.SectionName}
                 </h1>
                 <div className="bg-white w-full h-[45px] max-w-fit mt-5 rounded-full shadow p-1 flex items-center justify-center">
-                  <button className="px-5 bg-dark-body-color text-white h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
+                  <button onClick={() => {setAboutUs(1)}} className={`px-5 h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 1 ? 'transition duration-200 bg-dark-body-color text-white' : ' bg-transparent text-dark-body-color '}`}>
                     <RiShakeHandsLine className="text-[20px]" />
                     Who we are
                   </button>
-                  <button className="px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
+                  <button onClick={() => {setAboutUs(2)}}  className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 2 ? 'transition duration-200 bg-dark-body-color text-white' : ' bg-transparent text-dark-body-color '}`}>
                     <IoBriefcaseOutline className="text-[20px]" />
                     Mission
                   </button>
-                  <button className="px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
+                  <button onClick={() => {setAboutUs(3)}} className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 3 ? 'transition duration-200 bg-dark-body-color text-white' : ' bg-transparent text-dark-body-color '}`}>
                     <FaRegHandPointUp className="text-[20px]" />
                     Values
                   </button>
-                  <button className="px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2">
+                  <button onClick={() => {setAboutUs(4)}} className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 4 ? 'transition duration-200 bg-dark-body-color text-white' : ' bg-transparent text-dark-body-color '}`}>
                     <AiOutlineTeam className="text-[20px]" />
                     Team
                   </button>
                 </div>
-                <div className="mt-2">
+
+                {/* Who we are */}
+                <div className={`mt-2 ${aboutUs === 1 ? 'flex' : 'hidden' }`}>
                   <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
-                    {HeroText.Small}
+                    Who we are
+                  </p>
+                </div>
+
+                {/* Mission */}
+                <div className={`mt-2 ${aboutUs === 2 ? 'flex' : 'hidden' }`}>
+                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                    Mission
+                  </p>
+                </div>
+
+                {/* Values */}
+                <div className={`mt-2 ${aboutUs === 3 ? 'flex' : 'hidden' }`}>
+                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                    Values
+                  </p>
+                </div>
+
+                {/* Team */}
+                <div className={`mt-2 ${aboutUs === 4 ? 'flex' : 'hidden' }`}>
+                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                    Team
                   </p>
                 </div>
               </Reveal>
