@@ -457,7 +457,7 @@ function Home() {
 
         <div
           id="Projects"
-          className="w-full min-h-[600px] scroll-m-32 py-10 flex flex-col items-center justify-start relative bg-white/95 backdrop-blur-xl z-10"
+          className=" w-full min-h-[600px] scroll-m-32 py-10 flex flex-col items-center justify-start relative bg-white/95 backdrop-blur-xl z-10"
         >
           <div className="h-full absolute top-0 left-[-300px] w-[600px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white blur-md "></div>
           <div className="h-full absolute top-0 right-[-300px] w-[600px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white blur-md "></div>
@@ -481,7 +481,7 @@ function Home() {
               </button>
               <img
                 src={sample}
-                className="mt-10 h-fit w-full max-w-[90%] mx-auto shadow-lg object-cover rounded-3xl bg-stone-100/40 p-2 "
+                className="Project-Image mt-10 h-fit w-full max-w-[75%] mx-auto shadow-lg object-cover rounded-3xl bg-stone-100/40 p-2 "
               />
             </Reveal>
           </div>
@@ -492,7 +492,7 @@ function Home() {
         {/* separator */}
         {/* <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 "></div> */}
 
-        {/* About us */}
+        {/* Team */}
         <div
           id="Aboutus"
           className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5 bg-white z-10"
