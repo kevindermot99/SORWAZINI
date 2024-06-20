@@ -119,7 +119,7 @@ export const Members = [
 export const Contacts = {
   WhatsAppNumber: "+250785614800",
   InstagramUsername: "sorwazini7",
-  Gmail: "mbonimpayekevin@gmail.com",
+  Gmail: "sorwazini@gmail.com",
 };
 
 // Section Projects
