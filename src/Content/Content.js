@@ -9,6 +9,7 @@ import eke from '../assets/pfp/eke.jpg'
 import kevin from '../assets/pfp/kevin.jpg'
 import anita from '../assets/pfp/anita.png'
 import sylvia from '../assets/pfp/sylvia.jpeg'
+import gift from '../assets/pfp/gift.jpeg'
 
 // Function that gets day remaining
 function daysLeft(inputDate) {
@@ -51,7 +52,7 @@ export const SORWAZINI = [
     ZI: [
       {
         name: "T. Gift",
-        picture: "",
+        picture: gift,
       },
     ],
     NI: [
@@ -69,51 +70,50 @@ export const SORWAZINI = [
 
 export const Members = [
   {
-    name: "K. Honourgod Levison",
+    name: "Honourgod K. Levison",
     country: "NI",
-    picture: "",
-    Role: "",  
+    picture: honourGod,
+    Role: "Team Lead",  
   },
   {
     name: "Lineo Sylvia Muso",
     country: "SO",
-    picture: "",
-    Role: "",  
+    picture: sylvia,
+    Role: "Reporter/Presenter",  
   },
   
   {
-    name: "G. Rwema Christian",
+    name: "Rwema Christian",
     country: "RWA",
-    picture: "",
-    Role: "",  
+    picture: ChrisPfp,
+    Role: "Communication Lead",  
   },
   {
-    name: "C. Chinyeaka Eke",
+    name: "Chiagoziem Eke",
     country: "NI",
-    picture: "",
-    Role: "Tech Lead",  
+    picture: eke,
+    Role: "Research Lead",  
   },
   {
-    name: "T. Gift Marufu",
+    name: "Tapiwanashe Gift",
     country: "ZI",
-    picture: "",
-    Role: "",  
+    picture: gift,
+    Role: "Recorder",  
   },
   {
     name: "Anitha Uwimpuhwe",
     country: "RWA",
-    picture: "",
+    picture: anita,
     Role: "Social Media Manager",  
   },
   {
-    name: "M. Kaneza Kevin",
+    name: "Kaneza Kevin",
     country: "RWA",
-    picture: "",
+    picture: kevin,
     Role: "Tech Lead",  
   },
   
 ];
-
 
 // contacts
 export const Contacts = {
@@ -127,7 +127,7 @@ export const Projects = {
   SectionName: "Introducing",
   SectionTitle: "gerayo.",
   SectionStatus:
-    "Buy, Book or Rent with ease.",
+    "All in one solution: buy tickets, track buses. ",
   CurrentProject: {
     ProjectNumber: "01",
     ProjectName: "Gerayo",

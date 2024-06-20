@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "boxicons/css/boxicons.min.css";
 import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
@@ -18,16 +19,20 @@ import { keyframes } from "@emotion/react";
 import { Fade } from "react-awesome-reveal";
 import SorwaziniLogo from "../assets/SORWAZINI-Logo-1.png";
 import { RiShakeHandsLine } from "react-icons/ri";
-import { IoBriefcaseOutline } from "react-icons/io5";
 import { FaRegHandPointUp } from "react-icons/fa6";
-import { AiOutlineTeam } from "react-icons/ai";
-import sample from "../assets/sample.png";
+import sample from "../assets/sample2.png";
+import { TbExclamationCircle } from "react-icons/tb";
+import { MdOutlineRocketLaunch } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { RiTeamLine } from "react-icons/ri";
+import { GiEarthAfricaEurope } from "react-icons/gi";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
   const [copyButtonText, SetCopyButtonText] = useState("Copy");
   const location = useLocation();
-  const [aboutUs, setAboutUs] = useState(1)
+  const [aboutUs, setAboutUs] = useState(1);
 
   const handleLinkCopy = () => {
     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -141,10 +146,10 @@ function Home() {
             Home
           </a>
           <a
-            href="#Projects"
+            href="#who"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
-            Our Project
+            Who we are
           </a>
           <a
             href="#AboutUs"
@@ -156,13 +161,13 @@ function Home() {
             href="#Aboutus"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
-            About Us
+            Gallery
           </a>
           <a
             href="#Aboutus"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
-            Gallery
+            Our Product
           </a>
         </span>
         <span className="space-x-6 flex ">
@@ -201,7 +206,7 @@ function Home() {
             duration={1000}
             cascade
             damping={0.05}
-            triggerOnce
+            // triggerOnce
           >
             <h1 className="text-center max-w-[900px] font-bold text-[70px] max-sm:text-[50px] leading-[80px] max-sm:leading-[55px] tracking-tighter">
               {HeroText.Big}
@@ -224,7 +229,7 @@ function Home() {
                     duration={1000}
                     cascade
                     damping={0.05}
-                    triggerOnce
+                    // triggerOnce
                   >
                     {/* SO */}
                     <div className="w-fit flex flex-col gap-3 relative">
@@ -328,7 +333,7 @@ function Home() {
                 duration={1000}
                 cascade
                 damping={0.05}
-                triggerOnce
+                //triggerOnce
               >
                 <h1>🇿🇦 South Africa</h1>
                 <h1>🇷🇼 Rwanda</h1>
@@ -340,12 +345,12 @@ function Home() {
         </div>
 
         {/* separator */}
-        <div className="w-full h-[60px] rounded-t-[50%] bg-gradient-to-b from-stone-100 to-white"></div>
+        <div className="w-full h-[60px] rounded-t-[50%] bg-gradient-to-b from-stone-100/50 to-white"></div>
 
         {/* AboutUs */}
         <div
-          id="AboutUs"
-          className="w-full h-fit min-h-[600px] scroll-m-24 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
+          id="who"
+          className="w-full h-fit scroll-m-24 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
         >
           {/* bubbles */}
           <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
@@ -358,63 +363,198 @@ function Home() {
                 duration={1000}
                 cascade
                 damping={0.05}
-                triggerOnce
+                // triggerOnce
               >
-                <h1 className=" text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center ">
-                  {AboutUs.SectionName}
+                <h1 className=" text-[40px] max-w-[800px] leading-[47px] font-bold tracking-tighter text-center ">
+                  {aboutUs === 1 && "Get to know us"}
+                  {aboutUs === 3 && "Things we value"}
+                  {aboutUs === 4 && "Our Problem Statement "}
+                  {aboutUs === 5 && "Our Mission"}
                 </h1>
                 <div className="bg-white w-full h-[45px] max-w-fit mt-5 rounded-full shadow p-1 flex items-center justify-center">
-                  <button onClick={() => {setAboutUs(1)}} className={`px-5 h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 1 ? 'transition duration-200 bg-dark-body-color text-white' : ' bg-transparent text-dark-body-color '}`}>
+                  <button
+                    onClick={() => {
+                      setAboutUs(1);
+                    }}
+                    className={`px-5 h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
+                      aboutUs === 1
+                        ? "transition duration-200 bg-dark-body-color text-white"
+                        : " bg-transparent text-dark-body-color "
+                    }`}
+                  >
                     <RiShakeHandsLine className="text-[20px]" />
                     Who we are
                   </button>
-                  <button onClick={() => {setAboutUs(2)}}  className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 2 ? 'transition duration-200 bg-dark-body-color text-white' : ' bg-transparent text-dark-body-color '}`}>
-                    <IoBriefcaseOutline className="text-[20px]" />
-                    Mission
-                  </button>
-                  <button onClick={() => {setAboutUs(3)}} className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 3 ? 'transition duration-200 bg-dark-body-color text-white' : ' bg-transparent text-dark-body-color '}`}>
-                    <FaRegHandPointUp className="text-[20px]" />
+                  <button
+                    onClick={() => {
+                      setAboutUs(3);
+                    }}
+                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
+                      aboutUs === 3
+                        ? "transition duration-200 bg-dark-body-color text-white"
+                        : " bg-transparent text-dark-body-color "
+                    }`}
+                  >
+                    <FaRegHeart className="text-[20px]" />
                     Values
                   </button>
-                  <button onClick={() => {setAboutUs(4)}} className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 4 ? 'transition duration-200 bg-dark-body-color text-white' : ' bg-transparent text-dark-body-color '}`}>
-                    <AiOutlineTeam className="text-[20px]" />
-                    Team
+                  <button
+                    onClick={() => {
+                      setAboutUs(4);
+                    }}
+                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
+                      aboutUs === 4
+                        ? "transition duration-200 bg-dark-body-color text-white"
+                        : " bg-transparent text-dark-body-color "
+                    }`}
+                  >
+                    <TbExclamationCircle className="text-[20px]" />
+                    Problem
+                  </button>
+                  <button
+                    onClick={() => {
+                      setAboutUs(5);
+                    }}
+                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
+                      aboutUs === 5
+                        ? "transition duration-200 bg-dark-body-color text-white"
+                        : " bg-transparent text-dark-body-color "
+                    }`}
+                  >
+                    <MdOutlineRocketLaunch className="text-[20px]" />
+                    Mission
                   </button>
                 </div>
 
                 {/* Who we are */}
-                <div className={`mt-2 ${aboutUs === 1 ? 'flex' : 'hidden' }`}>
-                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
-                    Who we are
+                <div
+                  className={`mt-2 ${
+                    aboutUs === 1
+                      ? "flex flex-col justify-center items-center"
+                      : "hidden"
+                  }`}
+                >
+                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center w-full pb-6 pt-8 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                    We are Pan-African Tech-preneurs
                   </p>
+                  <div className="flex flex-wrap items-center justify-center max-w-[1000px] gap-2">
+                    {Members.map((person, index) => (
+                      <div className="p-4">
+                        <img
+                          src={person.picture}
+                          className="h-[140px] aspect-square object-cover rounded-full"
+                        />
+                        <p className="font-medium max-w-[500px] text-dark-body-color text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                          {person.name}
+                        </p>
+                        <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-1 tracking-tight leading-5 max-sm:px-5 ">
+                          {person.Role}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Mission */}
-                <div className={`mt-2 ${aboutUs === 2 ? 'flex' : 'hidden' }`}>
-                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
-                    Mission
+                <div className={`mt-2 ${aboutUs === 5 ? "flex justify-center items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]" : "hidden"}`}>
+                  <p className="font-medium max-w-[1000px] text-dark-body-color/60 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
+                  Our Mission is to transform public transportation in Rwanda through innovative software solutions, enhancing accessibility and creating a seamless, efficient transport network.
                   </p>
+                  <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex rounded-md ">
+                    <img
+                      src="https://github-production-user-asset-6210df.s3.amazonaws.com/65622766/341439473-b1029449-e768-429f-bd6b-60b8410f1c7e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240620T135712Z&X-Amz-Expires=300&X-Amz-Signature=ae99d2780107d8b4128ce3abe8f6404ef801d97a79252cf10eba1e3513adaa22&X-Amz-SignedHeaders=host&actor_id=65622766&key_id=0&repo_id=806913834"
+                      className="max-h-[300px] w-full object-cover"
+                    />
+                  </div>
                 </div>
 
                 {/* Values */}
-                <div className={`mt-2 ${aboutUs === 3 ? 'flex' : 'hidden' }`}>
-                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
-                    Values
-                  </p>
+                <div
+                  className={`mt-2 ${
+                    aboutUs === 3
+                      ? "flex items-start justify-center gap-3 pt-10 relative"
+                      : "hidden"
+                  }`}
+                >
+                  <div className=" bg-stone-200/10 px-3 py-5 rounded-3xl w-[340px] min-h-[100px] flex">
+                    <div className="bg-red-400/0 h-fit  p-3">
+                      <HiOutlineLightBulb className="text-[20px]" />
+                    </div>
+                    <div className="flex flex-col">
+                      <h1 className="tracking-tight font-bold text-dark-body-color text-[20px] pt-2 ">
+                        Creativity
+                      </h1>
+                      <div className="tracking-tight font-medium leading-5 pr-3 pb-4 text-dark-body-color/80  ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum repudiandae, quaerat explicabo atque repellat
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className=" bg-stone-200/10 px-3 py-5 rounded-3xl w-[340px] min-h-[100px] flex">
+                    <div className="bg-red-400/0 h-fit  p-3">
+                      <RiTeamLine className="text-[20px]" />
+                    </div>
+                    <div className="flex flex-col">
+                      <h1 className="tracking-tight font-bold text-dark-body-color text-[20px] pt-2 ">
+                        Teamwork
+                      </h1>
+                      <div className="tracking-tight font-medium leading-5 pr-3 pb-4 text-dark-body-color/80  ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum repudiandae, quaerat explicabo atque repellat
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className=" bg-stone-200/10 px-3 py-5 rounded-3xl w-[340px] min-h-[100px] flex ">
+                    <div className="bg-red-400/0 h-fit  p-3">
+                      <GiEarthAfricaEurope className="text-[20px]" />
+                    </div>
+                    <div className="flex flex-col">
+                      <h1 className="tracking-tight font-bold text-dark-body-color text-[20px] pt-2 ">
+                        Pan-Africanism
+                      </h1>
+                      <div className="tracking-tight font-medium leading-5 pr-3 pb-4 text-dark-body-color/80  ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum repudiandae, quaerat explicabo atque repellat
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Team */}
-                <div className={`mt-2 ${aboutUs === 4 ? 'flex' : 'hidden' }`}>
-                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
-                    Team
+                {/* Problem */}
+                <div
+                  className={`mt-2 ${
+                    aboutUs === 4
+                      ? "flex justify-center items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]"
+                      : "hidden"
+                  }`}
+                >
+                  <p className="font-medium max-w-[1000px] text-dark-body-color/60 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
+                    In Rwanda, the public transport system is a critical
+                    component of daily life, with over 40% of the population
+                    relying on it for their commuting needs. Despite its
+                    significant user base, the current technological
+                    infrastructure is insufficient to effectively manage and
+                    serve this demand. This inadequacy has led to excessive time
+                    consumption and severe congestion at bus stations,
+                    negatively impacting the efficiency of public transportation
+                    services and the daily lives of its users. There is an
+                    urgent need for an innovative solution that addresses these
+                    challenges by enhancing the technological framework, thereby
+                    improving the overall experience for public transport
+                    commuters in Rwanda.
                   </p>
-                  
+                  <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex rounded-md ">
+                    <img
+                      src="https://github-production-user-asset-6210df.s3.amazonaws.com/65622766/341439473-b1029449-e768-429f-bd6b-60b8410f1c7e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240620T135712Z&X-Amz-Expires=300&X-Amz-Signature=ae99d2780107d8b4128ce3abe8f6404ef801d97a79252cf10eba1e3513adaa22&X-Amz-SignedHeaders=host&actor_id=65622766&key_id=0&repo_id=806913834"
+                      className="max-h-[300px] w-full object-cover"
+                    />
+                  </div>
                 </div>
               </Reveal>
             </div>
           </div>
-
-          <div className="w-full h-full items-center justify-center py-16 grid grid-cols-2"></div>
         </div>
 
         {/* separator */}
@@ -447,18 +587,18 @@ function Home() {
             </div>
           </Reveal> */}
 
-        {/* Introducing */}
-        <div className="w-full h-[100vh] scroll-m-10 flex items-center justify-center max-sm:px-5 bg-white sticky top-0">
-          <Fade >
+        {/* Our Solution */}
+        <div className="w-full h-[100vh] scroll-m-10 flex items-center justify-center max-sm:px-5 sticky top-0">
+          <Fade>
             <h1 className="text-[70px] max-w-[500px] leading-[67px] font-bold tracking-tighter text-center  ">
-              Introducing..
+              Introducing...
             </h1>
           </Fade>
         </div>
 
         <div
           id="Projects"
-          className=" w-full min-h-[600px] scroll-m-32 py-10 flex flex-col items-center justify-start relative bg-white/95 backdrop-blur-xl z-10"
+          className=" w-full h-fit scroll-m-20 pt-10 flex flex-col items-center justify-start relative bg-white/95 backdrop-blur-xl z-10"
         >
           <div className="h-full absolute top-0 left-[-300px] w-[600px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white blur-md "></div>
           <div className="h-full absolute top-0 right-[-300px] w-[600px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white blur-md "></div>
@@ -469,20 +609,23 @@ function Home() {
               duration={1000}
               cascade
               damping={0.05}
-              triggerOnce
+              // triggerOnce
             >
               <h1 className="text-[50px] max-w-[500px] leading-[57px] text-[#399E5A] font-bold tracking-tighter text-center">
                 {Projects.SectionTitle}
               </h1>
               <p className="font-medium max-w-[500px] text-dark-body-color/60 text-base text-center pt-3 tracking-tight leading-5">
-                {Projects.SectionStatus}
+                {Projects.SectionStatus}{" "}
+                <span className=" text-[#399E5A] font-bold">
+                  Get there fast!
+                </span>
               </p>
               <button className="max-md:hidden font-medium mt-4 cursor-pointer bg-[#399E5A] text-light-body-color transition active:scale-95 text-sm py-2 px-5 rounded-full ">
-                Open Live Demo
+                Live Demo
               </button>
               <img
                 src={sample}
-                className="Project-Image mt-10 h-fit w-full max-w-[78%] mx-auto shadow-lg object-cover rounded-3xl bg-stone-300/20 ring-1 ring-stone-100 p-1"
+                className="Project-Image mt-10 h-fit w-full max-w-[78%] mx-auto  object-cover rounded-t-3xl bg-stone-300/20 ring-1 ring-stone-100 px-1 pt-1"
               />
             </Reveal>
           </div>
@@ -491,10 +634,10 @@ function Home() {
         </div>
 
         {/* separator */}
-        {/* <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 "></div> */}
+        <div className="w-full max-w-[100%] border-b-[1px] border-stone-200 z-10 "></div>
 
         {/* Team */}
-        <div
+        {/* <div
           id="Aboutus"
           className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5 bg-white z-10"
         >
@@ -506,9 +649,7 @@ function Home() {
               damping={0.1}
               triggerOnce
             >
-              {/* <h3 className="uppercase font-bold text-xs pb-3 ">
-                
-              </h3> */}
+              
               <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
                 
               {Challenges.SectionTitle}
@@ -521,12 +662,13 @@ function Home() {
           <div className="w-full h-fit flex flex-wrap items-start justify-center gap-6 mt-8 px-14 ">
             
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* separator */}
       <div className="w-full max-w-[90%] mx-auto border-b-[1px] border-stone-200 mb-2"></div>
 
+      <div className="min-h-[300px]"></div>
       {/* footer */}
       <div className="flex text-xs text-text-dark-color capitalize font-medium items-center justify-between py-6 px-12 ">
         <div>SORWAZINI. &copy; 2024</div>

@@ -51,13 +51,13 @@ html {
   animation: animatePerspective linear;
   animation-timeline: view();
   animation-range-start: 0px;
-  animation-range-end: 450px;
+  animation-range-end: 300px;
 }
 
 @keyframes animatePerspective {
   from {
     scale: 0.8;
-  transform: perspective(100em) rotateX(20deg) translateY(-200px);
+  transform: perspective(100em) rotateX(20deg) translateY(-50px);
   }
   to {
     scale: 1;
