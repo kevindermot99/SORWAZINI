@@ -126,9 +126,8 @@ function Home() {
         </div>
       </div>
 
-      {/* <Fade duration={1000} triggerOnce> */}
       {/* Menu */}
-      <div className=" h-fit w-full flex items-center bg-light-body-color/95 backdrop-blur-lg   justify-between gap-4 py-4 px-[24px] fixed top-0 z-20">
+      <div className=" h-fit w-full flex items-center bg-light-body-color/95 backdrop-blur-lg   justify-between gap-4 py-4 px-[24px] top-0 z-20">
         <Link
           className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color justify-center items-start `}
         >
@@ -188,19 +187,15 @@ function Home() {
           </button>
         </span>
       </div>
-      {/* </Fade> */}
 
-      {/* Content */}
+      {/* Body */}
       <div
         id="Home"
-        className="h-full pt-[100px] max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
+        className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
-        {/* bubbles */}
-        {/* <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
-            <div className="absolute top-[200px] right-20 h-10 w-3 bg-black/80 rotate-6  "></div>
-        </div> */}
+        
         {/* Hero */}
-        <div className="w-full h-fit py-16 flex flex-col items-center justify-center sticky">
+        <div className="w-full h-fit py-[90px] flex flex-col items-center justify-center sticky">
           <Reveal
             keyframes={customAnimation}
             duration={1000}
@@ -350,12 +345,12 @@ function Home() {
         {/* AboutUs */}
         <div
           id="who"
-          className="w-full h-fit scroll-m-24 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
+          className="w-full h-fit scroll-m-5 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
         >
           {/* bubbles */}
-          <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
+          {/* <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
             <div className="absolute top-[50px] left-0 right-0 mx-auto h-[300px] w-[300px] blur-[100px] bg-stone-100 "></div>
-          </div>
+          </div> */}
           <div class=" h-full w-full flex justify-start items-center flex-col ">
             <div className=" flex flex-col items-center justify-start w-full">
               <Reveal
@@ -428,7 +423,7 @@ function Home() {
 
                 {/* Who we are */}
                 <div
-                  className={`mt-2 ${
+                  className={`mt-2 pb-8 ${
                     aboutUs === 1
                       ? "flex flex-col justify-center items-center"
                       : "hidden"
@@ -456,9 +451,18 @@ function Home() {
                 </div>
 
                 {/* Mission */}
-                <div className={`mt-2 ${aboutUs === 5 ? "flex justify-center items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]" : "hidden"}`}>
+                <div
+                  className={`mt-2 ${
+                    aboutUs === 5
+                      ? "flex justify-center items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]"
+                      : "hidden"
+                  }`}
+                >
                   <p className="font-medium max-w-[1000px] text-dark-body-color/60 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
-                  Our Mission is to transform public transportation in Rwanda through innovative software solutions, enhancing accessibility and creating a seamless, efficient transport network.
+                    Our Mission is to transform public transportation in Rwanda
+                    through innovative software solutions, enhancing
+                    accessibility and creating a seamless, efficient transport
+                    network.
                   </p>
                   <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex rounded-md ">
                     <img
@@ -470,53 +474,62 @@ function Home() {
 
                 {/* Values */}
                 <div
-                  className={`mt-2 ${
+                  className={`mt-10 pb-16 ${
                     aboutUs === 3
-                      ? "flex items-start justify-center gap-3 pt-10 relative"
+                      ? "flex flex-wrap gap-3 p-0 relative max-w-[1000px]"
                       : "hidden"
                   }`}
                 >
-                  <div className=" bg-stone-200/10 px-3 py-5 rounded-3xl w-[340px] min-h-[100px] flex">
-                    <div className="bg-red-400/0 h-fit  p-3">
-                      <HiOutlineLightBulb className="text-[20px]" />
-                    </div>
-                    <div className="flex flex-col">
-                      <h1 className="tracking-tight font-bold text-dark-body-color text-[20px] pt-2 ">
-                        Creativity
-                      </h1>
-                      <div className="tracking-tight font-medium leading-5 pr-3 pb-4 text-dark-body-color/80  ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Rerum repudiandae, quaerat explicabo atque repellat
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
+                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                      <div className="bg-red-400/0 h-fit w-fit py-1">
+                        <HiOutlineLightBulb className="text-[23px] text-dark-body-color/60  " />
+                      </div>
+                      <div className="flex flex-col">
+                        <h1 className="tracking-tight font-extrabold  text-dark-body-color text-[20px] ">
+                          Creativity
+                        </h1>
+                        <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Rerum repudiandae, quaerat explicabo atque
+                          repellat
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className=" bg-stone-200/10 px-3 py-5 rounded-3xl w-[340px] min-h-[100px] flex">
-                    <div className="bg-red-400/0 h-fit  p-3">
-                      <RiTeamLine className="text-[20px]" />
-                    </div>
-                    <div className="flex flex-col">
-                      <h1 className="tracking-tight font-bold text-dark-body-color text-[20px] pt-2 ">
-                        Teamwork
-                      </h1>
-                      <div className="tracking-tight font-medium leading-5 pr-3 pb-4 text-dark-body-color/80  ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Rerum repudiandae, quaerat explicabo atque repellat
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
+                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                      <div className="bg-red-400/0 h-fit w-fit py-1">
+                        <RiTeamLine className="text-[20px] text-dark-body-color/60  " />
+                      </div>
+                      <div className="flex flex-col">
+                        <h1 className="tracking-tight font-bold text-dark-body-color text-[20px]   ">
+                          Teamwork
+                        </h1>
+                        <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Rerum repudiandae, quaerat explicabo atque
+                          repellat
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className=" bg-stone-200/10 px-3 py-5 rounded-3xl w-[340px] min-h-[100px] flex ">
-                    <div className="bg-red-400/0 h-fit  p-3">
-                      <GiEarthAfricaEurope className="text-[20px]" />
-                    </div>
-                    <div className="flex flex-col">
-                      <h1 className="tracking-tight font-bold text-dark-body-color text-[20px] pt-2 ">
-                        Pan-Africanism
-                      </h1>
-                      <div className="tracking-tight font-medium leading-5 pr-3 pb-4 text-dark-body-color/80  ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Rerum repudiandae, quaerat explicabo atque repellat
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
+                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                      <div className="bg-red-400/0 h-fit w-fit py-1">
+                        <GiEarthAfricaEurope className="text-[20px] text-dark-body-color/60  " />
+                      </div>
+                      <div className="flex flex-col">
+                        <h1 className="tracking-tight font-bold text-dark-body-color text-[20px]   ">
+                          Pan-Africanism
+                        </h1>
+                        <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Rerum repudiandae, quaerat explicabo atque
+                          repellat
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -556,123 +569,15 @@ function Home() {
             </div>
           </div>
         </div>
-
-        {/* separator */}
-        {/* <div className="w-full max-w-[90%] border-b-[1px] border-stone-200 mb-2"></div> */}
-
-        {/* Projects */}
-        {/* <Reveal
-            keyframes={customAnimation}
-            duration={1200}
-            cascade
-            damping={0.05}
-            triggerOnce
-            className="w-full"
-          >
-            <div className="p-[1px] bg-gradient-to-b from-dark-body-color/40 to-transparent mt-10 w-full h-fit rounded-t-3xl max-w-[90%] mx-auto relative flex justify-center items-center flex-col">
-              <div className="w-full h-full bg-white rounded-t-3xl p-10 max-sm:pb-16 flex justify-center items-start flex-col">
-                <div className="pointer-events-none absolute top-[-25px] left-[40px] h-[50px] w-[50px] rounded-full border-[1px] border-dark-body-color/40 text-dark-body-color bg-white font-bold text-xl flex justify-center items-center ">
-                  {Projects.CurrentProject.ProjectNumber}
-                </div>
-                <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center capitalize">
-                  {Projects.CurrentProject.ProjectName}
-                </h1>
-                <p className="font-medium max-w-[400px] text-base text-left pt-3 tracking-tight leading-5">
-                  {Projects.CurrentProject.ProjectDescription}
-                </p>
-                <p className="absolute sm:top-3 max-sm:bottom-3 pointer-events-none right-3 bg-dark-body-color text-text-light-color rounded-full px-4 py-2 font-medium max-w-[400px] text-sm tracking-tight leading-5">
-                  {Projects.CurrentProject.TimeLeft}
-                </p>
-              </div>
-            </div>
-          </Reveal> */}
-
-        {/* Our Solution */}
-        <div className="w-full h-[100vh] scroll-m-10 flex items-center justify-center max-sm:px-5 sticky top-0">
-          <Fade>
-            <h1 className="text-[70px] max-w-[500px] leading-[67px] font-bold tracking-tighter text-center  ">
-              Introducing...
-            </h1>
-          </Fade>
-        </div>
-
-        <div
-          id="Projects"
-          className=" w-full h-fit scroll-m-20 pt-10 flex flex-col items-center justify-start relative bg-white/95 backdrop-blur-xl z-10"
-        >
-          <div className="h-full absolute top-0 left-[-300px] w-[600px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white blur-md "></div>
-          <div className="h-full absolute top-0 right-[-300px] w-[600px] rounded-[50%] bg-gradient-to-b from-stone-100 to-white blur-md "></div>
-
-          <div className=" flex flex-col items-center justify-start  max-sm:px-2">
-            <Reveal
-              keyframes={customAnimation}
-              duration={1000}
-              cascade
-              damping={0.05}
-              // triggerOnce
-            >
-              <h1 className="text-[50px] max-w-[500px] leading-[57px] text-[#399E5A] font-bold tracking-tighter text-center">
-                {Projects.SectionTitle}
-              </h1>
-              <p className="font-medium max-w-[500px] text-dark-body-color/60 text-base text-center pt-3 tracking-tight leading-5">
-                {Projects.SectionStatus}{" "}
-                <span className=" text-[#399E5A] font-bold">
-                  Get there fast!
-                </span>
-              </p>
-              <button className="max-md:hidden font-medium mt-4 cursor-pointer bg-[#399E5A] text-light-body-color transition active:scale-95 text-sm py-2 px-5 rounded-full ">
-                Live Demo
-              </button>
-              <img
-                src={sample}
-                className="Project-Image mt-10 h-fit w-full max-w-[78%] mx-auto  object-cover rounded-t-3xl bg-stone-300/20 ring-1 ring-stone-100 px-1 pt-1"
-              />
-            </Reveal>
-          </div>
-
-          {/* Project countdown */}
-        </div>
-
-        {/* separator */}
-        <div className="w-full max-w-[100%] border-b-[1px] border-stone-200 z-10 "></div>
-
-        {/* Team */}
-        {/* <div
-          id="Aboutus"
-          className="w-full h-fit py-16 scroll-m-14 flex flex-col items-center justify-start  max-sm:px-5 bg-white z-10"
-        >
-          <div className=" flex flex-col items-center justify-start">
-            <Reveal
-              keyframes={customAnimation}
-              duration={1000}
-              cascade
-              damping={0.1}
-              triggerOnce
-            >
-              
-              <h1 className="text-[40px] max-w-[500px] leading-[47px] font-bold tracking-tighter text-center">
-                
-              {Challenges.SectionTitle}
-              </h1>
-              <p className="font-medium max-w-[500px] text-base text-center pt-3 tracking-tight leading-5">
-                {Challenges.SectionDescription}
-              </p>
-            </Reveal>
-          </div>
-          <div className="w-full h-fit flex flex-wrap items-start justify-center gap-6 mt-8 px-14 ">
-            
-          </div>
-        </div> */}
       </div>
 
       {/* separator */}
-      <div className="w-full max-w-[90%] mx-auto border-b-[1px] border-stone-200 mb-2"></div>
+      <div className="w-full max-w-[100%] border-b-[1px] border-stone-200 z-10 "></div>
 
-      <div className="min-h-[300px]"></div>
       {/* footer */}
-      <div className="flex text-xs text-text-dark-color capitalize font-medium items-center justify-between py-6 px-12 ">
-        <div>SORWAZINI. &copy; 2024</div>
-        <a href="https://www.alueducation.com">African Leadership university</a>
+      <div className="flex text-xs text-text-dark-color/60 capitalize font-medium items-center justify-between py-6 px-12 ">
+        <div>&copy; 2024 Sorwazini Think Tank</div>
+        <a href="#"></a>
       </div>
     </div>
   );
