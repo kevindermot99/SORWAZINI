@@ -147,6 +147,24 @@ export const Challenges = {
   SectionDescription: "We were assigned 6 challenges, each transforming into an unforgettable journey that provided valuable learning experiences ",
 };
 
+// section gallery
+export const gallery = {
+  SectionTitle: "Gallery",
+  SectionDescription: "We were assigned 6 challenges, each transforming into an unforgettable journey that provided valuable learning experiences ",
+  Images: [
+    "https://images.pexels.com/photos/19802887/pexels-photo-19802887/free-photo-of-power-cables-on-a-railway.jpeg",
+    "https://images.pexels.com/photos/7495732/pexels-photo-7495732.jpeg",
+    "https://images.pexels.com/photos/20529772/pexels-photo-20529772/free-photo-of-a-woman-posing-in-a-desert.jpeg",
+    "https://images.pexels.com/photos/21937092/pexels-photo-21937092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/24259755/pexels-photo-24259755/free-photo-of-a-woman-holding-a-tray-with-homemade-dishes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/17645285/pexels-photo-17645285/free-photo-of-sea-coast-in-cuckmere-haven.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/16848795/pexels-photo-16848795/free-photo-of-relaxation-in-luxembourg-garden.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/7403115/pexels-photo-7403115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/2360673/pexels-photo-2360673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/4231477/pexels-photo-4231477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/26018022/pexels-photo-26018022/free-photo-of-a-vase-of-flowers-on-a-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  ],
+}
 
 // Section values
 export const Values = {
