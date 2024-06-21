@@ -37,12 +37,12 @@ function Menu() {
           >
             E-Lab Challenges
           </Link>
-          <a
-            href="#Aboutus"
+          <Link
+            to={`/gallery`}
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
           >
             Gallery
-          </a>
+          </Link>
           <a
             href="#Aboutus"
             className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
