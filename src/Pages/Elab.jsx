@@ -117,7 +117,7 @@ function Elab() {
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
         {/* Hero section */}
-        <div className="py-10 min-h-[380px] w-full h-full flex flex-col items-center justify-center">
+        <div className="p-10 min-h-[380px] w-full h-full flex flex-col items-center justify-center">
           <Reveal
             keyframes={customAnimation}
             duration={1000}
@@ -132,6 +132,202 @@ function Elab() {
               {Challenges.SectionDescription}
             </p>
           </Reveal>
+        </div>
+
+        {/* Challenges Grid */}
+        <div className="w-full h-full flex flex-col justify-start items-center gap-16">
+          <div className="w-full h-fit max-w-[1000px] py-6">
+            <div className="flex items-start justify-between gap-10">
+              <div className="w-[50%]">
+                <h1 className="text-left font-bold text-[30px] tracking-tighter">
+                  Challenge 1
+                </h1>
+                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  May 30 2024
+                </p>
+                <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
+                  In Rwanda, the public transport system is a critical component
+                  of daily life, with over 40% of the population relying on it
+                  for their commuting needs. Despite its significant user base,
+                  the current technological infrastructure is insufficient to
+                  effectively manage and serve this demand. This inadequacy has
+                  led to excessive
+                </p>
+              </div>
+
+              <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
+                <iframe
+                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  title="E-Lab Elevator Pitch #challenge_01"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  className="w-full aspect-video rounded-md "
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-fit max-w-[1000px] py-6">
+            <div className="flex flex-row-reverse items-start justify-between gap-10">
+              <div className="w-[50%]">
+                <h1 className="text-left font-bold text-[30px] tracking-tighter">
+                  Challenge 1
+                </h1>
+                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  May 30 2024
+                </p>
+                <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
+                  In Rwanda, the public transport system is a critical component
+                  of daily life, with over 40% of the population relying on it
+                  for their commuting needs. Despite its significant user base,
+                  the current technological infrastructure is insufficient to
+                  effectively manage and serve this demand. This inadequacy has
+                  led to excessive
+                </p>
+              </div>
+
+              <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
+                <iframe
+                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  title="E-Lab Elevator Pitch #challenge_01"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  className="w-full aspect-video rounded-md "
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-fit max-w-[1000px] py-6">
+            <div className="flex items-start justify-between gap-10">
+              <div className="w-[50%]">
+                <h1 className="text-left font-bold text-[30px] tracking-tighter">
+                  Challenge 1
+                </h1>
+                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  May 30 2024
+                </p>
+                <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
+                  In Rwanda, the public transport system is a critical component
+                  of daily life, with over 40% of the population relying on it
+                  for their commuting needs. Despite its significant user base,
+                  the current technological infrastructure is insufficient to
+                  effectively manage and serve this demand. This inadequacy has
+                  led to excessive
+                </p>
+              </div>
+
+              <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
+                <iframe
+                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  title="E-Lab Elevator Pitch #challenge_01"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  className="w-full aspect-video rounded-md "
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-fit max-w-[1000px] py-6">
+            <div className="flex flex-row-reverse items-start justify-between gap-10">
+              <div className="w-[50%]">
+                <h1 className="text-left font-bold text-[30px] tracking-tighter">
+                  Challenge 1
+                </h1>
+                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  May 30 2024
+                </p>
+                <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
+                  In Rwanda, the public transport system is a critical component
+                  of daily life, with over 40% of the population relying on it
+                  for their commuting needs. Despite its significant user base,
+                  the current technological infrastructure is insufficient to
+                  effectively manage and serve this demand. This inadequacy has
+                  led to excessive
+                </p>
+              </div>
+
+              <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
+                <iframe
+                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  title="E-Lab Elevator Pitch #challenge_01"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  className="w-full aspect-video rounded-md "
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-fit max-w-[1000px] py-6">
+            <div className="flex items-start justify-between gap-10">
+              <div className="w-[50%]">
+                <h1 className="text-left font-bold text-[30px] tracking-tighter">
+                  Challenge 1
+                </h1>
+                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  May 30 2024
+                </p>
+                <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
+                  In Rwanda, the public transport system is a critical component
+                  of daily life, with over 40% of the population relying on it
+                  for their commuting needs. Despite its significant user base,
+                  the current technological infrastructure is insufficient to
+                  effectively manage and serve this demand. This inadequacy has
+                  led to excessive
+                </p>
+              </div>
+
+              <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
+                <iframe
+                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  title="E-Lab Elevator Pitch #challenge_01"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  className="w-full aspect-video rounded-md "
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-fit max-w-[1000px] py-6">
+            <div className="flex flex-row-reverse items-start justify-between gap-10">
+              <div className="w-[50%]">
+                <h1 className="text-left font-bold text-[30px] tracking-tighter">
+                  Challenge 1
+                </h1>
+                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  May 30 2024
+                </p>
+                <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
+                  In Rwanda, the public transport system is a critical component
+                  of daily life, with over 40% of the population relying on it
+                  for their commuting needs. Despite its significant user base,
+                  the current technological infrastructure is insufficient to
+                  effectively manage and serve this demand. This inadequacy has
+                  led to excessive
+                </p>
+              </div>
+
+              <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
+                <iframe
+                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  title="E-Lab Elevator Pitch #challenge_01"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  className="w-full aspect-video rounded-md "
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
