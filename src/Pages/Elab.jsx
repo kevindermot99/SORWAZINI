@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
-import { Contacts, HeroText, Members, SORWAZINI } from "../Content/Content";
+import { Contacts, Challenges, Members, SORWAZINI } from "../Content/Content";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import Menu from "../Components/Menu";
@@ -115,7 +115,25 @@ function Elab() {
       <div
         id="Challenges"
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
-      ></div>
+      >
+        {/* Hero section */}
+        <div className="py-10 min-h-[380px] w-full h-full flex flex-col items-center justify-center">
+          <Reveal
+            keyframes={customAnimation}
+            duration={1000}
+            cascade
+            damping={0.05}
+            // triggerOnce
+          >
+            <h1 className="text-center max-w-[900px] font-bold text-[70px] max-sm:text-[50px] leading-[80px] max-sm:leading-[55px] tracking-tighter">
+              {Challenges.SectionTitle}
+            </h1>
+            <p className="font-medium max-w-[500px] text-center pt-2 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+              {Challenges.SectionDescription}
+            </p>
+          </Reveal>
+        </div>
+      </div>
 
       {/* footer */}
       <Footer />
