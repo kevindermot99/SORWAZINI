@@ -4,29 +4,18 @@ import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
-import {
-  Contacts,
-  HeroText,
-  Members,
-  SORWAZINI,
-  Projects,
-  AboutUs,
-  Values,
-  Challenges,
-} from "../Content/Content";
+import { Contacts, HeroText, Members, SORWAZINI } from "../Content/Content";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import { Fade } from "react-awesome-reveal";
-import SorwaziniLogo from "../assets/SORWAZINI-Logo-1.png";
 import { RiShakeHandsLine } from "react-icons/ri";
-import { FaRegHandPointUp } from "react-icons/fa6";
-import sample from "../assets/sample2.png";
 import { TbExclamationCircle } from "react-icons/tb";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { RiTeamLine } from "react-icons/ri";
 import { GiEarthAfricaEurope } from "react-icons/gi";
+import Menu from "../Components/Menu";
+import Footer from "../Components/Footer";
 
 function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -127,73 +116,13 @@ function Home() {
       </div>
 
       {/* Menu */}
-      <div className=" h-fit w-full flex items-center bg-light-body-color/95 backdrop-blur-lg   justify-between gap-4 py-4 px-[24px] top-0 z-20">
-        <Link
-          className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color justify-center items-start `}
-        >
-          <img src={SorwaziniLogo} className="w-[180px]" />
-          <p className="text-sm pt-1 tracking-wide font-bold text-dark-body-color">
-            E-lab Think Tank
-          </p>
-        </Link>
-
-        <span className="space-x-6 max-md:hidden  ">
-          <a
-            href="#Home"
-            className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
-          >
-            Home
-          </a>
-          <a
-            href="#who"
-            className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
-          >
-            Who we are
-          </a>
-          <a
-            href="#AboutUs"
-            className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
-          >
-            E-Lab Challenges
-          </a>
-          <a
-            href="#Aboutus"
-            className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
-          >
-            Gallery
-          </a>
-          <a
-            href="#Aboutus"
-            className={`font-medium text-sm text-dark-body-color px-1 py-2 transition hover:border-b-[2px] border-dark-body-color`}
-          >
-            Our Product
-          </a>
-        </span>
-        <span className="space-x-6 flex ">
-          <Link
-            to={`https://www.alueducation.com/`}
-            className={`font-medium text-sm text-dark-body-color px-1 py-2 outline-none`}
-          >
-            <img
-              src="https://ciradu2204.github.io/ALUWebsite/img/alu_logo_original.png"
-              className="h-5"
-            />
-          </Link>
-          <button
-            onClick={() => setShowContact(true)}
-            className="max-md:hidden font-medium cursor-pointer bg-dark-body-color text-light-body-color transition active:scale-95 text-sm py-2 px-5 rounded-full "
-          >
-            Contact us
-          </button>
-        </span>
-      </div>
+      <Menu />
 
       {/* Body */}
       <div
         id="Home"
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
-        
         {/* Hero */}
         <div className="w-full h-fit py-[90px] flex flex-col items-center justify-center sticky">
           <Reveal
@@ -230,7 +159,7 @@ function Home() {
                     <div className="w-fit flex flex-col gap-3 relative">
                       <div className="w-full text-center">
                         <h1 className="font-bold ">SO</h1>
-                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] rounded-t-xl border-dark-body-color "></div>
                       </div>
                       <div className="flex gap-3">
                         {member.SO.map((person, index) => (
@@ -242,7 +171,7 @@ function Home() {
                               src={person.picture}
                               className="min-w-[100%] max-h-[100%] object-cover rounded-full"
                             />
-                            <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                            <div className="absolute top-[110%] text-dark-body-color bg-white rounded-full left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
                           </div>
@@ -253,7 +182,7 @@ function Home() {
                     <div className="w-fit flex flex-col gap-3 relative">
                       <div className="w-full text-center">
                         <h1 className="font-bold ">RWA</h1>
-                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] rounded-t-xl border-dark-body-color "></div>
                       </div>
                       <div className="flex gap-3">
                         {member.RWA.map((person, index) => (
@@ -265,7 +194,7 @@ function Home() {
                               src={person.picture}
                               className="min-w-[100%] max-h-[100%] object-cover rounded-full"
                             />
-                            <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                            <div className="absolute top-[110%] text-dark-body-color bg-white rounded-full left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
                           </div>
@@ -276,7 +205,7 @@ function Home() {
                     <div className="w-fit flex flex-col gap-3 relative">
                       <div className="w-full text-center">
                         <h1 className="font-bold ">ZI</h1>
-                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] rounded-t-xl border-dark-body-color "></div>
                       </div>
                       <div className="flex gap-3">
                         {member.ZI.map((person, index) => (
@@ -288,7 +217,7 @@ function Home() {
                               src={person.picture}
                               className="min-w-[100%] max-h-[100%] object-cover rounded-full"
                             />
-                            <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                            <div className="absolute top-[110%] text-dark-body-color bg-white rounded-full left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
                           </div>
@@ -299,7 +228,7 @@ function Home() {
                     <div className="w-fit flex flex-col gap-3 relative">
                       <div className="w-full text-center">
                         <h1 className="font-bold ">NI</h1>
-                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] border-dark-body-color "></div>
+                        <div className="border-t-[2px] border-l-[2px] border-r-[2px] h-[10px] rounded-t-xl border-dark-body-color "></div>
                       </div>
                       <div className="flex gap-3">
                         {member.NI.map((person, index) => (
@@ -311,7 +240,7 @@ function Home() {
                               src={person.picture}
                               className="min-w-[100%] max-h-[100%] object-cover rounded-full"
                             />
-                            <div className="absolute top-[110%] text-dark-body-color bg-white left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
+                            <div className="absolute top-[110%] text-dark-body-color bg-white rounded-full left-[-50%] right-[-50%] mx-auto w-fit text-center h-fit px-2 py-1 opacity-0 pointer-events-none group-hover:opacity-100 transition duration-500 text-sm translate-y-[-10px] group-hover:translate-y-0 ">
                               <span key={index}>{person.name}</span>
                             </div>
                           </div>
@@ -347,11 +276,7 @@ function Home() {
           id="who"
           className="w-full h-fit scroll-m-5 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
         >
-          {/* bubbles */}
-          {/* <div className="absolute top-0 left-0 w-full h-full max-h-[500px]  ">
-            <div className="absolute top-[50px] left-0 right-0 mx-auto h-[300px] w-[300px] blur-[100px] bg-stone-100 "></div>
-          </div> */}
-          <div class=" h-full w-full flex justify-start items-center flex-col ">
+          <div className=" h-full w-full flex justify-start items-center flex-col ">
             <div className=" flex flex-col items-center justify-start w-full">
               <Reveal
                 keyframes={customAnimation}
@@ -360,6 +285,7 @@ function Home() {
                 damping={0.05}
                 // triggerOnce
               >
+                {/* Tabs */}
                 <h1 className=" text-[40px] max-w-[800px] leading-[47px] font-bold tracking-tighter text-center ">
                   {aboutUs === 1 && "Get to know us"}
                   {aboutUs === 3 && "Things we value"}
@@ -434,7 +360,7 @@ function Home() {
                   </p>
                   <div className="flex flex-wrap items-center justify-center max-w-[1000px] gap-2">
                     {Members.map((person, index) => (
-                      <div className="p-4">
+                      <div className="p-4" key={index}>
                         <img
                           src={person.picture}
                           className="h-[140px] aspect-square object-cover rounded-full"
@@ -454,7 +380,7 @@ function Home() {
                 <div
                   className={`mt-2 ${
                     aboutUs === 5
-                      ? "flex justify-center items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]"
+                      ? "flex justify-center md:pb-44 items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]"
                       : "hidden"
                   }`}
                 >
@@ -476,7 +402,7 @@ function Home() {
                 <div
                   className={`mt-10 pb-16 ${
                     aboutUs === 3
-                      ? "flex flex-wrap gap-3 p-0 relative max-w-[1000px]"
+                      ? "flex flex-wrap gap-3 md:pb-44 relative max-w-[1000px]"
                       : "hidden"
                   }`}
                 >
@@ -537,9 +463,9 @@ function Home() {
 
                 {/* Problem */}
                 <div
-                  className={`mt-2 ${
+                  className={`mt-2  ${
                     aboutUs === 4
-                      ? "flex justify-center items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]"
+                      ? "flex justify-center md:pb-28 items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]"
                       : "hidden"
                   }`}
                 >
@@ -571,14 +497,8 @@ function Home() {
         </div>
       </div>
 
-      {/* separator */}
-      <div className="w-full max-w-[100%] border-b-[1px] border-stone-200 z-10 "></div>
-
       {/* footer */}
-      <div className="flex text-xs text-text-dark-color/60 capitalize font-medium items-center justify-between py-6 px-12 ">
-        <div>&copy; 2024 Sorwazini Think Tank</div>
-        <a href="#"></a>
-      </div>
+      <Footer />
     </div>
   );
 }
