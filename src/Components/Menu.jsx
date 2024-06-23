@@ -90,7 +90,7 @@ function Menu() {
           </div>
         </div>
       </div>
-      <div className={`h-fit w-full flex items-center  justify-between gap-4 py-4 px-[24px] top-0 z-20 `}>
+      <div className={`h-fit w-full flex items-center justify-between gap-4 py-4 px-[24px] sticky top-0 z-20 bg-white/90 backdrop-blur-md `}>
         <Link
           to={`/`}
           className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color justify-center items-start `}
@@ -126,12 +126,12 @@ function Menu() {
           >
             Gallery
           </Link>
-          <a
-            href="#Aboutus"
+          <Link
+            to={`/product`}
             className={`font-medium text-sm px-1 py-2 transition hover:border-b-[2px] `}
           >
             Our Product
-          </a>
+          </Link>
         </span>
         <span className="space-x-6 flex ">
           <Link
