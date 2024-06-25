@@ -37,7 +37,7 @@ function Product() {
         id="Challenges"
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
-        {/* <div className="bg-white h-[100vh] w-full flex items-center justify-center flex-col fixed top-0 left-0 z-20">
+        <div className="bg-white h-[100vh] w-full flex items-center justify-center flex-col fixed top-0 left-0 z-20">
           <Reveal
             keyframes={customAnimation}
             duration={1000}
@@ -45,15 +45,18 @@ function Product() {
             damping={0.05}
             // triggerOnce
           >
+            <div className="flex flex-col w-full h-full">
             <h1 className="text-center max-w-[900px] font-bold text-[70px] max-sm:text-[50px] leading-[80px] max-sm:leading-[55px] tracking-tighter">
               Introducing...
             </h1>
           <button className="text-[35px] p-[15px] text-dark-body-color hover:bg-stone-200 rounded-full absolute bottom-16 left-0 right-0 mx-auto w-fit active:scale-95">
             <LuArrowDownFromLine />
           </button>
+            </div>
+            
 
           </Reveal>
-        </div> */}
+        </div>
 
         <div className="w-full h-fit px-6 max-w-[1200px] pt-10 z-10 ">
           <div className="bg-project-green min-h-[450px] w-full rounded-3xl flex items-center justify-between py-10 px-12">
