@@ -6,6 +6,7 @@ import { Contacts, Challenges, Members, SORWAZINI } from "../Content/Content";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
+import { HiChatBubbleLeftRight } from "react-icons/hi2";
 
 function Menu() {
   const [showContact, setShowContact] = useState(false);
@@ -104,31 +105,31 @@ function Menu() {
         <span className="space-x-6 max-md:hidden  ">
           <Link
             to="/#Home"
-            className={`font-medium text-sm px-1 py-2 transition hover:border-b-[2px] `}
+            className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
             Home
           </Link>
           <Link
             to="/#who"
-            className={`font-medium text-sm px-1 py-2 transition hover:border-b-[2px] `}
+            className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
             Who we are
           </Link>
           <Link
             to={`/elab`}
-            className={`font-medium text-sm px-1 py-2 transition hover:border-b-[2px] `}
+            className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
             E-Lab Challenges
           </Link>
           <Link
             to={`/gallery`}
-            className={`font-medium text-sm px-1 py-2 transition hover:border-b-[2px] `}
+            className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
             Gallery
           </Link>
           <Link
             to={`/product`}
-            className={`font-medium text-sm px-1 py-2 transition hover:border-b-[2px] `}
+            className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
             Our Product
           </Link>
@@ -140,14 +141,15 @@ function Menu() {
           >
             <img
               src="https://ciradu2204.github.io/ALUWebsite/img/alu_logo_original.png"
-              className="h-5"
+              className="h-[20px]"
             />
           </Link>
           <button
             onClick={() => setShowContact(true)}
-            className={`max-md:hidden font-medium cursor-pointer  transition active:scale-95 text-sm py-2 px-5 rounded-full ${location.pathname === '/elab' ? 'text-dark-body-color bg-light-body-color' : 'bg-dark-body-color text-light-body-color'}`}
+            className={`max-md:hidden font-medium cursor-pointer flex items-center gap-1 transition active:scale-95 text-sm py-2 px-5 rounded-full bg-dark-body-color text-white `}
           >
-            Contact us
+            <HiChatBubbleLeftRight className="text-[17px]" />
+            Let's Talk
           </button>
         </span>
       </div>
