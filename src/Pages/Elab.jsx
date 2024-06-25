@@ -39,7 +39,7 @@ function Elab() {
 `;
 
   return (
-    <div className=" bg-light-body-color min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
+    <div className=" bg-light-body-color min-h-[100vh] mt-16 w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
       
       {/* Menu */}
       <Menu />

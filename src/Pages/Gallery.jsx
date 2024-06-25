@@ -22,7 +22,7 @@ function Gallery() {
 `;
 
   return (
-    <div className=" bg-light-body-color min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
+    <div className=" bg-light-body-color mt-16 min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
       {/* Menu */}
       <Menu />
 

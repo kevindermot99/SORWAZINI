@@ -124,7 +124,7 @@ function Home() {
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
         {/* Hero */}
-        <div className="w-full h-fit py-[90px] flex flex-col items-center justify-center sticky">
+        <div className="w-full h-fit py-[90px] mt-16 flex flex-col items-center justify-center sticky">
           <Reveal
             keyframes={customAnimation}
             duration={1000}
@@ -274,7 +274,7 @@ function Home() {
         {/* AboutUs */}
         <div
           id="who"
-          className="w-full h-fit scroll-m-5 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
+          className="w-full h-fit scroll-m-20 flex flex-col items-start justify-start relative  max-sm:px-5 bg-white"
         >
           <div className=" h-full w-full flex justify-start items-center flex-col ">
             <div className=" flex flex-col items-center justify-start w-full">

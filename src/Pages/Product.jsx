@@ -11,6 +11,7 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 import coaster from "../assets/coaster-logo.png";
 import yutong from "../assets/Yutong-Logo.wine.png";
 import acgroup from "../assets/ac-group.png";
+import { LuArrowDownFromLine } from "react-icons/lu";
 
 function Product() {
   const customAnimation = keyframes`
@@ -36,7 +37,9 @@ function Product() {
         id="Challenges"
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
-        <div className="w-full h-fit px-6 ">
+        
+
+        <div className="w-full h-fit px-6 max-w-[1200px] pt-10 z-10 ">
           <div className="bg-project-green min-h-[450px] w-full rounded-3xl flex items-center justify-between py-10 px-12">
             <div className="flex flex-col items-start justify-start gap-3 max-w-[50%]">
               <span className="flex items-center justify-start text-white text-sm  bg-stone-100/20 px-5 py-1 rounded-full ">
@@ -97,7 +100,7 @@ function Product() {
               Get there Fast!
             </span>
             <h1 className="text-[35px] leading-[65px] text-dark-body-color font-bold tracking-tight">
-              Get your bus tickets instantly! 
+              Get your bus tickets instantly!
             </h1>
             <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-3">
               With Gerayo, you can easily buy bus tickets online and see where
@@ -111,8 +114,11 @@ function Product() {
               Mobile App
             </p>
           </div>
-          <div className="w-[50%] h-fit relative"> 
-            <img src="" className="w-full min-h-[340px] rounded-2xl bg-stone-200" />
+          <div className="w-[50%] h-fit relative">
+            <img
+              src=""
+              className="w-full min-h-[340px] rounded-2xl bg-stone-200"
+            />
           </div>
         </div>
       </div>
