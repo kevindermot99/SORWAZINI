@@ -12,9 +12,15 @@ import coaster from "../assets/coaster-logo.png";
 import yutong from "../assets/Yutong-Logo.wine.png";
 import acgroup from "../assets/ac-group.png";
 import { LuArrowDownFromLine } from "react-icons/lu";
+import { FaCaretDown } from "react-icons/fa";
+import { Faqs } from "../Content/Content";
 
 function Product() {
-  const [introduced, setIntroduced] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAnswer = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   const customAnimation = keyframes`
   from {
@@ -28,10 +34,6 @@ function Product() {
     transform: translateY(0);
   }
 `;
-
-  const introduce = () => {
-    setIntroduced(true);
-  };
 
   return (
     <div
@@ -100,10 +102,8 @@ function Product() {
           </div>
         </div>
 
-        
-
         {/* feature showcase grid */}
-        <div className="flex items-start justify-between w-full max-w-[1200px] px-9 my-10 ">
+        <div className="flex items-start justify-between w-full max-w-[1200px] px-6 my-10 ">
           <div className="flex items-start justify-start flex-col max-w-[50%]">
             <span className="flex items-center justify-start font-medium text-project-green text-sm bg-project-green/10 px-5 py-1 rounded-full ">
               Get there Fast!
@@ -132,7 +132,7 @@ function Product() {
         </div>
 
         {/* feature showcase grid */}
-        <div className="flex items-start justify-between w-full max-w-[1200px] px-9 my-10 ">
+        <div className="flex items-start justify-between w-full max-w-[1200px] px-6 my-10 ">
           <div className="w-[50%] h-fit relative">
             <img
               src=""
@@ -160,13 +160,37 @@ function Product() {
           </div>
         </div>
 
-        <div className="w-full h-full bg-stone-200 p-10 ">
-          <span className="flex items-center w-fit justify-start font-medium text-project-green text-sm bg-project-green/30 px-5 py-1 rounded-full ">
-            Get there Fast!
+        <div className="w-full h-full bg-stone-100 px-10 py-16 flex flex-col items-center justify-start ">
+          <span className="flex items-center w-fit justify-start font-medium capitalize text-project-green text-sm bg-project-green/10 px-5 py-1 rounded-full ">
+            Frequently asked questions
           </span>
-          <h1 className="text-[35px] leading-[65px] text-dark-body-color font-bold tracking-tight">
-            Get your bus tickets instantly!
+          <h1 className="text-[35px] leading-[65px] capitalize text-dark-body-color font-bold tracking-tight">
+            Got questions? We've got answers!
           </h1>
+          <div className="w-full h-fit flex flex-col items-center justify-start my-2 max-w-[900px]">
+            {Faqs.map((item, index) => (
+              <div key={item.index} className=" py-4 px-5 bg-white text-dark-body-color rounded-xl w-full mb-2 flex justify-between items-start gap-5">
+                <div className="flex flex-col items-start justify-start">
+                  <h1 className="font-medium tracking-tight text-base leading-5 min-h-[30px] w-full flex items-center justify-start">
+                    {item.question}
+                  </h1>
+                  <p
+                    className={`text-sm leading-5 font-medium text-dark-body-color/70 transition-all duration-500 ease-in-out overflow-hidden ${
+                      activeIndex === index ? "max-h-96" : "max-h-0"
+                    }`}
+                  >
+                    {item.answer}
+                  </p>
+                </div>
+                <button
+                  onClick={() => toggleAnswer(index)}
+                  className=" h-[30px] aspect-square rounded-full transition duration-150 active:scale-90 text-dark-body-color/30 hover:bg-stone-200 flex items-center justify-center   "
+                >
+                  <FaCaretDown className="text-[20px]" />
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
