@@ -28,7 +28,7 @@ function Menu() {
       <div
         className={`fixed top-0 left-0 w-full h-full backdrop-blur-sm flex items-center justify-center ${
           showContact
-            ? "z-30 opacity-100 transition duration-200 "
+            ? "z-40 opacity-100 transition duration-200 "
             : "-z-50 opacity-0 "
         } `}
       >
