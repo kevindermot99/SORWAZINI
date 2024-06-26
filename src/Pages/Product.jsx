@@ -160,6 +160,7 @@ function Product() {
           </div>
         </div>
 
+        {/* Faqs */}
         <div className="w-full h-full bg-stone-100 px-10 py-16 flex flex-col items-center justify-start ">
           <span className="flex items-center w-fit justify-start font-medium capitalize text-project-green text-sm bg-project-green/10 px-5 py-1 rounded-full ">
             Frequently asked questions
@@ -169,7 +170,10 @@ function Product() {
           </h1>
           <div className="w-full h-fit flex flex-col items-center justify-start my-2 max-w-[900px]">
             {Faqs.map((item, index) => (
-              <div key={item.index} className=" py-4 px-5 bg-white text-dark-body-color rounded-xl w-full mb-2 flex justify-between items-start gap-5">
+              <div
+                key={item.index}
+                className=" py-4 px-5 bg-white text-dark-body-color rounded-xl w-full mb-2 flex justify-between items-start gap-5"
+              >
                 <div className="flex flex-col items-start justify-start">
                   <h1 className="font-medium tracking-tight text-base leading-5 min-h-[30px] w-full flex items-center justify-start">
                     {item.question}
@@ -191,6 +195,23 @@ function Product() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* CTA */}
+        <div className="w-full h-fit flex flex-col items-center justify-start py-16">
+          <div className="w-full max-w-[1200px] h-fit min-h-[340px] bg-stone-100 rounded-3xl"></div>
+          <h1 className="text-[35px] leading-[65px] text-dark-body-color font-bold tracking-tight mt-4">
+            Free Trial Signup
+          </h1>
+          <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-3 text-center">
+            Sign up now for a free trial and experience our premium features
+            without any commitment. Start your risk-free journey today!
+          </p>
+          <button
+            className={`max-md:hidden font-medium cursor-pointer flex items-center gap-1 transition active:scale-95 text-sm py-2 px-5 rounded-full bg-dark-body-color text-white `}
+          >
+            Get Started Today!
+          </button>
         </div>
       </div>
 
