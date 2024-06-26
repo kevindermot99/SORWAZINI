@@ -165,7 +165,7 @@ function Home() {
                         {member.SO.map((person, index) => (
                           <div
                             key={index}
-                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition hover:ring-0 ring-dark-body-color relative group"
+                            className="w-[70px] aspect-square bg-stone-200 rounded-full cursor-pointer hover:scale-110 transition relative group"
                           >
                             <img
                               src={person.picture}
@@ -292,14 +292,14 @@ function Home() {
                   {aboutUs === 4 && "Our Problem Statement "}
                   {aboutUs === 5 && "Our Mission"}
                 </h1>
-                <div className="bg-white w-full h-[45px] max-w-fit mt-5 rounded-full shadow p-1 flex items-center justify-center">
+                <div className="bg-stone-200/70 w-full h-[45px] max-w-fit mt-5 rounded-full shado p-1 flex items-center justify-center">
                   <button
                     onClick={() => {
                       setAboutUs(1);
                     }}
                     className={`px-5 h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
                       aboutUs === 1
-                        ? "transition duration-200 bg-dark-body-color text-white"
+                        ? "transition duration-200 bg-white text-dark-body-color "
                         : " bg-transparent text-dark-body-color "
                     }`}
                   >
@@ -312,7 +312,7 @@ function Home() {
                     }}
                     className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
                       aboutUs === 3
-                        ? "transition duration-200 bg-dark-body-color text-white"
+                        ? "transition duration-200 bg-white text-dark-body-color "
                         : " bg-transparent text-dark-body-color "
                     }`}
                   >
@@ -325,7 +325,7 @@ function Home() {
                     }}
                     className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
                       aboutUs === 4
-                        ? "transition duration-200 bg-dark-body-color text-white"
+                        ? "transition duration-200 bg-white text-dark-body-color "
                         : " bg-transparent text-dark-body-color "
                     }`}
                   >
@@ -338,7 +338,7 @@ function Home() {
                     }}
                     className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
                       aboutUs === 5
-                        ? "transition duration-200 bg-dark-body-color text-white"
+                        ? "transition duration-200 bg-white text-dark-body-color "
                         : " bg-transparent text-dark-body-color "
                     }`}
                   >
@@ -355,22 +355,30 @@ function Home() {
                       : "hidden"
                   }`}
                 >
-                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center w-full pb-6 pt-8 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center w-full pb-6 pt-6 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
                     We are Pan-African Tech-preneurs
                   </p>
-                  <div className="flex flex-wrap items-center justify-center max-w-[1000px] gap-2">
+                  <div className="flex flex-wrap items-center justify-center max-w-[1100px] gap-3">
                     {Members.map((person, index) => (
-                      <div className="p-4" key={index}>
-                        <img
-                          src={person.picture}
-                          className="h-[140px] aspect-square object-cover rounded-full"
-                        />
-                        <p className="font-medium max-w-[500px] text-dark-body-color text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
-                          {person.name}
-                        </p>
-                        <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-1 tracking-tight leading-5 max-sm:px-5 ">
-                          {person.Role}
-                        </p>
+                      <div
+                        className="p-[1px] bg-gradient-to-t from-stone-100 to-transparent rounded-2xl flex   "
+                        key={index}
+                      >
+                        <div className="w-full h-full p-10 rounded-2xl bg-stone-50/50 flex flex-col items-center justify-start">
+                          <div className="w-[140px] aspect-square bg-stone-100 rounded-full">
+                            <img
+                              src={person.picture}
+                              className="min-w-[100%] max-h-[100%] object-cover rounded-full"
+                            />
+                          </div>
+
+                          <p className="font-medium max-w-[500px] text-dark-body-color text-center pt-5 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                            {person.name}
+                          </p>
+                          <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-1 tracking-tight leading-5 max-sm:px-5 ">
+                            {person.Role}
+                          </p>
+                        </div>
                       </div>
                     ))}
                   </div>

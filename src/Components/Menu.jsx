@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SorwaziniLogo from "../assets/SORWAZINI-Logo-1.png";
+import elabLogo from '../assets/E-lab-logo.png'
 import { useLocation } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import { Contacts, Challenges, Members, SORWAZINI } from "../Content/Content";
@@ -136,12 +137,12 @@ function Menu() {
         </span>
         <span className="space-x-6 flex ">
           <Link
-            to={`https://www.alueducation.com/`}
+            to={`https://docs.google.com/document/d/1dWQUse2QDlr7thUOgPvlj3ePtG0N8faAP8OEN-FUm44/edit`}
             className={`font-medium text-sm text-dark-body-color px-1 py-2 outline-none`}
           >
             <img
-              src="https://ciradu2204.github.io/ALUWebsite/img/alu_logo_original.png"
-              className="h-[20px]"
+              src={elabLogo}
+              className="h-[26px]"
             />
           </Link>
           <button

@@ -8,9 +8,6 @@ import Footer from "../Components/Footer";
 import { RiTimerFlashFill } from "react-icons/ri";
 import { FaApple } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
-import coaster from "../assets/coaster-logo.png";
-import yutong from "../assets/Yutong-Logo.wine.png";
-import acgroup from "../assets/ac-group.png";
 import { LuArrowDownFromLine } from "react-icons/lu";
 import { FaCaretDown } from "react-icons/fa";
 import { Faqs } from "../Content/Content";
@@ -37,7 +34,7 @@ function Product() {
 
   return (
     <div
-      className={` bg-light-body-color min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip mt-16`}
+      className={` bg-light-body-color min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip pt-16`}
     >
       {/* Menu */}
       <Menu />
@@ -201,7 +198,7 @@ function Product() {
         <div className="w-full h-fit flex flex-col items-center justify-start py-16">
           <div className="w-full max-w-[1200px] h-fit min-h-[340px] bg-stone-100 rounded-3xl"></div>
           <h1 className="text-[35px] leading-[65px] text-dark-body-color font-bold tracking-tight mt-4">
-            Free Trial Signup
+            Free Trial Sign up
           </h1>
           <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-3 text-center">
             Sign up now for a free trial and experience our premium features
