@@ -68,7 +68,7 @@ function Product() {
                   and making your journey smooth and hassle-free.
                 </p>
                 <div className="flex items-center justify-start gap-2">
-                  <a
+                  {/* <a
                     href="https://www.apple.com/app-store/"
                     target="_blank"
                     className="bg-stone-100/20 text-white px-3 h-[45px] flex justify-center items-center rounded-xl text-[23px] transition duration-200 active:scale-95 "
@@ -83,11 +83,11 @@ function Product() {
                     title="Google Play store"
                   >
                     <IoLogoGooglePlaystore />
-                  </a>
+                  </a> */}
                   <a
                     href="#"
                     target="_blank"
-                    className="bg-dark-body-color text-white px-8 font-medium h-[45px] flex justify-center items-center rounded-xl text-sm transition duration-200 active:scale-95 "
+                    className="bg-dark-body-color text-white px-12 font-medium h-[45px] flex justify-center items-center rounded-xl text-sm transition duration-200 active:scale-95 "
                     title="Google Playstore"
                   >
                     Live Demo

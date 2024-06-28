@@ -10,6 +10,11 @@ import kevin from '../assets/pfp/kevin.jpg'
 import anita from '../assets/pfp/anita.png'
 import sylvia from '../assets/pfp/sylvia.jpeg'
 import gift from '../assets/pfp/gift.jpeg'
+import { BiLogoGmail } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { CgWebsite } from "react-icons/cg";
 
 // Function that gets day remaining
 function daysLeft(inputDate) {
@@ -73,44 +78,203 @@ export const Members = [
     name: "Honourgod K. Levison",
     country: "NI",
     picture: honourGod,
-    Role: "Team Lead",  
+    Role: "Team Lead",
+    socials: [
+      {
+        siteName: "Instagram",
+        siteIcon: RiInstagramFill ,
+        siteLink: "",
+      },
+      {
+        siteName: "Github",
+        siteIcon: FaGithub ,
+        siteLink: "",
+      },
+      {
+        siteName: "Gmail",
+        siteIcon: BiLogoGmail ,
+        siteLink: "",
+      },
+      {
+        siteName: "Whatsapp",
+        siteIcon: IoLogoWhatsapp ,
+        siteLink: "",
+      },
+    ]
   },
   {
     name: "Lineo Sylvia Muso",
     country: "SO",
     picture: sylvia,
-    Role: "Reporter/Presenter",  
+    Role: "Reporter/Presenter",
+    socials: [
+      {
+        siteName: "Instagram",
+        siteIcon: RiInstagramFill ,
+        siteLink: "",
+      },
+      {
+        siteName: "Github",
+        siteIcon: FaGithub ,
+        siteLink: "",
+      },
+      {
+        siteName: "Gmail",
+        siteIcon: BiLogoGmail ,
+        siteLink: "",
+      },
+      {
+        siteName: "Whatsapp",
+        siteIcon: IoLogoWhatsapp ,
+        siteLink: "",
+      },
+    ]
   },
   
   {
     name: "Rwema Christian",
     country: "RWA",
     picture: ChrisPfp,
-    Role: "Communication Lead",  
+    Role: "Communication Lead",
+    socials: [
+      {
+        siteName: "Instagram",
+        siteIcon: RiInstagramFill ,
+        siteLink: "",
+      },
+      {
+        siteName: "Github",
+        siteIcon: FaGithub ,
+        siteLink: "",
+      },
+      {
+        siteName: "Gmail",
+        siteIcon: BiLogoGmail ,
+        siteLink: "",
+      },
+      {
+        siteName: "Whatsapp",
+        siteIcon: IoLogoWhatsapp ,
+        siteLink: "",
+      },
+    ]  
   },
   {
     name: "Chiagoziem Eke",
     country: "NI",
     picture: eke,
-    Role: "Research Lead",  
+    Role: "Research Lead",
+    socials: [
+      {
+        siteName: "Instagram",
+        siteIcon: RiInstagramFill ,
+        siteLink: "",
+      },
+      {
+        siteName: "Github",
+        siteIcon: FaGithub ,
+        siteLink: "",
+      },
+      {
+        siteName: "Gmail",
+        siteIcon: BiLogoGmail ,
+        siteLink: "",
+      },
+      {
+        siteName: "Whatsapp",
+        siteIcon: IoLogoWhatsapp ,
+        siteLink: "",
+      },
+      {
+        siteName: "Blog",
+        siteIcon: CgWebsite ,
+        siteLink: "",
+      },
+    ]
   },
   {
     name: "Tapiwanashe Gift",
     country: "ZI",
     picture: gift,
-    Role: "Recorder",  
+    Role: "Recorder",
+    socials: [
+      {
+        siteName: "Instagram",
+        siteIcon: RiInstagramFill ,
+        siteLink: "",
+      },
+      {
+        siteName: "Github",
+        siteIcon: FaGithub ,
+        siteLink: "",
+      },
+      {
+        siteName: "Gmail",
+        siteIcon: BiLogoGmail ,
+        siteLink: "",
+      },
+      {
+        siteName: "Whatsapp",
+        siteIcon: IoLogoWhatsapp ,
+        siteLink: "",
+      },
+    ] 
   },
   {
     name: "Anitha Uwimpuhwe",
     country: "RWA",
     picture: anita,
-    Role: "Social Media Manager",  
+    Role: "Social Media Manager",
+    socials: [
+      {
+        siteName: "Instagram",
+        siteIcon: RiInstagramFill ,
+        siteLink: "",
+      },
+      {
+        siteName: "Github",
+        siteIcon: FaGithub ,
+        siteLink: "",
+      },
+      {
+        siteName: "Gmail",
+        siteIcon: BiLogoGmail ,
+        siteLink: "",
+      },
+      {
+        siteName: "Whatsapp",
+        siteIcon: IoLogoWhatsapp ,
+        siteLink: "",
+      },
+    ] 
   },
   {
     name: "Kaneza Kevin",
     country: "RWA",
     picture: kevin,
-    Role: "Tech Lead",  
+    Role: "Tech Lead",
+    socials: [
+      {
+        siteName: "Instagram",
+        siteIcon: RiInstagramFill ,
+        siteLink: "",
+      },
+      {
+        siteName: "Github",
+        siteIcon: FaGithub ,
+        siteLink: "",
+      },
+      {
+        siteName: "Gmail",
+        siteIcon: BiLogoGmail ,
+        siteLink: "",
+      },
+      {
+        siteName: "Whatsapp",
+        siteIcon: IoLogoWhatsapp ,
+        siteLink: "",
+      },
+    ] 
   },
   
 ];

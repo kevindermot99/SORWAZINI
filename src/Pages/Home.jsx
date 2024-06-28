@@ -47,7 +47,6 @@ function Home() {
 
   return (
     <div className=" bg-light-body-color min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
-
       {/* Menu */}
       <Menu />
 
@@ -294,14 +293,14 @@ function Home() {
                   <div className="flex flex-wrap items-center justify-center max-w-[1100px] gap-3">
                     {Members.map((person, index) => (
                       <div
-                        className="p-[1px] bg-gradient-to-t from-stone-100 to-transparent rounded-2xl flex   "
+                        className="p-[1px] bg-gradient-to-tl from-stone-300 via-transparent to-stone-300 rounded-2xl flex   "
                         key={index}
                       >
-                        <div className="w-full h-full p-10 rounded-2xl bg-stone-50/50 flex flex-col items-center justify-start">
-                          <div className="w-[140px] aspect-square bg-stone-100 rounded-full">
+                        <div className="w-full h-full p-10 rounded-2xl bg-stone-50 flex flex-col items-center justify-start">
+                          <div className="w-[140px] aspect-square bg-stone-50 rounded-full">
                             <img
                               src={person.picture}
-                              className="min-w-[100%] max-h-[100%] object-cover rounded-full"
+                              className="min-w-[100%] max-h-[100%] object-cover rounded-full shadow-lg "
                             />
                           </div>
 
@@ -311,6 +310,13 @@ function Home() {
                           <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center pt-1 tracking-tight leading-5 max-sm:px-5 ">
                             {person.Role}
                           </p>
+                          <div className="flex items-center justify-center mt-3 gap-3 ">
+                            {person.socials.map((social, index) => (
+                              <Link to={social.siteLink} className="text-xl text-text-dark-color/40 hover:text-dark-body-color" title={social.siteName}>
+                                {React.createElement(social.siteIcon)}
+                              </Link>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     ))}
