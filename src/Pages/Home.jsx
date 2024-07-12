@@ -56,7 +56,7 @@ function Home() {
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
         {/* Hero */}
-        <div className="w-full h-fit py-[90px] mt-16 flex flex-col items-center justify-center sticky">
+        <div className="w-full h-fit py-[70px] mt-20  flex flex-col items-center justify-center ">
           <Reveal
             keyframes={customAnimation}
             duration={1000}
@@ -433,8 +433,8 @@ function Home() {
                   </p>
                   <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex rounded-md ">
                     <img
-                      src="https://github-production-user-asset-6210df.s3.amazonaws.com/65622766/341439473-b1029449-e768-429f-bd6b-60b8410f1c7e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240620T135712Z&X-Amz-Expires=300&X-Amz-Signature=ae99d2780107d8b4128ce3abe8f6404ef801d97a79252cf10eba1e3513adaa22&X-Amz-SignedHeaders=host&actor_id=65622766&key_id=0&repo_id=806913834"
-                      className="max-h-[300px] w-full object-cover"
+                      src="https://mobile.igihe.com/local/cache-vignettes/L1000xH667/ry6b2412-2-46621.jpg?1713680919"
+                      className="max-h-[300px] rounded-2xl w-full object-cover"
                     />
                   </div>
                 </div>

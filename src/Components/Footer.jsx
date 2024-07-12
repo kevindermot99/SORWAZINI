@@ -9,29 +9,29 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-dark-body-color z-10">
+    <footer className="bg-stone-100 z-10">
       <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div>
+          <div className="text-dark-body-color">
             <div className="flex justify-center text-teal-300 sm:justify-start">
               <img src={SorwaziniLogo} className="w-[230px]" />
             </div>
 
-            <p className="max-w-md mx-auto mt-6 leading-snug   text-center text-text-light-color/60 sm:max-w-xs sm:mx-0 sm:text-left">
+            <p className="max-w-md mx-auto mt-5 leading-snug text-sm text-center sm:max-w-xs sm:mx-0 sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
-            <div className="mt-6 w-full flex items-start justify-start gap-4">
-              <Link to={'/'} className="text-white/70 text-2xl hover:text-white/40"  title="Instagram">
+            <div className="mt-5 w-full flex items-start justify-start gap-3">
+              <Link to={'/'} className="text-xl opacity-50 hover:opacity-90"  title="Instagram">
                 <RiInstagramFill  />
               </Link>
-              <Link to={'/'} className="text-white/70 text-2xl hover:text-white/40"  title="YouTube">
+              <Link to={'/'} className="text-xl opacity-50 hover:opacity-90"  title="YouTube">
                 <FaYoutube  />
               </Link>
-              <Link to={'/'} className="text-white/70 text-2xl hover:text-white/40"  title="Gmail">
+              <Link to={'/'} className="text-xl opacity-50 hover:opacity-90"  title="Gmail">
                 <BiLogoGmail  />
               </Link>
-              <Link to={'/'} className="text-white/70 text-2xl hover:text-white/40"  title="Github">
+              <Link to={'/'} className="text-xl opacity-50 hover:opacity-90"  title="Github">
                 <FaGithub  />
               </Link>
             </div>
@@ -39,43 +39,40 @@ function Footer() {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">About Us</p>
+              <p className="text-lg font-medium ">About Us</p>
 
-              <nav className="mt-8">
+              <nav className="mt-3">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
+                      className=""
                       href="/"
                     >
                       Who we are
                     </a>
                   </li>
-
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
+                      className=""
                       href="/"
                     >
-                      Our Values
+                      Our values
                     </a>
                   </li>
-
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
+                      className=""
                       href="/"
                     >
                       Our Mission
                     </a>
                   </li>
-
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
+                      className=""
                       href="/"
                     >
-                      Problem Statement
+                      Problem statement
                     </a>
                   </li>
                 </ul>
@@ -83,25 +80,40 @@ function Footer() {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">Other Links</p>
+              <p className="text-lg font-medium ">Quick Links</p>
 
-              <nav className="mt-8">
+              <nav className="mt-3">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
+                      className=""
+                      href="/"
+                    >
+                      home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className=""
                       href="/"
                     >
                       E-lab Challenges
                     </a>
                   </li>
-
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
+                      className=""
                       href="/"
                     >
                       Gallery
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className=""
+                      href="/"
+                    >
+                      Our product
                     </a>
                   </li>
                 </ul>
@@ -109,13 +121,13 @@ function Footer() {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">Projects</p>
+              <p className="text-lg font-medium ">Projects</p>
 
-              <nav className="mt-8">
+              <nav className="mt-3">
                 <ul className="space-y-4 text-sm">
                   <li>
                     <a
-                      className="text-white transition hover:text-white/75"
+                      className=""
                       href="/"
                     >
                       Gerayo
@@ -126,17 +138,17 @@ function Footer() {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">Contact Us</p>
+              <p className="text-lg font-medium">Contact Us</p>
 
-              <ul className="mt-8 space-y-4 text-sm">
+              <ul className="mt-3 space-y-4 text-sm">
                 <li>
                   <a
                     className="flex items-center justify-center sm:justify-start gap-1.5 group"
-                    href="/"
+                    href={`mailto:${Contacts.Gmail}`}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5 text-white shrink-0"
+                      className="w-5 h-5 shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -149,20 +161,20 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="text-white transition group-hover:text-white/75">
+                    <span className="">
                       {Contacts.Gmail}
                     </span>
                   </a>
                 </li>
 
                 <li>
-                  <a
+                  <span
                     className="flex items-center justify-center sm:justify-start gap-1.5 group"
-                    href="/"
+                    
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5 text-white shrink-0"
+                      className="w-5 h-5  shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -175,16 +187,16 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="text-white transition group-hover:text-white/75">
+                    <span className="">
                       {Contacts.WhatsAppNumber}
                     </span>
-                  </a>
+                  </span>
                 </li>
 
                 <li className="flex items-start justify-center gap-1.5 sm:justify-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 text-white shrink-0"
+                    className="w-5 h-5 shrink-0"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -202,7 +214,7 @@ function Footer() {
                     />
                   </svg>
 
-                  <address className="-mt-0.5 not-italic text-white">
+                  <address className="-mt-0.5 not-italic ">
                     Kigali, Rwanda
                   </address>
                 </li>
@@ -211,13 +223,13 @@ function Footer() {
           </div>
         </div>
 
-        <div className="pt-6 mt-12 border-t border-gray-800">
+        <div className="pt-6 mt-12 border-t border-stone-300">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
-            <p className="text-sm text-gray-400">
+            <p className="text-xs ">
               <span className="block sm:inline">All rights reserved.</span>
             </p>
 
-            <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+            <p className="mt-4 text-xs sm:order-first sm:mt-0">
               &copy; 2022 SORWAZINI.
             </p>
           </div>

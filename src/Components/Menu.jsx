@@ -132,13 +132,13 @@ function Menu() {
             to={`/product`}
             className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
-            Our Product
+            Our Prototype
           </Link>
         </span>
         <span className="space-x-6 flex ">
           <Link
             to={`https://docs.google.com/document/d/1dWQUse2QDlr7thUOgPvlj3ePtG0N8faAP8OEN-FUm44/edit`}
-            className={`font-medium text-sm text-dark-body-color px-1 py-2 outline-none`}
+            className={`hidden font-medium text-sm text-dark-body-color px-1 py-2 outline-none`}
           >
             <img
               src={elabLogo}

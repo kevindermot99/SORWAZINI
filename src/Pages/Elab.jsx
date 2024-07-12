@@ -57,12 +57,12 @@ function Elab() {
             duration={1000}
             cascade
             damping={0.05}
-            // triggerOnce
+            triggerOnce
           >
-            <h1 className="text-center max-w-[900px] font-bold text-[70px] max-sm:text-[50px] leading-[80px] max-sm:leading-[55px] tracking-tighter">
+            <h1 className="text-center max-w-[900px]  font-bold text-[60px] max-sm:text-[50px] leading-[70px] max-sm:leading-[55px] tracking-tighter">
               {Challenges.SectionTitle}
             </h1>
-            <p className="font-medium max-w-[500px] text-center pt-2 max-sm:pt-2 tracking-normal leading-5 max-sm:px-5 ">
+            <p className="font-medium max-w-[500px] text-sm opacity-65 text-center pt-2 max-sm:pt-2 tracking-normal leading-5 max-sm:px-5 ">
               {Challenges.SectionDescription}
             </p>
           </Reveal>
