@@ -13,7 +13,7 @@ import gift from "../assets/pfp/gift.jpeg";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 
 // Function that gets day remaining
@@ -81,24 +81,19 @@ export const Members = [
     Role: "Team Lead",
     socials: [
       {
-        siteName: "Instagram",
-        siteIcon: RiInstagramFill,
-        siteLink: "",
-      },
-      {
         siteName: "Github",
         siteIcon: FaGithub,
-        siteLink: "",
+        siteLink: " https://github.com/HonourGod",
       },
       {
         siteName: "Gmail",
         siteIcon: BiLogoGmail,
-        siteLink: "",
+        siteLink: "h.levison@alustudent.com",
       },
       {
-        siteName: "Whatsapp",
-        siteIcon: IoLogoWhatsapp,
-        siteLink: "",
+        siteName: "Linkedin",
+        siteIcon: FaLinkedin,
+        siteLink: "www.linkedin.com/in/honourgod-levison-2b3777174/",
       },
     ],
   },
@@ -109,11 +104,6 @@ export const Members = [
     Role: "Reporter/Presenter",
     socials: [
       {
-        siteName: "Instagram",
-        siteIcon: RiInstagramFill,
-        siteLink: "",
-      },
-      {
         siteName: "Github",
         siteIcon: FaGithub,
         siteLink: "",
@@ -121,11 +111,6 @@ export const Members = [
       {
         siteName: "Gmail",
         siteIcon: BiLogoGmail,
-        siteLink: "",
-      },
-      {
-        siteName: "Whatsapp",
-        siteIcon: IoLogoWhatsapp,
         siteLink: "",
       },
     ],
@@ -138,24 +123,19 @@ export const Members = [
     Role: "Communication Lead",
     socials: [
       {
-        siteName: "Instagram",
-        siteIcon: RiInstagramFill,
-        siteLink: "",
-      },
-      {
         siteName: "Github",
         siteIcon: FaGithub,
-        siteLink: "",
+        siteLink: "https://github.com/Rwema707",
       },
       {
         siteName: "Gmail",
         siteIcon: BiLogoGmail,
-        siteLink: "",
+        siteLink: "r.gashumba@alustudent.com",
       },
       {
-        siteName: "Whatsapp",
-        siteIcon: IoLogoWhatsapp,
-        siteLink: "",
+        siteName: "Linkedin",
+        siteIcon: FaLinkedin,
+        siteLink: "http://www.linkedin.com/in/rwema-christian-335632279",
       },
     ],
   },
@@ -166,29 +146,24 @@ export const Members = [
     Role: "Research Lead",
     socials: [
       {
-        siteName: "Instagram",
-        siteIcon: RiInstagramFill,
-        siteLink: "",
-      },
-      {
         siteName: "Github",
         siteIcon: FaGithub,
-        siteLink: "",
+        siteLink: "https://github.com/El-gibbor",
       },
       {
         siteName: "Gmail",
         siteIcon: BiLogoGmail,
-        siteLink: "",
+        siteLink: "c.eke@alustudent.com",
       },
       {
-        siteName: "Whatsapp",
-        siteIcon: IoLogoWhatsapp,
-        siteLink: "",
+        siteName: "Linkedin",
+        siteIcon: FaLinkedin,
+        siteLink: "https://www.linkedin.com/in/elgibbor/",
       },
       {
         siteName: "Blog",
         siteIcon: CgWebsite,
-        siteLink: "",
+        siteLink: "https://elgibbor.hashnode.dev/",
       },
     ],
   },
@@ -199,24 +174,19 @@ export const Members = [
     Role: "Recorder",
     socials: [
       {
-        siteName: "Instagram",
-        siteIcon: RiInstagramFill,
-        siteLink: "",
-      },
-      {
         siteName: "Github",
         siteIcon: FaGithub,
-        siteLink: "",
+        siteLink: "https://github.com/Tapiwanashe9",
       },
       {
         siteName: "Gmail",
         siteIcon: BiLogoGmail,
-        siteLink: "",
+        siteLink: "t.marufu@alustudent.com",
       },
       {
-        siteName: "Whatsapp",
-        siteIcon: IoLogoWhatsapp,
-        siteLink: "",
+        siteName: "Linkedin",
+        siteIcon: FaLinkedin,
+        siteLink: "http://www.linkedin.com/in/rwema-christian-335632279",
       },
     ],
   },
@@ -227,11 +197,6 @@ export const Members = [
     Role: "Social Media Manager",
     socials: [
       {
-        siteName: "Instagram",
-        siteIcon: RiInstagramFill,
-        siteLink: "",
-      },
-      {
         siteName: "Github",
         siteIcon: FaGithub,
         siteLink: "",
@@ -242,9 +207,9 @@ export const Members = [
         siteLink: "",
       },
       {
-        siteName: "Whatsapp",
-        siteIcon: IoLogoWhatsapp,
-        siteLink: "",
+        siteName: "Linkedin",
+        siteIcon: FaLinkedin,
+        siteLink: "http://www.linkedin.com/in/rwema-christian-335632279",
       },
     ],
   },
@@ -255,24 +220,19 @@ export const Members = [
     Role: "Tech Lead",
     socials: [
       {
-        siteName: "Instagram",
-        siteIcon: RiInstagramFill,
-        siteLink: "",
-      },
-      {
         siteName: "Github",
         siteIcon: FaGithub,
-        siteLink: "",
+        siteLink: "https://github.com/kevindermot99",
       },
       {
         siteName: "Gmail",
         siteIcon: BiLogoGmail,
-        siteLink: "",
+        siteLink: "k.mbonimpay@alustudent.com",
       },
       {
-        siteName: "Whatsapp",
-        siteIcon: IoLogoWhatsapp,
-        siteLink: "",
+        siteName: "Linkedin",
+        siteIcon: FaLinkedin,
+        siteLink: "https://www.linkedin.com/in/kevin-kaneza-aa1a902a6/",
       },
     ],
   },
