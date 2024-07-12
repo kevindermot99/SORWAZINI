@@ -6,8 +6,12 @@ import { keyframes } from "@emotion/react";
 import Menu from "../Components/Menu";
 import Footer from "../Components/Footer";
 import { gallery } from "../Content/Content";
+import { BiLoaderAlt } from "react-icons/bi";
 
 function Gallery() {
+  const [imageLoading, setImageLoading] = useState(true);
+  const [image, setImage] = useState("")
+  const [showImageFull, setShowImageFull] = useState(false)
   const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -20,6 +24,14 @@ function Gallery() {
     transform: translateY(0);
   }
 `;
+  const handleImageLoad = () => {
+    setImageLoading(false);
+  };
+
+  const showImage = (url) => {
+    setImage(url)
+  }
+
 
   return (
     <div className=" bg-light-body-color pt-16 min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
@@ -31,26 +43,31 @@ function Gallery() {
         id="Challenges"
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
+        {/* full screen image */}
+        <div className="fixed top-0 left-0 w-full h-full bg-stone-600/10 z-30 flex items-center justify-center">
+          <img src={image} alt="" />
+        </div>
+        <div></div>
         {/* Hero section */}
         <div className="min-h-[250px] w-full h-full flex flex-col items-center justify-center ">
-          <Reveal
-            keyframes={customAnimation}
-            duration={1000}
-            cascade
-            damping={0.05}
-            triggerOnce
-          >
+          
             <h1 className="text-center max-w-[900px]  font-bold text-[60px] max-sm:text-[50px] leading-[70px] max-sm:leading-[55px] tracking-tighter">
               {gallery.SectionTitle}
             </h1>
             <p className="font-medium max-w-[500px] text-sm opacity-65 text-center pt-2 max-sm:pt-2 tracking-normal leading-5 max-sm:px-5 ">
               {gallery.SectionDescription}
             </p>
-          </Reveal>
         </div>
 
         {/* images grid */}
-        <div className="columns-3 w-full max-w-[1000px] space-y-5 h-fit pb-10">
+        <div className="columns-3 w-full max-w-[1000px] space-y-5 h-fit pb-10 relative">
+          {imageLoading && (
+            <div
+              className={`absolute top-0 left-0 z-20 bg-white w-full h-full flex items-start justify-center `}
+            >
+              <BiLoaderAlt className="text-2xl text-dark-body-color/50 animate-spinLoader" />
+            </div>
+          )}
           {gallery.Images.map((image, index) => (
             <Reveal
               keyframes={customAnimation}
@@ -62,6 +79,7 @@ function Gallery() {
               <div className="relative group cursor-pointer">
                 <span className="absolute top-0 left-0 right-0 bottom-0 m-auto rounded-3xl bg-black/110 opacity-0 group-hover:opacity-100 transition duration-300  "></span>
                 <img
+                  onLoad={handleImageLoad}
                   src={image.url}
                   key={index}
                   className="rounded-3xl w-full object-cover max-h-[500px]  "

@@ -20,6 +20,10 @@ export default {
         "button-color": "#3A7D44",
         "project-green": "#149A75",
       },
+      animation: {
+        spinLoader: "spin .4s linear infinite",
+        spinSlow: "spin 5s linear infinite",
+      },
       patterns: {
         opacities: {
             100: "1",
