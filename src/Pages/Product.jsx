@@ -45,24 +45,24 @@ function Product() {
         className={`h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col`}
       >
         {/* Hero section */}
-        <div className={`w-full h-fit px-6 max-w-[1200px] pt-10 z-10`}>
-          <div className="bg-project-green min-h-[450px] w-full rounded-3xl flex items-center justify-between py-10 px-12">
-            <div className="flex flex-col items-start justify-start gap-3 max-w-[50%]">
+        <div className={`w-full h-fit  z-10`}>
+          <div className="bg-stone-200 min-h-[450px] w-full flex items-center justify-between py-10 px-12">
+            <div className="flex flex-col items-start justify-start gap-3 max-w-[45%]">
               <Reveal
                 keyframes={customAnimation}
                 duration={1000}
                 cascade
                 damping={0.05}
-                // triggerOnce
+                triggerOnce
               >
-                <span className="flex items-center justify-start text-white text-sm  bg-stone-100/20 px-5 gap-1 py-1 rounded-full ">
+                <span className="flex items-center justify-start text-dark-body-color text-sm  bg-stone-400/20 px-5 gap-1 py-1 rounded-full ">
                   <RiTimerFlashFill />
                   Get there Fast!
                 </span>
-                <h1 className="text-[55px] leading-[65px] text-white font-bold tracking-tight">
+                <h1 className="text-[50px] leading-[60px] text-dark-body-color font-bold tracking-tight">
                   Get your bus tickets faster with Gerayo
                 </h1>
-                <p className="text-white font-medium tracking-tight max-w-[530px]  ">
+                <p className="text-dark-body-color/60 font-medium tracking-tight max-w-[530px] pb-3  ">
                   With Gerayo, you can easily buy bus tickets online and see
                   where your bus is in real-time. It's perfect for saving time
                   and making your journey smooth and hassle-free.
