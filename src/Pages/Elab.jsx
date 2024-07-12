@@ -40,7 +40,7 @@ function Elab() {
 
   return (
     <div className=" bg-light-body-color min-h-[100vh] pt-16 w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
-      
+
       {/* Menu */}
       <Menu />
 
@@ -51,7 +51,7 @@ function Elab() {
       >
         {/* Hero section */}
         <div className="min-h-[300px] w-full h-full flex flex-col items-center justify-center">
-          
+
           <Reveal
             keyframes={customAnimation}
             duration={1000}

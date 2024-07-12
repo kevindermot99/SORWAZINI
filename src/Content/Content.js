@@ -83,7 +83,7 @@ export const Members = [
       {
         siteName: "Github",
         siteIcon: FaGithub,
-        siteLink: " https://github.com/HonourGod",
+        siteLink: "https://github.com/HonourGod",
       },
       {
         siteName: "Gmail",
