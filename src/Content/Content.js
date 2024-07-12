@@ -86,16 +86,16 @@ export const Members = [
         siteLink: "https://github.com/HonourGod",
       },
       {
-        siteName: "Gmail",
-        siteIcon: BiLogoGmail,
-        siteLink: "h.levison@alustudent.com",
-      },
-      {
         siteName: "Linkedin",
         siteIcon: FaLinkedin,
-        siteLink: "www.linkedin.com/in/honourgod-levison-2b3777174/",
+        siteLink: "http://www.linkedin.com/in/honourgod-levison-2b3777174/",
       },
     ],
+    Gmail: {
+      siteName: "Gmail",
+      siteIcon: BiLogoGmail,
+      siteLink: "h.levison@alustudent.com",
+    },
   },
   {
     name: "Lineo Sylvia Muso",
@@ -108,12 +108,12 @@ export const Members = [
         siteIcon: FaGithub,
         siteLink: "",
       },
-      {
-        siteName: "Gmail",
-        siteIcon: BiLogoGmail,
-        siteLink: "",
-      },
     ],
+    Gmail: {
+      siteName: "Gmail",
+      siteIcon: BiLogoGmail,
+      siteLink: "",
+    },
   },
 
   {
@@ -128,16 +128,16 @@ export const Members = [
         siteLink: "https://github.com/Rwema707",
       },
       {
-        siteName: "Gmail",
-        siteIcon: BiLogoGmail,
-        siteLink: "r.gashumba@alustudent.com",
-      },
-      {
         siteName: "Linkedin",
         siteIcon: FaLinkedin,
         siteLink: "http://www.linkedin.com/in/rwema-christian-335632279",
       },
     ],
+    Gmail: {
+      siteName: "Gmail",
+      siteIcon: BiLogoGmail,
+      siteLink: "r.gashumba@alustudent.com",
+    },
   },
   {
     name: "Chiagoziem Eke",
@@ -151,11 +151,6 @@ export const Members = [
         siteLink: "https://github.com/El-gibbor",
       },
       {
-        siteName: "Gmail",
-        siteIcon: BiLogoGmail,
-        siteLink: "c.eke@alustudent.com",
-      },
-      {
         siteName: "Linkedin",
         siteIcon: FaLinkedin,
         siteLink: "https://www.linkedin.com/in/elgibbor/",
@@ -166,6 +161,11 @@ export const Members = [
         siteLink: "https://elgibbor.hashnode.dev/",
       },
     ],
+    Gmail: {
+      siteName: "Gmail",
+      siteIcon: BiLogoGmail,
+      siteLink: "c.eke@alustudent.com",
+    },
   },
   {
     name: "Tapiwanashe Gift",
@@ -179,16 +179,16 @@ export const Members = [
         siteLink: "https://github.com/Tapiwanashe9",
       },
       {
-        siteName: "Gmail",
-        siteIcon: BiLogoGmail,
-        siteLink: "t.marufu@alustudent.com",
-      },
-      {
         siteName: "Linkedin",
         siteIcon: FaLinkedin,
         siteLink: "http://www.linkedin.com/in/rwema-christian-335632279",
       },
     ],
+    Gmail: {
+      siteName: "Gmail",
+      siteIcon: BiLogoGmail,
+      siteLink: "t.marufu@alustudent.com",
+    },
   },
   {
     name: "Anitha Uwimpuhwe",
@@ -202,16 +202,16 @@ export const Members = [
         siteLink: "",
       },
       {
-        siteName: "Gmail",
-        siteIcon: BiLogoGmail,
-        siteLink: "",
-      },
-      {
         siteName: "Linkedin",
         siteIcon: FaLinkedin,
         siteLink: "http://www.linkedin.com/in/rwema-christian-335632279",
       },
     ],
+    Gmail: {
+      siteName: "Gmail",
+      siteIcon: BiLogoGmail,
+      siteLink: "",
+    },
   },
   {
     name: "Kaneza Kevin",
@@ -225,16 +225,16 @@ export const Members = [
         siteLink: "https://github.com/kevindermot99",
       },
       {
-        siteName: "Gmail",
-        siteIcon: BiLogoGmail,
-        siteLink: "k.mbonimpay@alustudent.com",
-      },
-      {
         siteName: "Linkedin",
         siteIcon: FaLinkedin,
         siteLink: "https://www.linkedin.com/in/kevin-kaneza-aa1a902a6/",
       },
     ],
+    Gmail: {
+      siteName: "Gmail",
+      siteIcon: BiLogoGmail,
+      siteLink: "k.mbonimpay@alustudent.com",
+    },
   },
 ];
 

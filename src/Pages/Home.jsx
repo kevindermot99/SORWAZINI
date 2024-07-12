@@ -312,10 +312,23 @@ function Home() {
                           </p>
                           <div className="flex items-center justify-center mt-3 gap-3 ">
                             {person.socials.map((social, index) => (
-                              <Link to={social.siteLink} className="text-xl text-text-dark-color/40 hover:text-dark-body-color" title={social.siteName}>
+                              <a
+                                href={social.siteLink}
+                                target="_blank"
+                                className="text-xl text-text-dark-color/40 hover:text-dark-body-color"
+                                title={social.siteName}
+                              >
                                 {React.createElement(social.siteIcon)}
-                              </Link>
+                              </a>
                             ))}
+                            <a
+                              href={`mailto:${person.Gmail}`}
+                              target="_blank"
+                              className="text-xl text-text-dark-color/40 hover:text-dark-body-color"
+                              title={person.siteName}
+                            >
+                              {React.createElement(person.Gmail.siteIcon)}
+                            </a>
                           </div>
                         </div>
                       </div>
