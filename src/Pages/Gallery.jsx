@@ -10,8 +10,9 @@ import { BiLoaderAlt } from "react-icons/bi";
 
 function Gallery() {
   const [imageLoading, setImageLoading] = useState(true);
-  const [image, setImage] = useState("")
-  const [showImageFull, setShowImageFull] = useState(false)
+  const [image, setImage] = useState("");
+  const [act, setAct] = useState("");
+  const [showImageFull, setShowImageFull] = useState(false);
   const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -28,10 +29,11 @@ function Gallery() {
     setImageLoading(false);
   };
 
-  const showImage = (url) => {
-    setImage(url)
-  }
-
+  const showImage = (url, act) => {
+    setImage(url);
+    setAct(act);
+    setShowImageFull(true);
+  };
 
   return (
     <div className=" bg-light-body-color pt-16 min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
@@ -44,19 +46,35 @@ function Gallery() {
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
         {/* full screen image */}
-        <div className="fixed top-0 left-0 w-full h-full bg-stone-600/10 z-30 flex items-center justify-center">
-          <img src={image} alt="" />
+        <div
+          className={`fixed top-0 left-0 w-full h-full z-30 flex flex-col items-center justify-center ${
+            showImageFull ? "visible " : "invisible "
+          }`}
+        >
+          <div
+            onClick={() => setShowImageFull(false)}
+            className={`absolute top-0 left-0 bg-black/10 w-full h-full backdrop-blur-md transition-all ease-out ${
+              showImageFull ? "opacity-100 " : "opacity-0 "
+            } `}
+          ></div>
+          <img
+            src={image}
+            className={` max-h-[80%] min-w-[300px] max-w-[80%] object-cover shadow rounded-xl z-10 select-none transition-all ease-in ${
+              showImageFull ? "opacity-100 " : "opacity-0 scale-95  "
+            }`}
+          />
+          <p className={` mt-[20px] w-fit bg-white/80 rounded-2xl shadow-lg py-2 px-3 text-xs backdrop-blur-sm text-dark-body-color font-medium transition-all ease-in-out ${showImageFull ? ' opacity-100 delay-200' : 'opacity-0 -translate-y-3 scale-90'} `}>
+            {act}
+          </p>
         </div>
-        <div></div>
         {/* Hero section */}
         <div className="min-h-[250px] w-full h-full flex flex-col items-center justify-center ">
-          
-            <h1 className="text-center max-w-[900px]  font-bold text-[60px] max-sm:text-[50px] leading-[70px] max-sm:leading-[55px] tracking-tighter">
-              {gallery.SectionTitle}
-            </h1>
-            <p className="font-medium max-w-[500px] text-sm opacity-65 text-center pt-2 max-sm:pt-2 tracking-normal leading-5 max-sm:px-5 ">
-              {gallery.SectionDescription}
-            </p>
+          <h1 className="text-center max-w-[900px]  font-bold text-[60px] max-sm:text-[50px] leading-[70px] max-sm:leading-[55px] tracking-tighter">
+            {gallery.SectionTitle}
+          </h1>
+          <p className="font-medium max-w-[500px] text-sm opacity-65 text-center pt-2 max-sm:pt-2 tracking-normal leading-5 max-sm:px-5 ">
+            {gallery.SectionDescription}
+          </p>
         </div>
 
         {/* images grid */}
@@ -76,7 +94,10 @@ function Gallery() {
               damping={0.05}
               triggerOnce
             >
-              <div className="relative group cursor-pointer">
+              <div
+                onClick={() => showImage(image.url, image.activity)}
+                className="relative group cursor-pointer"
+              >
                 <span className="absolute top-0 left-0 right-0 bottom-0 m-auto rounded-3xl bg-black/110 opacity-0 group-hover:opacity-100 transition duration-300  "></span>
                 <img
                   onLoad={handleImageLoad}
