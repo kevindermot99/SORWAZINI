@@ -103,7 +103,7 @@ function Gallery() {
                   onLoad={handleImageLoad}
                   src={image.url}
                   key={index}
-                  className="rounded-3xl w-full object-cover max-h-[500px]  "
+                  className="rounded-3xl w-full object-cover max-h-[440px] min-h-[150px] bg-stone-100  "
                 />
                 <p className="absolute bottom-3 left-3 mr-3 w-fit bg-white/80 rounded-2xl shadow-lg py-2 px-3 text-xs backdrop-blur-sm text-dark-body-color font-medium">
                   {image.activity}

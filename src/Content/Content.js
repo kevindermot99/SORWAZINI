@@ -323,7 +323,7 @@ export const gallery = {
     },
     {
       url: "https://lh3.googleusercontent.com/fife/ALs6j_FmP9tIsib5oWG9zCTh-fjs1VHtVy90Za-RYAjV6Q5et0ziHfdR-I4qLzNwTlGFGQEH0jRgvz25YMQa69tI83L6Vr6YtdAQXOREmeOImORg45I-dzT9xowrDjmC_ZsdlqixwFbdqbI11yf2YcOdfo-omzQleJwf2N3PaO9VQEOrwCv2rBDPCHn1ASh87uTBql8njMDtTslUCjGi5idpvlPwkaDK1u-A-s7JdLpUkIlaJNTENNwBTJtTWg1UWTACM7iDkRfHEjo7vinohx13CMHdiDJ9deMC294G0bNDBPI5FxTF4I-QCiBR348Os8ofibJTTqJ6JC_uMl22akwJt6_pZ6MADkmto9t6jXCMs48uhTtgJ6D4WCwwjA0AJsIr41tJocjzugzTWHUXvAMUFXXyyM-QQYwTpAazs6hEzmwszqBp0jMordXZ3tOf0l-Gdyr-ICljdTzfS2sWgR3YxvycTabkPA_KnuSlXXsB9khI50Ij92KNo3mmJQdDSMJGzLgi8yZf0St9bw2geJz2lvlrcCmi_hDau_DHN-FEN8ISqY8p4-SQKFps3G3AbaMxTuB97BfHm1tKkY_lNbjQpjcVudi0sh-3rhLv5j4D_iKLutLP1PJQoD9K9PLj_zltYD-0Elshi1aW2rN2zpsmHHsTzO6wx3Q1Kg3sUy8DU0BOwFVQRp1WdC5QCYsv85MsRAaAeuI2OY0C6MMo2vLcCLOw_JJTuUh_S-VzXPgbjv_JGKkYLhWpTCYnKc0jy5t2SwUOz8OOIozgLrfpaVIqKe89bIyttM5LN1nNEH6trJWg9HWjDfdjpiRg0D-yEhw86GPEX1rzlz3t6UaHJkTdbpnisQggPF4WbV_ckxQ-phdcMxw_JSVND-a2JhisVoMrie9Gl9-YJKLlH_8v7x-JcwrISaTWJDhkDNFO40XAw1jsIaFt_SZLwfPJAwOYpjMwgIOQNgOaXcABjKx6NO0_zqPYtZn2fCHaihvyIlsdmtlpJrelNCW08hDflpAtQ0uondG-qtLJdjcIzQqdCm9evR9VwU6JorIfCZXE52A-ZXoJVpiwlfxV6lKG1NB-kk5QfQIeJV4k-L43hsn2ssF05bmFAsHPmfqKk-cFn51P3D0pOjbG2r1XUZ8tMSTYAuX9s8oUMEHwBhB8gwwfpc-qqo2digypEhz26FGpYB9jBLZj3sw51M-feNqaDXZgpCoKBi4XiABuIgN3n9-2Ey5Qfg5Aq-aIjJRCdYx-Qg0UHnwmUZMkttjUDQhoK7W4Tpkzso--6fmdkaPdK_thkKnrEMIfKUFDXEBuiz2BXkkvIgjAr0NtuJjdkS5aXQ0gQSOM_zlySS-rVaAC9AfnOl_lbglqV5bQabKv_x_7aqywWkXrhRXWeqxaJv9hbzKhEO7cqhyrtU9Yzo14voC6XRsszxbUg7wX0wOmxDjTEZnLc1UM4OgtfA92OQZEW32GhMTDI7BtIh1Lz_mBQWldPtyNqH2cHruLUz8NNPRN_HGYdB0tGMrHOzTk07p2Ogc6JMwuHE6ox5QXsx0xB2MrAojdcafvkJbYMQ8VSPvQhc_GM24i0yWK-XBAiWsTnEfcFeURJvJHlhVOhBmUaNoDJAbcw-ZTLaMbuoNCzbZfU0Zb0qTGVn98ltFkdrwuVaG8lNMpcVZG7RIBHTxxOaIASwsO99jQY5py7nlIIDtOS7Ko4PtWb2DTPJIgnDm5VzM2JbG9-mgWSr242luSyAce9Z8exT8RR6Fy7WNmXIpx=w959-h633",
-      activity: "Overjoyed",
+      activity: "Taps the team's mastermind 😂",
     },
     {
       url: "https://lh3.googleusercontent.com/fife/ALs6j_FxtCZF_eB6yobXEQO1GOz7zKzUwHet1MqL6dAWzWqndfnud7GSYglMVU9aZy4-sZCyhO-tHSyvJb8aTmP4kgX3vabAqcQ62WU4QbJdBkev8eDCRorSziri4jfX9Sykkj2jvhLyaZCwTICLRLYbabdOtjA1WJJwibC971JMKMqc4SHUpKZZImSJkMZWqkXvrXcpJh-iyvxbZsZGy0uJxGuA4GkaO0ZbMyVBkcEqubAEl2CgoDpGHZ8PjIlekWI025bb7aNsGeie1Ncckdp7NgI3X1Sz05TmbQpjeW1yfmRuRWmzR6q37b-5OEMQSWfGSXIFgsONZ4brE5wEd1vNckvgeqwKOIzDLfgQSuWOaSgt55N4tC6AQxbtfYoenLuxKQFv3OjPHWWJ0BHyO8SEbnGd2ND8vzI_A4p9ZOzBIM8mG3WJktbgjfsy3bWBI4wqELpK45lARZPYRKwXeRhYrOdMkmFrPGLBZ7hIlmTWSAXsr5cLdx-owdI5U53YwZs-gkTJTRp8lpHIoV7La5-uVqF5Vy7i4RLlaHY9YwVOHJBu27xe_R8GJZS3a6YvG59yP-v8WzcSJIn3JhUKaaqNAv34QhUahszKs6mWukqR8GCoJhkLODppCzGyvjxWF_Ox9VEaLGQSyOcV5wefNC2FG8NSTqY2eF0gr6nZkTIHPQ41foSEE6FWiQLJj75N1DiUBNHz4IJ_r7oGQwHDb4DHy9V3d3t3fax_i5i5C4HRX3w31m_QEDtQBAOk8xy3jt9IZxgLGrum7ovXKB1aJVOd2FiFMtW62IoRTkG5rQfOHDViaQQefLlW4EvXbsczFf2Kn7ADBcAtxuosPEPC1JpvWOzPxkm7hICTb5CbKdYfJmdLBX5JlFvdV8uc0ryh-7xHxyPgaQ7eurfptBE7brl1jYYgNY_qhDDiZ_o2lTfryiMzg7JCtbLftbl5OkO9oFi77E8B3KaCP9cHoJzGMtsME4vUSCBEIiMJHiQaFuBJx-9Iwjq4Tl6gEpu2SndNRS1ru3SWNlg9p1UQs0DsE6iHZMxpswsBxIPIDOUfUtRt2IjKJ-UTWoArf-CGr346lbGlhK2LTQmOKliHDMCnTv-38y4ehXQ1Q3ptCCdeOu1hxXM_zI4U76k8ZkHdpshSxhjeMvkiLdcwduFOGn9Lm93ovQzYFEYhiM1T9IZAd7alDHVN-yXZUQ52mgK_DHapF9wOEEWQtEmWuMHM1RNAAYcPpiLYSfU6bbi4a6J0k088GbXZrq4sf-518u0TsocjwJXEvfbOoHhU6lvKmy6dXOlhhYyOFrhmASKq9IhNG7DoQb5Vw9tBhlvvrbudcFEKSwVPBEJLH0_v-Ys0L7cjUKCa3IBTOo6_jeY7_LJsDMZaXpy5TcQEFXXUGsw6l59y_b6mOsekXEUar8w8pESVl6FYr7wg6v0GmRR4Naf1uQZOO4GmBbyJQznJk3ec6-wlgZUf0yE5J7gkAvU7yGAUdcPOxqQghtQ_FU3_ZeuT44Lqk4E88m2lDY96ie5LKpkUlMN3MWfiXYWIgWfAbB9vFBZSPNioe8bQgIegXxqdCBu5eOQ_QpNZF9ULXdChYbG8Bx-ZpX-ZSZeTIEs9JPFzfIErF2qSkYKY44NRXbDSunZHm4AiPWVaf7jgYVVjUsFybEbY3qZ9dhcrD7GQ-bYFJUvyqpzYoxCHAGncA0noHsg1MBBdvsfHAA9VDbNkb5VpSnTFV8l4juiOvBFcCCnakXYIFFij3c06-vnk4Qm6=w959-h633",
@@ -361,10 +361,6 @@ export const gallery = {
       url: "https://lh3.googleusercontent.com/fife/ALs6j_FjW_SvZcPP3q_VTu_zvM6k6MwNmOCeAdqI7KzQPQNQ054d1kT_FHpsVgbKntH4sWsfWxR2tIlHajSXtsGBNWm7V41zJY_SbFwez-zhMw7trRTFyqg_0mOdAw7dNbgzVWgBAqBVzENXTcW0M5kXgpCrmkTh9FZWU_-qUi3N4ius2pTSOcuUvbWqiyxfYvJhVAV0GW4iqNZoXkB-IRKQOxaAbCp1cfG_-A697J1vyMJkHoBkMckg3LSjUV7ZQmgLiEtWTP7pCaATR66OBHw56awr_0M7GRsAdohNVscE-0C1WEtLXzUBYr5wDq4koKqdWjpFDUUy_evtgOEnZB96qfL8jGZJ7QGbqh4d-mgHN7Rxd0IJZcGUJzrYsA-aACxCxXr5zFs-Wa41uAK-xvmFp-PVIQWaIo5qYksiE66o3-X8ZC6WX8dtxHkiCOlIam2Pl7TcazNn4Mvw0103pZLd5PkuV26BmG-KJVOf7FKOWk2Dd5-JpICCHfTKWV_Q8s6bzJizjEllBSfjFjSBqNjZLfldjPyBaf3bq_yFzRUj--tfksQYHWoI4UuCfgYBjTzPCZFgRzp9INKgEz521GKeRWblFHtqnmfYBLr9C7xkG-_DEV2I2kJLA18yCf6bD2KqFXPcP-XyV2I66OmBpZCKauVPri9b2DS39iGzKhlFQMVL-kL439kxmmR-VUc-QQds5c0nGP7naZK0oDTe3iABeASa_6QYPqF5Pcu0p0T83XY9kmnv4-xKVNg94MrOedU9P298snsqpHmaqVLuLLfmt7gdJ5kHdf-JBtQUtPyZv35vCvqe4bVaKW6rQOFRtjB5TWSwkxFURsVMR8vcU2dEexTtvHFBolOhn0IsDNj71o2a_QVSZSIF1O-tRR0oYgXSMbKFyUukja-atVjc0Rswf9qnsMr12O6Ws_2yILJYrliS6x6QJRNtBqB4-AaNpzAAq_wvfHK0dAsDiIgRT8O2Di-mvQ0izvVHrILyXCoBO_K0SuH0u4ctnZmKXReQXYA6AyIZNMRJm6lSrMRrw1rCvRrWU8IvSSg42OXmrQWlQmBeIYjEFR6cQ3RACUJpFwvxFDLBsbskXo7w8jALqV9ECnZAUGzdMtnn9A0UGn7hUmoGp-LBb_ycd3hUz_wZcmZUNKZYypHl58-gm94v_tNfxnxQGOHhPfOy1wevLk0bk3HY_T4yr8lh-AgKrYxNVBtbTtrtpPtaEJPr5Es6lg82_4Oc-aE1foXsXpZLwH95kjqdY0XAiuPjwIysxU8ij0w8Xd2fDDQwMc72yzLeo8tE6r_87SbRKydSxNtRXzbkUROEHuKu9ua1HPkCJgeSyM6T-sqjE8z3GOJRQkzSS1oFUoxPMz52myRuiB3KzU-W8rHyk9CHVskSzjIlHRKRvJ8ckS2Wm6O9S2afJyOqYEGkm8PrGsEPsALpP89ZJ2ABo6FMF2UrbLJbRBXAULqYv9W25rJD4VgFwJxj8-K7IjPAYddYwG2scPIwldPtNPp2ahUK1RYUxIwE6LSxyYpDPmL-VKeXUgC4RCozrIsO5wSE-J3gjNBUETgjBIipP0A8eZYb53G-nFAaewa0HEElUgMVJqwpDZ765a7s7Ouf3XU13lZw9DM6P7KWSYu0hfys1Wws0KFWPVeN4LqKvTYjkdiTaNZxGR5XDXu0MxsS42GE6FYM7PDtXKw2e-c-opAf1MT7Ga4bIDCLynauV2qbhCHxsRxe0AwNmGUwhtEq0V1OQund3AuH-Sf8sHDS=w943-h649",
       activity: "Help lab day "
     },
-    {
-      url: "https://lh3.googleusercontent.com/fife/ALs6j_G-TKjmbkyMLz8msjd1VwmSkP9exhImnPcOYC56vJFPqh7pVYIBJEP5r6mmQ4R_zilt_zdFdWVLjpYeGAuySVAVauW-nJB-XE8vlHqRfDhTHCSPydveBjSayamu6rsYPK6U8yVQzQKv8bBLl3dHaar9HhuXchHZgOSt1p79eapUvpRQwLKzH98Ps1dmp4QyJiSKiy8xdAq_iD8XoWHFjM0UOUdbVUQ1rq_uKRCVL-C0-5038ld2HCti3xa7vLvnCApMmLDcfk-fHz5KQCnkPFkjzCrxiuXBYjWIzlJ4UStvlyzrWqIiyLmGidV-g6deqIw1-reyJ4uy4fvuCpyFeznE716frxTjP_CT5FOR_mNHCx1N3pEic9lrAx_oqjaJ1TZvLWM1QatgaUidWTwu5dhICkCzXzQp-3VmcC-qV8vDPksIL5uq9S6pkOdXofCuqr3DKjb0y45QhrufCxNXwHpAEFaATXXb9aGSJmDVGJFpayBWYU9-_MPY8uSifF4xEruA0iE-m8ZFSu_wejN5Fn9sPQloOYA8MFyyGRub2XlvP-qn62Vz5lBcpWdXCAuPuhHw1UjQzsI-SFKYb1vRErsEmPxlwDnPbXTjX6ADq1udbEVITmSbGf1M17TnuzUMwpqnJcDci_UltTnKgpyZJiVSHmvlz-Tw6MGXpCC0J9g06VquaQQ3UL6WWQxLxrMknCPRAKUQI6MCNzG1FtuUXRcNzK_ojwqNO4xBNWEeSHRK_PaAUqWnPJSDvLu5yFkxCzbLppyqP_Bq5awwJMRGtPIIGr2NLaQLNMEHyEEz_tuSuqO-mZxAb8m6d6exwr5gBJGb_5AxEAX1Z_8ku4LbNeh58cEdyseGcQ3pLYhSDXWZX6g5Fab4YOdpspHVgX-JzRyU63QX6k5P-aPpQ1dPAP8Xy6vtFrbRfUShhn9Hygu1ZsSAfYGxyXJKPGYnplY2Snw5M70Td6hq9oWl4puh1-1yVNhYhuSK2JcyMY7g8_xCPq2VH_BHuaDzOVGPNKxes40uuR0WmQw54ye4DTJLQO8e23nRVct0-_r3_FHxn6dNi8FRxnD76yv3E0lz6ocFHzovO24EzWEcUFtZEK_bn-8Uok3Mbg4ifjk7bik5gnNsvsymgrijR0NBXRQv0cCrvJFcbjm9N-ZbPclp53y5cfp_Tuh3ppB9IWU7m_pkYgPpWs0Q7JNkWKAf2twMOS6d_CI0iS_jJbhfom101MLzNJKuFKlFR5KII4rxLhfbo3GCbWNA3i4BLKHWlE8eDKquS6-sqdVTM20vJK1el3ng8j3DNPdpBY8Hz5GfYlt2nphdaPI28ttdpWpxEdDA7fbh71dJk_ztJWxFa7L1S1oWcB79LOlyAk2jnucQe404gYzuVmmTLfk5lb1XgUpm7qAkXvRO5dK_AwsWsmPbL-Znf86RD7BB7LYsSKCjTrECtBRMfVZvqoinBvVld7RGfFVvIBBbTH_qfs_8rTtghxH9HnVwSObE7UpBwLh9gDKrJPpQHXTdDRXkJTvwgXHxffjTTBS6z3d-4wphcd4fJVTjoYoO429wrot2P1DKRclKdgxKbcY40W2o3hc0DDGxGSVyU55Xw3tNswBf3s4RdZRPPWe-0Np70iBfCdcxadCjid7Jf6Im9O0txlfVLI716WqqB5eOa01CXm5c5wi77Ayp8kkjsAYzyOeAjDz7ppUXWlHd7mvmw2VGoIU1dqouQSsjfoA4H70ox1dq25k_iLAa6OBji0fu_RdHgGYD=w943-h649",
-      activity: "Brainstorming again"
-    },
   ],
 };
 
@@ -401,41 +397,4 @@ export const Values = {
   ],
 };
 
-// Faqs
-export const Faqs = [
-  {
-    question: "How do I purchase a bus ticket online?",
-    answer:
-      "To purchase a bus ticket online, visit our website or mobile app, select your desired route and travel date, choose the available bus, and complete the payment process using your preferred payment method. You will receive a digital ticket via email or SMS.",
-  },
-  {
-    question: "Can I track the location of my bus in real-time?",
-    answer:
-      "Yes, our system allows you to track the location of your bus in real-time. Simply log in to your account on our website or mobile app, go to the 'Track My Bus' section, and enter your ticket number or bus details to view its current location and estimated arrival time.",
-  },
-  {
-    question: "What should I do if I miss my bus?",
-    answer:
-      "If you miss your bus, please contact our customer support team as soon as possible. Depending on availability and the terms and conditions of your ticket, we may be able to rebook you on the next available bus or offer a partial refund.",
-  },
-  {
-    question: "Is it safe to make payments online for bus tickets?",
-    answer:
-      "Yes, making payments online through our system is safe and secure. We use advanced encryption technologies and comply with international security standards to ensure that your personal and payment information is protected.",
-  },
-  {
-    question: "How can I cancel or change my ticket booking?",
-    answer:
-      "To cancel or change your ticket booking, log in to your account on our website or mobile app, go to the 'My Bookings' section, select the ticket you wish to cancel or change, and follow the prompts. Please note that cancellations and changes are subject to our terms and conditions, and additional fees may apply.",
-  },
-  {
-    question: "What should I do if I lose my digital ticket?",
-    answer:
-      "If you lose your digital ticket, you can retrieve it by logging into your account on our website or mobile app. Go to the 'My Bookings' section to view and re-send your ticket details.",
-  },
-  {
-    question: "Can I bring luggage on the bus?",
-    answer:
-      "Yes, you can bring luggage on the bus. Each passenger is allowed one piece of checked luggage and one carry-on bag. Additional luggage may incur extra fees, depending on the bus company’s policies.",
-  },
-];
+
