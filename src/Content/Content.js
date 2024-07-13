@@ -12,7 +12,6 @@ import sylvia from "../assets/pfp/sylvia.jpeg";
 import gift from "../assets/pfp/gift.jpeg";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 
@@ -268,7 +267,7 @@ export const AboutUs = {
 export const Challenges = {
   SectionTitle: "E-lab Challenges",
   SectionDescription:
-    "We were assigned 6 challenges, each transforming into an unforgettable journey that provided valuable learning experiences ",
+    "We tackled six challenges as a Think Tank group, exposing us to real-world contexts, complexity, and innovative thinking. We harnessed our potential, pushed our limits, and aimed to reach the finish line.",
 };
 
 // section gallery

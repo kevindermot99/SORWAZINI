@@ -73,26 +73,21 @@ function Elab() {
           <div className="w-full h-fit max-w-[1100px] py-6">
             <div className="flex items-start justify-between gap-10">
               <div className="w-[50%]">
-                <h1 className="text-left font-bold text-[30px] tracking-tighter">
+                <h1 className="text-center font-bold text-[30px] tracking-tighter">
                   Challenge 1
                 </h1>
-                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
-                  May 30 2024
+                <p className="font-medium text-sm text-center text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  Elevator Pitch
                 </p>
                 <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
-                  In Rwanda, the public transport system is a critical component
-                  of daily life, with over 40% of the population relying on it
-                  for their commuting needs. Despite its significant user base,
-                  the current technological infrastructure is insufficient to
-                  effectively manage and serve this demand. This inadequacy has
-                  led to excessive
+                Here’s our elevator pitch introducing our names, country, interests, and a fun fact. We shared our passions, why we care about these issues, our goals for solving them, and the unique contributions each of us brings to the team.
                 </p>
               </div>
 
               <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
                 <iframe
                   src="https://www.youtube.com/embed/x1rH6-zX2CI"
-                  title="E-Lab Elevator Pitch #challenge_01"
+                  title="E-Lab Elevator Pitch - challenge_01"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                   referrerpolicy="strict-origin-when-cross-origin"
@@ -105,57 +100,47 @@ function Elab() {
           <div className="w-full h-fit max-w-[1100px] py-6">
             <div className="flex flex-row-reverse items-start justify-between gap-10">
               <div className="w-[50%]">
-                <h1 className="text-left font-bold text-[30px] tracking-tighter">
-                  Challenge 1
+                <h1 className="text-center font-bold text-[30px] tracking-tighter">
+                  Challenge 2
                 </h1>
-                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
-                  May 30 2024
+                <p className="font-medium text-sm text-center text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  Discover Africa
                 </p>
                 <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
-                  In Rwanda, the public transport system is a critical component
-                  of daily life, with over 40% of the population relying on it
-                  for their commuting needs. Despite its significant user base,
-                  the current technological infrastructure is insufficient to
-                  effectively manage and serve this demand. This inadequacy has
-                  led to excessive
+                For this challenge, Sorwazini uncovered and shared the story of the Land of a Thousand Hills, Rwanda, through our gossip television channel. We explored fascinating facts about Rwanda, addressed common misconceptions, highlighted its uniqueness, and discussed the challenges facing this great country.
                 </p>
               </div>
 
               <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
-                <iframe
-                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
-                  title="E-Lab Elevator Pitch #challenge_01"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  className="w-full aspect-video rounded-md "
-                ></iframe>
+              <iframe
+              src="https://www.youtube.com/embed/IllFryNP11E?si=sH_UIXbIW-Fk27Xq"
+              title="Discover Africa - challenge_02"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              className="w-full aspect-video rounded-md "
+               ></iframe>
               </div>
             </div>
           </div>
           <div className="w-full h-fit max-w-[1100px] py-6">
             <div className="flex items-start justify-between gap-10">
               <div className="w-[50%]">
-                <h1 className="text-left font-bold text-[30px] tracking-tighter">
-                  Challenge 1
+                <h1 className="text-center font-bold text-[30px] tracking-tighter">
+                  Challenge 3
                 </h1>
-                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
-                  May 30 2024
+                <p className="font-medium text-sm text-center text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  Help Lab
                 </p>
                 <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
-                  In Rwanda, the public transport system is a critical component
-                  of daily life, with over 40% of the population relying on it
-                  for their commuting needs. Despite its significant user base,
-                  the current technological infrastructure is insufficient to
-                  effectively manage and serve this demand. This inadequacy has
-                  led to excessive
+                Creating impact in the community is an essential part of E-lab. For Challenge 3, Sorwazini engaged in Help-Lab. In this challenge, we made a significant impact on the students at St. Rita Primary School by educating them in digital literacy and conducting extracurricular activities.
                 </p>
               </div>
 
               <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
                 <iframe
-                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  src="https://www.youtube.com/embed/mNN-hmmO8eA?si=q5pQSrAwHJTdG5fJ"
                   title="E-Lab Elevator Pitch #challenge_01"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -169,25 +154,20 @@ function Elab() {
           <div className="w-full h-fit max-w-[1100px] py-6">
             <div className="flex flex-row-reverse items-start justify-between gap-10">
               <div className="w-[50%]">
-                <h1 className="text-left font-bold text-[30px] tracking-tighter">
-                  Challenge 1
+                <h1 className="text-center font-bold text-[30px] tracking-tighter">
+                  Challenge 4
                 </h1>
-                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
-                  May 30 2024
+                <p className="font-medium text-sm text-center text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  Hunt for Tressure
                 </p>
                 <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
-                  In Rwanda, the public transport system is a critical component
-                  of daily life, with over 40% of the population relying on it
-                  for their commuting needs. Despite its significant user base,
-                  the current technological infrastructure is insufficient to
-                  effectively manage and serve this demand. This inadequacy has
-                  led to excessive
+                Our quest for valuable resources led us to I.D.A. Technology, a company specializing in Information Development for Africa. We conducted a virtual interview with CTO Mr. Telesphore Tuganimana, exploring their solutions and alignment with our goals. Here, we highlight key moments from the interview and reflect on how our findings deepen our understanding of the challenges we aim to address.
                 </p>
               </div>
 
               <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
                 <iframe
-                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  src="https://www.youtube.com/embed/BvloPw-WFYM?si=aWFVyPDY6boD0Ku2"
                   title="E-Lab Elevator Pitch #challenge_01"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -201,25 +181,20 @@ function Elab() {
           <div className="w-full h-fit max-w-[1100px] py-6">
             <div className="flex items-start justify-between gap-10">
               <div className="w-[50%]">
-                <h1 className="text-left font-bold text-[30px] tracking-tighter">
-                  Challenge 1
+                <h1 className="text-center font-bold text-[30px] tracking-tighter">
+                  Challenge 5
                 </h1>
-                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
-                  May 30 2024
+                <p className="font-medium text-sm text-center text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                  Mission Voyage
                 </p>
                 <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
-                  In Rwanda, the public transport system is a critical component
-                  of daily life, with over 40% of the population relying on it
-                  for their commuting needs. Despite its significant user base,
-                  the current technological infrastructure is insufficient to
-                  effectively manage and serve this demand. This inadequacy has
-                  led to excessive
+                In this challenge, we assumed a $10,000 grant was available, and we developed a compelling proposal and application to secure the funding for our project. The video briefly introduces us and describes the situation we're tackling, our mission and problem statement, a research analysis, our project idea, its impact, and why we deserve the grant.
                 </p>
               </div>
 
               <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
                 <iframe
-                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  src="https://www.youtube.com/embed/z07mBAV7Nrg?si=VVK8Ib6RuZwFNDK2"
                   title="E-Lab Elevator Pitch #challenge_01"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -230,13 +205,13 @@ function Elab() {
               </div>
             </div>
           </div>
-          <div className="w-full h-fit max-w-[1100px] py-6">
+          {/* <div className="w-full h-fit max-w-[1100px] py-6">
             <div className="flex flex-row-reverse items-start justify-between gap-10">
               <div className="w-[50%]">
-                <h1 className="text-left font-bold text-[30px] tracking-tighter">
+                <h1 className="text-center font-bold text-[30px] tracking-tighter">
                   Challenge 1
                 </h1>
-                <p className="font-medium text-sm text-left text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
+                <p className="font-medium text-sm text-center text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
                   May 30 2024
                 </p>
                 <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
@@ -261,7 +236,7 @@ function Elab() {
                 ></iframe>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
