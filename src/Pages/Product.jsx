@@ -104,62 +104,80 @@ function Product() {
         </div>
 
         {/* feature showcase grid */}
-        <div className="flex items-start justify-between w-full max-w-[1200px] px-6 my-10 ">
-          <div className="w-[50%] h-fit relative">
-            <img
-              src=""
-              className="w-full min-h-[340px] rounded-2xl bg-stone-200"
-            />
-          </div>
-          <div className="h-full min-h-[340px] flex items-start justify-center flex-col max-w-[50%] pl-10">
-            <span className="flex items-center justify-start font-medium text-sm text-purple-600 bg-purple-600/10 px-5 py-1 rounded-full ">
-              Get there Fast!
-            </span>
-            <h1 className="text-[35px] leading-tight my-2 text-dark-body-color font-bold tracking-tight">
-              Track your Bus Anywhere, Everywhere!
-            </h1>
-            <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-5">
-              know the exact location of your convenient bus and the estimated
-              arrival and departure time. This will help plan your schedule and
-              reduce the bus station queue lines.
-            </p>
-            {/* <p className="font-medium tracking-tight text-sm py-3 px-5 bg-stone-200/60 text-dark-body-color rounded-xl w-full mb-2">
+        <Reveal
+          keyframes={customAnimation}
+          duration={1000}
+          cascade
+          damping={0.05}
+          triggerOnce
+          className="w-full max-w-[1200px]"
+        >
+          <div className="flex items-start justify-between w-full max-w-[1200px] px-6 my-10 ">
+            <div className="w-[50%] h-fit relative">
+              <img
+                src=""
+                className="w-full min-h-[340px] rounded-2xl bg-stone-200"
+              />
+            </div>
+            <div className="h-full min-h-[340px] flex items-start justify-center flex-col max-w-[50%] pl-10">
+              <span className="flex items-center justify-start font-medium text-sm text-purple-600 bg-purple-600/10 px-5 py-1 rounded-full ">
+                Get there Fast!
+              </span>
+              <h1 className="text-[35px] leading-tight my-2 text-dark-body-color font-bold tracking-tight">
+                Track your Bus Anywhere, Everywhere!
+              </h1>
+              <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-5">
+                know the exact location of your convenient bus and the estimated
+                arrival and departure time. This will help plan your schedule
+                and reduce the bus station queue lines.
+              </p>
+              {/* <p className="font-medium tracking-tight text-sm py-3 px-5 bg-stone-200/60 text-dark-body-color rounded-xl w-full mb-2">
               Mobile App
             </p>
             <p className="font-medium tracking-tight text-sm py-3 px-5 bg-stone-200/60 text-dark-body-color rounded-xl w-full mb-3">
               Mobile App
             </p> */}
+            </div>
           </div>
-        </div>
+        </Reveal>
 
         {/* feature showcase grid */}
-        <div className="flex items-start justify-between w-full max-w-[1200px] px-6 my-10 ">
-          <div className="min-h-[340px] flex items-start justify-center flex-col max-w-[50%] pr-10">
-            <span className="flex items-center justify-start font-medium text-project-green text-sm bg-project-green/10 px-5 py-1 rounded-full ">
-              No more queue lines!
-            </span>
-            <h1 className="text-[35px] leading-tight my-2 text-dark-body-color font-bold tracking-tight">
-              Get your bus tickets instantly!
-            </h1>
-            <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-5">
-              With Gerayo, you can easily buy bus tickets online and see where
-              your bus is in real-time. It's perfect for saving time and making
-              your journey smooth and hassle-free.
-            </p>
-            {/* <p className="text-dark-body-color font-medium tracking-tight py-3 px-5 text-sm bg-stone-200/60 rounded-xl w-full mb-2">
+        <Reveal
+          keyframes={customAnimation}
+          duration={1000}
+          cascade
+          damping={0.05}
+          triggerOnce
+          className="w-full max-w-[1200px]"
+        >
+          <div className="flex items-start justify-between w-full max-w-[1200px] px-6 my-10 ">
+            <div className="min-h-[340px] flex items-start justify-center flex-col max-w-[50%] pr-10">
+              <span className="flex items-center justify-start font-medium text-project-green text-sm bg-project-green/10 px-5 py-1 rounded-full ">
+                No more queue lines!
+              </span>
+              <h1 className="text-[35px] leading-tight my-2 text-dark-body-color font-bold tracking-tight">
+                Get your bus tickets instantly!
+              </h1>
+              <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-5">
+                With Gerayo, you can easily buy bus tickets online and see where
+                your bus is in real-time. It's perfect for saving time and
+                making your journey smooth and hassle-free.
+              </p>
+              {/* <p className="text-dark-body-color font-medium tracking-tight py-3 px-5 text-sm bg-stone-200/60 rounded-xl w-full mb-2">
               Easy to use
             </p>
             <p className="text-dark-body-color font-medium tracking-tight py-3 px-5 text-sm bg-stone-200/60 rounded-xl w-full mb-2">
               Privacy protection
             </p> */}
+            </div>
+            <div className="w-[50%] h-fit relative">
+              <img
+                src=""
+                className="w-full min-h-[340px] rounded-2xl bg-stone-200"
+              />
+            </div>
           </div>
-          <div className="w-[50%] h-fit relative">
-            <img
-              src=""
-              className="w-full min-h-[340px] rounded-2xl bg-stone-200"
-            />
-          </div>
-        </div>
+        </Reveal>
 
         {/* CTA */}
         <div className="w-full h-fit flex flex-col items-center justify-start py-16">
