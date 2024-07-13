@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "boxicons/css/boxicons.min.css";
 import { Link, useLocation } from "react-router-dom";
 import Reveal from "react-awesome-reveal";
@@ -12,10 +12,16 @@ import { LuArrowDownFromLine } from "react-icons/lu";
 import { FaCaretDown } from "react-icons/fa";
 
 function Product() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(30px);
     // filter: blur(5px)
   }
 

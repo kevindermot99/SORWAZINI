@@ -37,8 +37,8 @@ function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
-            <div className="text-center sm:text-left">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-3">
+            {/* <div className="text-center sm:text-left">
               <p className="text-lg font-medium ">About Us</p>
 
               <nav className="mt-3">
@@ -77,7 +77,7 @@ function Footer() {
                   </li>
                 </ul>
               </nav>
-            </div>
+            </div> */}
 
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium ">Quick Links</p>
@@ -85,36 +85,36 @@ function Footer() {
               <nav className="mt-3">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a
+                    <Link
                       className=""
-                      href="/"
+                      to="/"
                     >
                       home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className=""
-                      href="/"
+                      to="/elab"
                     >
                       E-lab Challenges
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className=""
-                      href="/"
+                      to="/gallery"
                     >
                       Gallery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className=""
-                      href="/"
+                      to="/product"
                     >
                       Our product
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>

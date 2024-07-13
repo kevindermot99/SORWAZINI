@@ -108,12 +108,6 @@ function Menu() {
             Home
           </Link>
           <Link
-            to="/#who"
-            className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
-          >
-            Who we are
-          </Link>
-          <Link
             to={`/elab`}
             className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >

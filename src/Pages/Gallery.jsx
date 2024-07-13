@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "boxicons/css/boxicons.min.css";
 import { Link, useLocation } from "react-router-dom";
 import Reveal from "react-awesome-reveal";
@@ -13,10 +13,16 @@ function Gallery() {
   const [image, setImage] = useState("");
   const [act, setAct] = useState("");
   const [showImageFull, setShowImageFull] = useState(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(30px);
     // filter: blur(5px)
   }
 

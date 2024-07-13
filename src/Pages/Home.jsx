@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "boxicons/css/boxicons.min.css";
 import { Link, useLocation } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
@@ -22,6 +22,12 @@ function Home() {
   const [copyButtonText, SetCopyButtonText] = useState("Copy");
   const location = useLocation();
   const [aboutUs, setAboutUs] = useState(1);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
 
   const handleLinkCopy = () => {
     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -29,13 +35,13 @@ function Home() {
       setTimeout(() => {
         SetCopyButtonText("Copy");
       }, 1000);
-    });
-  };
+    })
+  }
 
   const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(30px);
     // filter: blur(5px)
   }
 
@@ -313,6 +319,7 @@ function Home() {
                           <div className="flex items-center justify-center mt-3 gap-3 ">
                             {person.socials.map((social, index) => (
                               <a
+                                key={index}
                                 href={social.siteLink}
                                 target="_blank"
                                 className="text-xl text-text-dark-color/40 hover:text-dark-body-color"
