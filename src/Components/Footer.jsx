@@ -9,8 +9,13 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
+<<<<<<< HEAD
     <footer className="bg-stone-200 z-10">
       <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
+=======
+    <footer className="bg-stone-100 z-10">
+      <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-14">
+>>>>>>> 553f35aede689d600751fcd568141e102b2b2dab
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="text-dark-body-color">
             <div className="flex justify-center text-teal-300 sm:justify-start">
@@ -18,27 +23,46 @@ function Footer() {
             </div>
 
             <p className="max-w-md mx-auto mt-5 leading-snug text-sm text-center sm:max-w-xs sm:mx-0 sm:text-left">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
+              Pan-African Tech-preneurs
             </p>
             <div className="mt-5 w-full flex items-start justify-start gap-3">
-              <Link to={'/'} className="text-xl opacity-50 hover:opacity-90"  title="Instagram">
-                <RiInstagramFill  />
-              </Link>
-              <Link to={'/'} className="text-xl opacity-50 hover:opacity-90"  title="YouTube">
-                <FaYoutube  />
-              </Link>
-              <Link to={'/'} className="text-xl opacity-50 hover:opacity-90"  title="Gmail">
-                <BiLogoGmail  />
-              </Link>
-              <Link to={'/'} className="text-xl opacity-50 hover:opacity-90"  title="Github">
-                <FaGithub  />
-              </Link>
+              <a
+                href={"https://www.instagram.com/sorwazini7/"}
+                target="_blank"
+                className="text-xl opacity-50 hover:opacity-90"
+                title="Instagram"
+              >
+                <RiInstagramFill />
+              </a>
+              <a
+                href={"https://www.youtube.com/@SORWAZINI_ALU"}
+                target="_blank"
+                className="text-xl opacity-50 hover:opacity-90"
+                title="YouTube"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href={`mailto:${Contacts.Gmail}`}
+                target="_blank"
+                className="text-xl opacity-50 hover:opacity-90"
+                title="Gmail"
+              >
+                <BiLogoGmail />
+              </a>
+              <a
+                href={"https://github.com/kevindermot99/SORWAZINI"}
+                target="_blank"
+                className="text-xl opacity-50 hover:opacity-90"
+                title="Github"
+              >
+                <FaGithub />
+              </a>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
-            <div className="text-center sm:text-left">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-3">
+            {/* <div className="text-center sm:text-left">
               <p className="text-lg font-medium ">About Us</p>
 
               <nav className="mt-3">
@@ -77,7 +101,7 @@ function Footer() {
                   </li>
                 </ul>
               </nav>
-            </div>
+            </div> */}
 
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium ">Quick Links</p>
@@ -85,36 +109,24 @@ function Footer() {
               <nav className="mt-3">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a
-                      className=""
-                      href="/"
-                    >
+                    <Link className="" to="/">
                       home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=""
-                      href="/"
-                    >
+                    <Link className="" to="/elab">
                       E-lab Challenges
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=""
-                      href="/"
-                    >
+                    <Link className="" to="/gallery">
                       Gallery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className=""
-                      href="/"
-                    >
+                    <Link className="" to="/product">
                       Our product
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -126,10 +138,7 @@ function Footer() {
               <nav className="mt-3">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a
-                      className=""
-                      href="/"
-                    >
+                    <a className="" href="/">
                       Gerayo
                     </a>
                   </li>
@@ -161,17 +170,19 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="">
-                      {Contacts.Gmail}
-                    </span>
+                    <span className="">{Contacts.Gmail}</span>
                   </a>
                 </li>
 
                 <li>
+<<<<<<< HEAD
                   <span
                     className="flex items-center justify-center sm:justify-start gap-1.5 group"
 
                   >
+=======
+                  <span className="flex items-center justify-center sm:justify-start gap-1.5 group">
+>>>>>>> 553f35aede689d600751fcd568141e102b2b2dab
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-5 h-5  shrink-0"
@@ -187,9 +198,7 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="">
-                      {Contacts.WhatsAppNumber}
-                    </span>
+                    <span className="">{Contacts.WhatsAppNumber}</span>
                   </span>
                 </li>
 

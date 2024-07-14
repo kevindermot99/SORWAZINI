@@ -92,7 +92,7 @@ function Menu() {
           </div>
         </div>
       </div>
-      <div className={`h-fit w-full flex items-center justify-between gap-4 py-4 px-[24px] fixed top-0 z-30 backdrop-blur-md ${location.pathname === "/product" ? 'bg-stone-200 ' : 'bg-white/90 '} `}>
+      <div className={`h-fit w-full flex items-center justify-between gap-4 py-4 px-[24px] fixed top-0 z-30 backdrop-blur-md ${location.pathname === "/product" ? 'bg-stone-100/85 ' : 'bg-white/85 '} `}>
         <Link
           to={`/`}
           className={`font-Kanit font-medium text-2xl flex flex-col leading-6 text-dark-body-color justify-center items-start `}
@@ -106,12 +106,6 @@ function Menu() {
             className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
             Home
-          </Link>
-          <Link
-            to="/#who"
-            className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
-          >
-            Who we are
           </Link>
           <Link
             to={`/elab`}
@@ -129,7 +123,7 @@ function Menu() {
             to={`/product`}
             className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
-            Our Prototype
+            Prototype
           </Link>
         </span>
         <span className="space-x-6 flex ">

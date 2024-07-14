@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "boxicons/css/boxicons.min.css";
 import { Link, useLocation } from "react-router-dom";
 import Reveal from "react-awesome-reveal";
@@ -13,10 +13,16 @@ function Gallery() {
   const [image, setImage] = useState("");
   const [act, setAct] = useState("");
   const [showImageFull, setShowImageFull] = useState(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(30px);
     // filter: blur(5px)
   }
 
@@ -59,7 +65,7 @@ function Gallery() {
           ></div>
           <img
             src={image}
-            className={` max-h-[80%] min-w-[300px] max-w-[80%] object-cover shadow rounded-xl z-10 select-none transition-all ease-in ${
+            className={` max-h-[80%] brightness-[110%] min-w-[300px] max-w-[80%] object-cover shadow rounded-xl z-10 select-none transition-all ease-in ${
               showImageFull ? "opacity-100 " : "opacity-0 scale-95  "
             }`}
           />
@@ -103,7 +109,7 @@ function Gallery() {
                   onLoad={handleImageLoad}
                   src={image.url}
                   key={index}
-                  className="rounded-3xl w-full object-cover max-h-[500px]  "
+                  className="rounded-3xl w-full object-cover max-h-[440px] min-h-[150px] bg-stone-100  "
                 />
                 <p className="absolute bottom-3 left-3 mr-3 w-fit bg-white/80 rounded-2xl shadow-lg py-2 px-3 text-xs backdrop-blur-sm text-dark-body-color font-medium">
                   {image.activity}
