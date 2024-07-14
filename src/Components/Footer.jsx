@@ -9,13 +9,8 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-<<<<<<< HEAD
-    <footer className="bg-stone-200 z-10">
-      <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
-=======
     <footer className="bg-stone-100 z-10">
       <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-14">
->>>>>>> 553f35aede689d600751fcd568141e102b2b2dab
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="text-dark-body-color">
             <div className="flex justify-center text-teal-300 sm:justify-start">
@@ -175,14 +170,7 @@ function Footer() {
                 </li>
 
                 <li>
-<<<<<<< HEAD
-                  <span
-                    className="flex items-center justify-center sm:justify-start gap-1.5 group"
-
-                  >
-=======
                   <span className="flex items-center justify-center sm:justify-start gap-1.5 group">
->>>>>>> 553f35aede689d600751fcd568141e102b2b2dab
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-5 h-5  shrink-0"
