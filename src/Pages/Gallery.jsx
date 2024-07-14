@@ -65,7 +65,7 @@ function Gallery() {
           ></div>
           <img
             src={image}
-            className={` max-h-[80%] min-w-[300px] max-w-[80%] object-cover shadow rounded-xl z-10 select-none transition-all ease-in ${
+            className={` max-h-[80%] brightness-[110%] min-w-[300px] max-w-[80%] object-cover shadow rounded-xl z-10 select-none transition-all ease-in ${
               showImageFull ? "opacity-100 " : "opacity-0 scale-95  "
             }`}
           />

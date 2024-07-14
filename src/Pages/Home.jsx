@@ -28,15 +28,14 @@ function Home() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-
   const handleLinkCopy = () => {
     navigator.clipboard.writeText(window.location.href).then(() => {
       SetCopyButtonText("Copied!");
       setTimeout(() => {
         SetCopyButtonText("Copy");
       }, 1000);
-    })
-  }
+    });
+  };
 
   const customAnimation = keyframes`
   from {
@@ -359,8 +358,8 @@ function Home() {
                   </p>
                   <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex rounded-md ">
                     <img
-                      src="https://github-production-user-asset-6210df.s3.amazonaws.com/65622766/341439473-b1029449-e768-429f-bd6b-60b8410f1c7e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240620T135712Z&X-Amz-Expires=300&X-Amz-Signature=ae99d2780107d8b4128ce3abe8f6404ef801d97a79252cf10eba1e3513adaa22&X-Amz-SignedHeaders=host&actor_id=65622766&key_id=0&repo_id=806913834"
-                      className="max-h-[300px] w-full object-cover"
+                      src="https://lh3.googleusercontent.com/u/1/drive-viewer/AKGpihZVEKrPNim41GZUO2tXRBSGC6DmAq_wyCkmVrhnF4eulUxbo4zvTsnGnAUOhoF5hWewYS77HXLII9Kmx__Nd-FNyPMsOZlIJyU=w1366-h649-rw-v1"
+                      className="max-h-[300px] rounded-2xl shadow-xl w-full object-cover"
                     />
                   </div>
                 </div>
@@ -437,24 +436,18 @@ function Home() {
                   }`}
                 >
                   <p className="font-medium max-w-[1000px] text-dark-body-color/60 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
-                    In Rwanda, the public transport system is a critical
-                    component of daily life, with over 40% of the population
-                    relying on it for their commuting needs. Despite its
-                    significant user base, the current technological
-                    infrastructure is insufficient to effectively manage and
-                    serve this demand. This inadequacy has led to excessive time
-                    consumption and severe congestion at bus stations,
-                    negatively impacting the efficiency of public transportation
-                    services and the daily lives of its users. There is an
-                    urgent need for an innovative solution that addresses these
-                    challenges by enhancing the technological framework, thereby
-                    improving the overall experience for public transport
-                    commuters in Rwanda.
+                    In Rwanda, public transport is a lifeline for many, with
+                    over 40% of people depending on buses to get around.
+                    Unfortunately, the current ticketing system leads to long
+                    waits and crowded bus stations, making daily journeys
+                    stressful and time-consuming. To make things easier we need
+                    a fresh, tech-driven approach to streamline the system and
+                    ensure a smoother, more efficient ride for everyone.
                   </p>
                   <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex rounded-md ">
                     <img
                       src="https://mobile.igihe.com/local/cache-vignettes/L1000xH667/ry6b2412-2-46621.jpg?1713680919"
-                      className="max-h-[300px] rounded-2xl w-full object-cover"
+                      className="max-h-[300px] rounded-2xl shadow-xl w-full object-cover"
                     />
                   </div>
                 </div>
