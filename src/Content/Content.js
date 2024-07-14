@@ -274,7 +274,7 @@ export const Challenges = {
 export const gallery = {
   SectionTitle: "Gallery",
   SectionDescription:
-    "Unforgettable Moments",
+    "Unforgettable Moments 🥳",
   Images: [
     {
       url: "https://lh3.googleusercontent.com/u/1/drive-viewer/AKGpihZVEKrPNim41GZUO2tXRBSGC6DmAq_wyCkmVrhnF4eulUxbo4zvTsnGnAUOhoF5hWewYS77HXLII9Kmx__Nd-FNyPMsOZlIJyU=w1366-h649-rw-v1",
