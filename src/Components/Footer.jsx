@@ -18,7 +18,7 @@ function Footer() {
             </div>
 
             <p className="max-w-md mx-auto mt-5 leading-snug text-sm text-center sm:max-w-xs sm:mx-0 sm:text-left">
-              Pan-African Tech-preneurs
+            We are Pan-African Techpreneurs united by a shared mission to transform Rwanda's public transport system.
             </p>
             <div className="mt-5 w-full flex items-start justify-start gap-3">
               <a
