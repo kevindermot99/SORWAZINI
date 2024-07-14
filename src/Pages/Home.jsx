@@ -287,8 +287,8 @@ function Home() {
                       : "hidden"
                     }`}
                 >
-                  <p className="font-medium max-w-[500px] text-dark-body-color/60 text-center w-full pb-6 pt-6 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
-                    We are Pan-African Tech-preneurs
+                  <p className="font-light max-w-[500px] text-black text-center w-full pb-6 pt-2 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                  Pan-African Techpreneurs united by a shared mission to transform Rwanda's public transport system.
                   </p>
                   <div className="flex flex-wrap items-center justify-center max-w-[1100px] gap-3">
                     {Members.map((person, index) => (
