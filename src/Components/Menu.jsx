@@ -123,7 +123,7 @@ function Menu() {
             to={`/product`}
             className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
-            Our Prototype
+            Prototype
           </Link>
         </span>
         <span className="space-x-6 flex ">

@@ -89,10 +89,10 @@ function Product() {
                     <a
                       href="#"
                       target="_blank"
-                      className="bg-dark-body-color text-white px-12 font-medium h-[45px] flex justify-center items-center rounded-xl text-sm transition duration-200 active:scale-95 "
+                      className="bg-dark-body-color text-white px-8 font-medium h-[40px] flex justify-center items-center rounded-full text-sm transition duration-200 active:scale-95 "
                       title="Google Playstore"
                     >
-                      Live Demo
+                      Open gerayo
                     </a>
                   </div>
                 </Reveal>
