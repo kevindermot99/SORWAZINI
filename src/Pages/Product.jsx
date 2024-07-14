@@ -10,6 +10,8 @@ import { FaApple } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { LuArrowDownFromLine } from "react-icons/lu";
 import { FaCaretDown } from "react-icons/fa";
+import LoginScreenshot from '../assets/screenshots/login.jpg'
+import TrackScreenshot from '../assets/screenshots/track.jpg'
 
 function Product() {
   const { pathname } = useLocation();
@@ -19,6 +21,19 @@ function Product() {
   }, [pathname]);
 
   const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+    // filter: blur(5px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const customAnimationImages = keyframes`
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -45,7 +60,7 @@ function Product() {
       >
         {/* Hero section */}
         <div className={`w-full h-fit z-10 mb-10`}>
-          <div className="bg-stone-200 min-h-[450px] w-full py-10 px-12 flex items-center justify-center">
+          <div className="bg-stone-100 min-h-[450px] overflow-clip w-full py-10 px-12 flex items-center justify-center">
             <div className="w-full max-w-[1200px] h-full min-h-[400px] flex items-center justify-between px-6">
               {/* hero text */}
               <div className="flex flex-col items-start justify-start gap-3 max-w-[45%]">
@@ -98,7 +113,20 @@ function Product() {
                 </Reveal>
               </div>
               {/* visual */}
-              <div></div>
+              <Reveal
+                  keyframes={customAnimationImages}
+                  duration={1000}
+                  cascade
+                  damping={0.05}
+                  triggerOnce
+                  className="w-full max-w-[50%] h-fit"
+                >
+              <div className="h-full max-h-[400px] flex items-start justify-center gap-4">
+                  <img src={TrackScreenshot} className=" h-[370px] -rotate-6 z-0 translate-x-[40px] rounded-xl shadow-stone-300 shadow-xl " />
+                  <img src={LoginScreenshot} className=" h-[420px] translate-y-[-20px] rotate-0 translate-x-[30px] rounded-xl shadow-stone-300 shadow-xl z-10" />
+                  <img src={TrackScreenshot} className=" h-[370px] rotate-6 translate-x-[20px] rounded-xl shadow-stone-300 shadow-xl z-0" />
+              </div>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -181,12 +209,21 @@ function Product() {
 
         {/* CTA */}
         <div className="w-full h-fit flex flex-col items-center justify-start py-16">
-          <div className="w-full max-w-[1200px] h-fit min-h-[340px] bg-stone-100 rounded-3xl"></div>
+          <div className="w-full max-w-[1000px] h-fit flex items-center gap-3 flex-wrap justify-center">
+            <span className="h-[140px] w-[160px] rounded-2xl bg-stone-200" />
+            <span className="h-[140px] w-[160px] rounded-2xl bg-stone-200" />
+            <span className="h-[140px] w-[160px] rounded-2xl bg-stone-200" />
+            <span className="h-[140px] w-[160px] rounded-2xl bg-stone-200" />
+            <span className="h-[140px] w-[160px] rounded-2xl bg-stone-200" />
+            <span className="h-[140px] w-[160px] rounded-2xl bg-stone-200" />
+            <span className="h-[140px] w-[160px] rounded-2xl bg-stone-200" />
+            <span className="h-[140px] w-[160px] rounded-2xl bg-stone-200" />
+          </div>
           <h1 className="text-[35px] leading-[65px] text-dark-body-color font-bold tracking-tight mt-4">
-            Download Gerayo
+            Download the App
           </h1>
           <p className="text-dark-body-color font-medium tracking-tight max-w-[430px] mb-6 text-center">
-            simply open gerayo in your prefered browser and install it on your
+            simply open gerayo in your prefered Web browser and install it on your
             device for easy access
           </p>
           <a
