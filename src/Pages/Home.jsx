@@ -61,7 +61,7 @@ function Home() {
         className="h-full scroll-mt-24 max-sm:mt-[50px] w-full flex items-center relative justify-start flex-col"
       >
         {/* Hero */}
-        <div className="w-full h-fit py-[70px] mt-20  flex flex-col items-center justify-center ">
+        <div className="w-full h-fit py-[90px] mt-16 flex flex-col items-center justify-center sticky">
           <Reveal
             keyframes={customAnimation}
             duration={1000}
@@ -325,16 +325,8 @@ function Home() {
                                 title={social.siteName}
                               >
                                 {React.createElement(social.siteIcon)}
-                              </a>
+                              </Link>
                             ))}
-                            <a
-                              href={`mailto:${person.Gmail}`}
-                              target="_blank"
-                              className="text-xl text-text-dark-color/40 hover:text-dark-body-color"
-                              title={person.siteName}
-                            >
-                              {React.createElement(person.Gmail.siteIcon)}
-                            </a>
                           </div>
                         </div>
                       </div>
