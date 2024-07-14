@@ -102,7 +102,7 @@ function Menu() {
 
         <span className="space-x-6 max-md:hidden  ">
           <Link
-            to="/#Home"
+            to="/"
             className={`font-medium text-sm px-1 py-2 transition border-dark-body-color hover:border-b-[2px] `}
           >
             Home
