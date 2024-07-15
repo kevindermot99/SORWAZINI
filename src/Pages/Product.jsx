@@ -81,8 +81,7 @@ const customAnimationImages = keyframes`
                   <p className="text-dark-body-color/60 font-medium tracking-tight max-w-[530px] pb-3  ">
                     Track your bus in real-time and get your ticket quickly. Our
                     easy-to-use system keeps you updated on where your bus is
-                    and any changes to the schedule: no more long waits, just
-                    quick and convenient ticket booking.
+                    and any changes to the schedule. Say goodbye to long waits and hello to quick and convenient ticket purchasing.
                   </p>
                   <div className="flex items-center justify-start gap-2">
                     {/* <a
@@ -155,9 +154,7 @@ const customAnimationImages = keyframes`
                 Track your Bus Anywhere, Everywhere!
               </h1>
               <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-5">
-                know the exact location of your convenient bus and the estimated
-                arrival and departure time. This will help plan your schedule
-                and reduce the bus station queue lines.
+              Know the exact location of your bus and get accurate arrival and departure times. Plan your schedule with ease and avoid waiting in long queues at the bus station.
               </p>
               {/* <p className="font-medium tracking-tight text-sm py-3 px-5 bg-stone-200/60 text-dark-body-color rounded-xl w-full mb-2">
               Mobile App
@@ -187,9 +184,7 @@ const customAnimationImages = keyframes`
                 Get your bus tickets instantly!
               </h1>
               <p className="text-dark-body-color font-medium tracking-tight max-w-[530px] mb-5">
-                With Gerayo, you can easily buy bus tickets online and see where
-                your bus is in real-time. It's perfect for saving time and
-                making your journey smooth and hassle-free.
+              With Gerayo, you can easily purchase bus tickets online from the comfort of your home or office and track your bus in real-time. Save time and enjoy a smooth, hassle-free journey.
               </p>
               {/* <p className="text-dark-body-color font-medium tracking-tight py-3 px-5 text-sm bg-stone-200/60 rounded-xl w-full mb-2">
               Easy to use
