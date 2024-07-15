@@ -18,7 +18,7 @@ function Footer() {
             </div>
 
             <p className="max-w-md mx-auto mt-5 leading-snug text-sm text-center sm:max-w-xs sm:mx-0 sm:text-left">
-            We are Pan-African Techpreneurs united by a shared mission to transform Rwanda's public transport system.
+              We are Pan-African Techpreneurs united by a shared mission to transform Rwanda's public transport system.
             </p>
             <div className="mt-5 w-full flex items-start justify-start gap-3">
               <a
@@ -133,9 +133,9 @@ function Footer() {
               <nav className="mt-3">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a className="" href="/">
+                    <Link className="" to="/product">
                       Gerayo
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>

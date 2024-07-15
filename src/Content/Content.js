@@ -107,6 +107,11 @@ export const Members = [
         siteIcon: FaGithub,
         siteLink: "",
       },
+      {
+        siteName: "Linkedin",
+        siteIcon: FaLinkedin,
+        siteLink: "https://www.linkedin.com/in/lineo-muso-30a9b2233//",
+      },
     ],
     Gmail: {
       siteName: "Gmail",
@@ -241,7 +246,7 @@ export const Members = [
 export const Contacts = {
   WhatsAppNumber: "+2348167568143",
   InstagramUsername: "sorwazini7",
-  Gmail: "sorwazini@gmail.com",
+  Gmail: "info@sorwazini.tech",
 };
 
 // Section Projects
