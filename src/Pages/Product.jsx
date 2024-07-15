@@ -101,7 +101,7 @@ const customAnimationImages = keyframes`
                     <IoLogoGooglePlaystore />
                   </a> */}
                     <a
-                      href="#"
+                      href="https://gerayo.onrender.com/"
                       target="_blank"
                       className="bg-dark-body-color text-white px-8 font-medium h-[40px] flex justify-center items-center rounded-full text-sm transition duration-200 active:scale-95 "
                       title="Google Playstore"
