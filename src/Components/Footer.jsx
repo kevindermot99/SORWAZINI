@@ -227,7 +227,7 @@ function Footer() {
             </p>
 
             <p className="mt-4 text-xs sm:order-first sm:mt-0">
-              &copy; 2022 SORWAZINI.
+              &copy; 2024 SORWAZINI.
             </p>
           </div>
         </div>
