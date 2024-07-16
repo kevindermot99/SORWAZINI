@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Elab from "./Pages/Elab";
 import "./index.css"
@@ -10,14 +10,14 @@ function App() {
 
   return (
 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/elab" element={<Elab />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/product" element={<Product />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
   );
 }
