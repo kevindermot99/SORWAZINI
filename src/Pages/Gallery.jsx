@@ -14,6 +14,7 @@ function Gallery() {
   const [act, setAct] = useState("");
   const [showImageFull, setShowImageFull] = useState(false);
   const { pathname } = useLocation();
+  const [randomImages, setRandomImages] = useState([])
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,6 +41,14 @@ function Gallery() {
     setAct(act);
     setShowImageFull(true);
   };
+
+  useEffect(() => {
+    function getRandomGallery(gallery) {
+      const shuffledGallery = gallery.sort(() => 0.5 - Math.random());
+      return shuffledGallery;
+    }
+    setRandomImages(getRandomGallery(gallery.Images))
+  }, []);
 
   return (
     <div className=" bg-light-body-color pt-16 min-h-[100vh] w-full text-text-dark-color flex flex-col relative overflow-x-clip  ">
@@ -69,7 +78,13 @@ function Gallery() {
               showImageFull ? "opacity-100 " : "opacity-0 scale-95  "
             }`}
           />
-          <p className={` mt-[20px] w-fit bg-white/80 rounded-2xl shadow-lg py-2 px-3 text-xs backdrop-blur-sm text-dark-body-color font-medium transition-all ease-in-out ${showImageFull ? ' opacity-100 delay-200' : 'opacity-0 -translate-y-3 scale-90'} `}>
+          <p
+            className={` mt-[20px] w-fit bg-white/80 rounded-2xl shadow-lg py-2 px-3 text-xs backdrop-blur-sm text-dark-body-color font-medium transition-all ease-in-out ${
+              showImageFull
+                ? " opacity-100 delay-200"
+                : "opacity-0 -translate-y-3 scale-90"
+            } `}
+          >
             {act}
           </p>
         </div>
@@ -92,7 +107,7 @@ function Gallery() {
               <BiLoaderAlt className="text-2xl text-dark-body-color/50 animate-spinLoader" />
             </div>
           )}
-          {gallery.Images.map((image, index) => (
+          {randomImages.map((image, index) => (
             <Reveal
               keyframes={customAnimation}
               duration={1000}
