@@ -281,7 +281,7 @@ export const AboutUs = {
 export const Challenges = {
   SectionTitle: "E-lab Challenges",
   SectionDescription:
-    "We tackled six challenges as a Think Tank group, exposing us to real-world contexts, complexity, and innovative thinking. We harnessed our potential, pushed our limits, and aimed to reach the finish line.",
+    "We tackled six challenges as a Think Tank group, exposing us to real-world contexts, complexity, and innovative thinking.",
 };
 
 // section gallery
