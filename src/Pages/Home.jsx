@@ -336,7 +336,7 @@ function Home() {
                       : "hidden"
                     }`}
                 >
-                  <p className="font-medium max-w-[1000px] text-dark-body-color/60 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
+                  <p className="font-medium max-w-[1000px] text-gray-800 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
                     Our Mission is to transform public transportation in Rwanda
                     through innovative software solutions, enhancing
                     accessibility and creating a seamless, efficient transport
@@ -413,7 +413,7 @@ function Home() {
                       : "hidden"
                     }`}
                 >
-                  <p className="font-medium max-w-[1000px] text-black text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
+                  <p className="font-medium max-w-[1000px] text-gray-800 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
                     In Rwanda, public transport is a lifeline for many, with
                     over 40% of people depending on buses to get around.
                     Unfortunately, the current ticketing system leads to long
