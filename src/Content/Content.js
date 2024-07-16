@@ -22,7 +22,22 @@ import image3 from "../assets/download-the-app/3.jpg";
 import image4 from "../assets/download-the-app/4.jpg";
 import image5 from "../assets/download-the-app/5.jpg";
 import image6 from "../assets/download-the-app/6.jpg";
-import image7 from "../assets/download-the-app/7.jpg";
+
+// importing gallery images
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
+import gImage1 from "../assets/gallery/1.png";
 
 // Function that gets day remaining
 function daysLeft(inputDate) {
@@ -291,7 +306,7 @@ export const gallery = {
     "O`ur most memorable experiences. From milestones to everyday interactions and fun moments, they all capture the essence of our journey and the vibrant community we are building.",
   Images: [
     {
-      url: "https://lh3.googleusercontent.com/u/1/drive-viewer/AKGpihZVEKrPNim41GZUO2tXRBSGC6DmAq_wyCkmVrhnF4eulUxbo4zvTsnGnAUOhoF5hWewYS77HXLII9Kmx__Nd-FNyPMsOZlIJyU=w1366-h649-rw-v1",
+      url: "",
       activity: "Our very first discussion as a think tank",
     },
     {
