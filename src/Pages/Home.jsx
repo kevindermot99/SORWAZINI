@@ -358,7 +358,7 @@ function Home() {
                     }`}
                 >
                   <div className=" w-full max-w-[320px] min-h-[100px] p-[4px]">
-                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                    <div className="bg-gray-50 py-5 shadow-lg px-8 rounded-2xl flex flex-col w-full h-full">
                       <div className="bg-red-400/0 h-fit w-fit py-1">
                         <HiOutlineLightBulb className="text-[23px] text-dark-body-color/60  " />
                       </div>
@@ -373,8 +373,8 @@ function Home() {
                     </div>
                   </div>
 
-                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
-                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] ">
+                    <div className="bg-gray-50 py-5 px-8 shadow-lg rounded-2xl flex flex-col w-full h-full">
                       <div className="bg-red-400/0 h-fit w-fit py-1">
                         <RiTeamLine className="text-[20px] text-dark-body-color/60  " />
                       </div>
@@ -389,8 +389,8 @@ function Home() {
                     </div>
                   </div>
 
-                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
-                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] ">
+                    <div className="bg-gray-50 py-5 px-8 shadow-lg rounded-2xl flex flex-col w-full h-full">
                       <div className="bg-red-400/0 h-fit w-fit py-1">
                         <GiEarthAfricaEurope className="text-[20px] text-dark-body-color/60  " />
                       </div>
@@ -413,7 +413,7 @@ function Home() {
                       : "hidden"
                     }`}
                 >
-                  <p className="font-medium max-w-[1000px] text-dark-body-color/60 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
+                  <p className="font-medium max-w-[1000px] text-black text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
                     In Rwanda, public transport is a lifeline for many, with
                     over 40% of people depending on buses to get around.
                     Unfortunately, the current ticketing system leads to long
