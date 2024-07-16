@@ -304,14 +304,14 @@ export const AboutUs = {
 export const Challenges = {
   SectionTitle: "E-lab Challenges",
   SectionDescription:
-    "We tackled six challenges as a Think Tank group, exposing us to real-world contexts, complexity, and innovative thinking. We harnessed our potential, pushed our limits, and aimed to reach the finish line.",
+    "We tackled six challenges as a Think Tank group, exposing us to real-world contexts, complexity, and innovative thinking.",
 };
 
 // section gallery
 export const gallery = {
   SectionTitle: "Gallery",
   SectionDescription:
-    "O`ur most memorable experiences. From milestones to everyday interactions and fun moments, they all capture the essence of our journey and the vibrant community we are building.",
+    "Memorable experiences. From milestones to everyday interactions and fun moments.",
   Images: [
     {
       url: gImage1,

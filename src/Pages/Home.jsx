@@ -188,7 +188,7 @@ function Home() {
                 </div>
               ))}
             </div>
-            <div className="flex items-center gap-14 text-dark-body-color text-sm font-medium px-4 max-sm:gap-0 max-sm:px-8 ">
+            <div className="flex items-center gap-16 text-dark-body-color text-sm font-medium max-sm:gap-0 max-sm:px-8 ">
               <Reveal
                 keyframes={customAnimation}
                 duration={1000}
@@ -196,10 +196,10 @@ function Home() {
                 damping={0.05}
                 //triggerOnce
               >
-                <h1>🇿🇦 South Africa</h1>
-                <h1>🇷🇼 Rwanda</h1>
-                <h1>🇿🇼 Zimbambwe</h1>
-                <h1>🇳🇬 Nigeria</h1>
+                <h1>South Africa</h1>
+                <h1>Rwanda</h1>
+                <h1>Zimbambwe</h1>
+                <h1>Nigeria</h1>
               </Reveal>
             </div>
           </div>
@@ -292,9 +292,8 @@ function Home() {
                       : "hidden"
                   }`}
                 >
-                  <p className="font-medium max-w-[500px] text-black text-center w-full pb-6 pt-2 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
-                    Pan-African Techpreneurs united by a shared mission to
-                    transform Rwanda's public transport system.
+                  <p className="font-normal max-w-[500px] text-gray-700 text-center w-full pb-6 pt-2 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
+                  Pan-African Techpreneurs united by a shared mission to transform Rwanda's public transport system.
                   </p>
                   <div className="flex flex-wrap items-center justify-center max-w-[1100px] gap-3">
                     {Members.map((person, index) => (
@@ -343,7 +342,7 @@ function Home() {
                       : "hidden"
                   }`}
                 >
-                  <p className="font-medium max-w-[1000px] text-dark-body-color/60 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
+                  <p className="font-medium max-w-[1000px] text-gray-800 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
                     Our Mission is to transform public transportation in Rwanda
                     through innovative software solutions, enhancing
                     accessibility and creating a seamless, efficient transport
@@ -365,8 +364,8 @@ function Home() {
                       : "hidden"
                   }`}
                 >
-                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
-                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px]">
+                    <div className="bg-gray-50 py-5 shadow-lg px-8 rounded-2xl flex flex-col w-full h-full">
                       <div className="bg-red-400/0 h-fit w-fit py-1">
                         <HiOutlineLightBulb className="text-[23px] text-dark-body-color/60  " />
                       </div>
@@ -374,19 +373,15 @@ function Home() {
                         <h1 className="tracking-tight font-extrabold  text-dark-body-color text-[20px] ">
                           Creativity
                         </h1>
-                        <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
-                          As a team, we value creativity because we believe
-                          every member's innovative and problem-solving
-                          strengths are essential to our mission. We encourage
-                          and embrace new problem-solving approaches, thinking
-                          outside the box and continuous improvement.
+                        <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80">
+                        Our spirit for innovation fuels us to find unique solutions for the challenges in the transport system.
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
-                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] ">
+                    <div className="bg-gray-50 py-5 px-8 shadow-lg rounded-2xl flex flex-col w-full h-full">
                       <div className="bg-red-400/0 h-fit w-fit py-1">
                         <RiTeamLine className="text-[20px] text-dark-body-color/60  " />
                       </div>
@@ -395,18 +390,14 @@ function Home() {
                           Teamwork
                         </h1>
                         <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
-                          This is the bedrock of our combined efforts,
-                          emphasizing the importance of collaboration, shared
-                          objectives and goals and mutual respect. By valuing
-                          teamwork, we create an environment where everyone is
-                          encouraged to share opinions and ideas.
+                        We achieve our goals through strong collaboration and mutual support.
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
-                    <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] ">
+                    <div className="bg-gray-50 py-5 px-8 shadow-lg rounded-2xl flex flex-col w-full h-full">
                       <div className="bg-red-400/0 h-fit w-fit py-1">
                         <GiEarthAfricaEurope className="text-[20px] text-dark-body-color/60  " />
                       </div>
@@ -415,12 +406,7 @@ function Home() {
                           Pan-Africanism
                         </h1>
                         <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
-                          As individuals from diverse communities across Africa
-                          with a goal to become Africa's leaders, we value
-                          Pan-Africanism. This reflects our commitment to
-                          promoting unity and development across Africa, aiming
-                          to contribute positively to communities and promote
-                          African values.
+                        We thrive and draw strength from our diverse backgrounds, skills and experiences.
                         </div>
                       </div>
                     </div>
@@ -435,7 +421,7 @@ function Home() {
                       : "hidden"
                   }`}
                 >
-                  <p className="font-medium max-w-[1000px] text-dark-body-color/60 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
+                  <p className="font-medium max-w-[1000px] text-gray-800 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
                     In Rwanda, public transport is a lifeline for many, with
                     over 40% of people depending on buses to get around.
                     Unfortunately, the current ticketing system leads to long

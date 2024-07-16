@@ -93,7 +93,7 @@ function Gallery() {
           <h1 className="text-center max-w-[900px]  font-bold text-[60px] max-sm:text-[50px] leading-[70px] max-sm:leading-[55px] tracking-tighter">
             {gallery.SectionTitle}
           </h1>
-          <p className="font-medium max-w-[500px] text-sm opacity-65 text-center pt-2 max-sm:pt-2 tracking-normal leading-5 max-sm:px-5 ">
+          <p className="font-medium max-w-[500px] opacity-65 text-center pt-2 max-sm:pt-2 tracking-normal leading-5 max-sm:px-5 ">
             {gallery.SectionDescription}
           </p>
         </div>

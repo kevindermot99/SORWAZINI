@@ -133,9 +133,12 @@ function Footer() {
               <nav className="mt-3">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <Link className="" to="/product">
+                    <a
+                      href="https://gerayo.onrender.com/"
+                      target="_blank"
+                    >
                       Gerayo
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>
