@@ -357,7 +357,7 @@ function Home() {
                       : "hidden"
                     }`}
                 >
-                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px] bg-dark-body-color/5  rounded-full    ">
+                  <div className=" w-full max-w-[320px] min-h-[100px] p-[4px]">
                     <div className="bg-gray-50 py-5 px-8 rounded-3xl flex flex-col w-full h-full">
                       <div className="bg-red-400/0 h-fit w-fit py-1">
                         <HiOutlineLightBulb className="text-[23px] text-dark-body-color/60  " />
@@ -366,10 +366,8 @@ function Home() {
                         <h1 className="tracking-tight font-extrabold  text-dark-body-color text-[20px] ">
                           Creativity
                         </h1>
-                        <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Rerum repudiandae, quaerat explicabo atque
-                          repellat
+                        <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80">
+                        Our spirit for innovation fuels us to find unique solutions for the challenges in the transport system.
                         </div>
                       </div>
                     </div>
@@ -385,9 +383,7 @@ function Home() {
                           Teamwork
                         </h1>
                         <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Rerum repudiandae, quaerat explicabo atque
-                          repellat
+                        We achieve our goals through strong collaboration and mutual support.
                         </div>
                       </div>
                     </div>
@@ -403,9 +399,7 @@ function Home() {
                           Pan-Africanism
                         </h1>
                         <div className="tracking-tight font-medium leading-5 text-left text-base pr-3 pb-4 pt-1 text-dark-body-color/80  ">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Rerum repudiandae, quaerat explicabo atque
-                          repellat
+                        We thrive and draw strength from our diverse backgrounds, skills and experiences.
                         </div>
                       </div>
                     </div>
