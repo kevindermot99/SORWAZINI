@@ -237,10 +237,10 @@ function Elab() {
             </div>
           </div>
           <div className="w-full h-fit max-w-[1100px] py-6">
-            <div className="flex items-start justify-between gap-10">
+            <div className="flex flex-row-reverse items-start justify-between gap-10">
               <div className="w-[50%]">
                 <h1 className="text-center font-bold text-[30px] tracking-tighter">
-                  Challenge 5
+                  Challenge 6
                 </h1>
                 {/* Horizontal line beside challenge title */}
                 <div className="relative flex items-center justify-center mx-6 my-2">
@@ -255,8 +255,8 @@ function Elab() {
                 </p>
               </div>
 
-              <div className="w-[50%] h-full min-h-[260px] bg-black flex">
-                <img src="src/assets/site-shot.png" alt="" />
+              <div className="w-[50%] rounded-xl shadow-xl overflow-clip h-full min-h-[280px] flex">
+                <img src="src/assets/site-shot.png" className="object-cover rounded-2xl" />
               </div>
             </div>
           </div>
