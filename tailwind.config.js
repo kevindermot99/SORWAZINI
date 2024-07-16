@@ -18,7 +18,7 @@ export default {
         "text-dark-color": "#1E1F22",
         "text-light-color": "#ebebeb",
         "button-color": "#3A7D44",
-        "project-green": "#149A75",
+        "project-green": "#399E5A",
       },
       animation: {
         spinLoader: "spin .4s linear infinite",
