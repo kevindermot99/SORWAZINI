@@ -9,6 +9,7 @@ import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import Menu from "../Components/Menu";
 import Footer from "../Components/Footer";
+import siteShot from '../assets/site-shot.png'
 
 function Elab() {
   const [showContact, setShowContact] = useState(false);
@@ -256,7 +257,7 @@ function Elab() {
               </div>
 
               <div className="w-[50%] rounded-xl shadow-xl overflow-clip h-full min-h-[280px] flex">
-                <img src="src/assets/site-shot.png" className="object-cover rounded-2xl" />
+                <img src={siteShot} className="object-cover rounded-2xl" />
               </div>
             </div>
           </div>
