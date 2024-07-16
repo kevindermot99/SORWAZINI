@@ -67,7 +67,7 @@ function Home() {
             duration={1000}
             cascade
             damping={0.05}
-          // triggerOnce
+            // triggerOnce
           >
             <h1 className="text-center max-w-[900px] font-bold text-[70px] max-sm:text-[50px] leading-[80px] max-sm:leading-[55px] tracking-tighter">
               {HeroText.Big}
@@ -90,7 +90,7 @@ function Home() {
                     duration={1000}
                     cascade
                     damping={0.05}
-                  // triggerOnce
+                    // triggerOnce
                   >
                     {/* SO */}
                     <div className="w-fit flex flex-col gap-3 relative">
@@ -194,7 +194,7 @@ function Home() {
                 duration={1000}
                 cascade
                 damping={0.05}
-              //triggerOnce
+                //triggerOnce
               >
                 <h1>🇿🇦 South Africa</h1>
                 <h1>🇷🇼 Rwanda</h1>
@@ -220,7 +220,7 @@ function Home() {
                 duration={1000}
                 cascade
                 damping={0.05}
-              // triggerOnce
+                // triggerOnce
               >
                 {/* Tabs */}
                 <h1 className=" text-[40px] max-w-[800px] leading-[47px] font-bold tracking-tighter text-center ">
@@ -234,10 +234,11 @@ function Home() {
                     onClick={() => {
                       setAboutUs(1);
                     }}
-                    className={`px-5 h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 1
+                    className={`px-5 h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
+                      aboutUs === 1
                         ? "transition duration-200 bg-white text-dark-body-color "
                         : " bg-transparent text-dark-body-color "
-                      }`}
+                    }`}
                   >
                     <RiShakeHandsLine className="text-[20px]" />
                     Who we are
@@ -246,10 +247,11 @@ function Home() {
                     onClick={() => {
                       setAboutUs(3);
                     }}
-                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 3
+                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
+                      aboutUs === 3
                         ? "transition duration-200 bg-white text-dark-body-color "
                         : " bg-transparent text-dark-body-color "
-                      }`}
+                    }`}
                   >
                     <FaRegHeart className="text-[20px]" />
                     Values
@@ -258,10 +260,11 @@ function Home() {
                     onClick={() => {
                       setAboutUs(4);
                     }}
-                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 4
+                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
+                      aboutUs === 4
                         ? "transition duration-200 bg-white text-dark-body-color "
                         : " bg-transparent text-dark-body-color "
-                      }`}
+                    }`}
                   >
                     <TbExclamationCircle className="text-[20px]" />
                     Problem
@@ -270,10 +273,11 @@ function Home() {
                     onClick={() => {
                       setAboutUs(5);
                     }}
-                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${aboutUs === 5
+                    className={`px-5 text-dark-body-color h-full whitespace-nowrap rounded-full font-semibold text-sm tracking-tight flex items-center justify-center gap-2 ${
+                      aboutUs === 5
                         ? "transition duration-200 bg-white text-dark-body-color "
                         : " bg-transparent text-dark-body-color "
-                      }`}
+                    }`}
                   >
                     <MdOutlineRocketLaunch className="text-[20px]" />
                     Mission
@@ -282,10 +286,11 @@ function Home() {
 
                 {/* Who we are */}
                 <div
-                  className={`mt-2 pb-8 ${aboutUs === 1
+                  className={`mt-2 pb-8 ${
+                    aboutUs === 1
                       ? "flex flex-col justify-center items-center"
                       : "hidden"
-                    }`}
+                  }`}
                 >
                   <p className="font-normal max-w-[500px] text-gray-700 text-center w-full pb-6 pt-2 max-sm:pt-2 tracking-tight leading-5 max-sm:px-5 ">
                   Pan-African Techpreneurs united by a shared mission to transform Rwanda's public transport system.
@@ -331,10 +336,11 @@ function Home() {
 
                 {/* Mission */}
                 <div
-                  className={`mt-2 ${aboutUs === 5
+                  className={`mt-2 ${
+                    aboutUs === 5
                       ? "flex justify-center md:pb-44 items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]"
                       : "hidden"
-                    }`}
+                  }`}
                 >
                   <p className="font-medium max-w-[1000px] text-gray-800 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
                     Our Mission is to transform public transportation in Rwanda
@@ -352,10 +358,11 @@ function Home() {
 
                 {/* Values */}
                 <div
-                  className={`mt-10 pb-16 ${aboutUs === 3
+                  className={`mt-10 pb-16 ${
+                    aboutUs === 3
                       ? "flex flex-wrap gap-3 md:pb-44 relative max-w-[1000px]"
                       : "hidden"
-                    }`}
+                  }`}
                 >
                   <div className=" w-full max-w-[320px] min-h-[100px] p-[4px]">
                     <div className="bg-gray-50 py-5 shadow-lg px-8 rounded-2xl flex flex-col w-full h-full">
@@ -408,10 +415,11 @@ function Home() {
 
                 {/* Problem */}
                 <div
-                  className={`mt-2  ${aboutUs === 4
+                  className={`mt-2  ${
+                    aboutUs === 4
                       ? "flex justify-center md:pb-28 items-start p-10 rounded-xl bg-stone-200/0 gap-10 mt-6 max-w-[1000px]"
                       : "hidden"
-                    }`}
+                  }`}
                 >
                   <p className="font-medium max-w-[1000px] text-gray-800 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5 w-[50%]">
                     In Rwanda, public transport is a lifeline for many, with

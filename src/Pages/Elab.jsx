@@ -102,7 +102,7 @@ function Elab() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
-                  className="w-full aspect-video rounded-md "
+                  className="w-full aspect-video rounded-xl shadow-xl "
                 ></iframe>
               </div>
             </div>
@@ -168,7 +168,7 @@ function Elab() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
-                  className="w-full aspect-video rounded-md "
+                  className="w-full aspect-video rounded-xl shadow-xl  "
                 ></iframe>
               </div>
             </div>
@@ -199,7 +199,7 @@ function Elab() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
-                  className="w-full aspect-video rounded-md "
+                  className="w-full aspect-video rounded-xl shadow-xl  "
                 ></iframe>
               </div>
             </div>
