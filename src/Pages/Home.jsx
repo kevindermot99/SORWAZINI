@@ -188,7 +188,7 @@ function Home() {
                 </div>
               ))}
             </div>
-            <div className="flex items-center gap-14 text-dark-body-color text-sm font-medium px-4 max-sm:gap-0 max-sm:px-8 ">
+            <div className="flex items-center gap-16 text-dark-body-color text-sm font-medium max-sm:gap-0 max-sm:px-8 ">
               <Reveal
                 keyframes={customAnimation}
                 duration={1000}
@@ -196,10 +196,10 @@ function Home() {
                 damping={0.05}
                 //triggerOnce
               >
-                <h1>🇿🇦 South Africa</h1>
-                <h1>🇷🇼 Rwanda</h1>
-                <h1>🇿🇼 Zimbambwe</h1>
-                <h1>🇳🇬 Nigeria</h1>
+                <h1>South Africa</h1>
+                <h1>Rwanda</h1>
+                <h1>Zimbambwe</h1>
+                <h1>Nigeria</h1>
               </Reveal>
             </div>
           </div>

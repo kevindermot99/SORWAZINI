@@ -217,47 +217,15 @@ function Elab() {
                     Mission Voyage
                   </p>
                   <span className="flex-grow border-t border-gray-400"></span>
-                  </div>
-                  <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
-                    In this challenge, we assumed a $10,000 grant was available, and we developed a compelling proposal and application to secure the funding for our project. The video briefly introduces us and describes the situation we're tackling, our mission and problem statement, a research analysis, our project idea, its impact, and why we deserve the grant.
-                  </p>
                 </div>
-
-                <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
-                  <iframe
-                    src="https://www.youtube.com/embed/z07mBAV7Nrg?si=VVK8Ib6RuZwFNDK2"
-                    title="E-Lab Elevator Pitch #challenge_01"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                    className="w-full aspect-video rounded-md "
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-            {/* <div className="w-full h-fit max-w-[1100px] py-6">
-            <div className="flex flex-row-reverse items-start justify-between gap-10">
-              <div className="w-[50%]">
-                <h1 className="text-center font-bold text-[30px] tracking-tighter">
-                  Challenge 1
-                </h1>
-                <p className="font-medium text-base text-center text-dark-body-color/60 pt-1 pb-2 tracking-tight ">
-                  May 30 2024
-                </p>
                 <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
-                  In Rwanda, the public transport system is a critical component
-                  of daily life, with over 40% of the population relying on it
-                  for their commuting needs. Despite its significant user base,
-                  the current technological infrastructure is insufficient to
-                  effectively manage and serve this demand. This inadequacy has
-                  led to excessive
+                  In this challenge, we assumed a $10,000 grant was available, and we developed a compelling proposal and application to secure the funding for our project. The video briefly introduces us and describes the situation we're tackling, our mission and problem statement, a research analysis, our project idea, its impact, and why we deserve the grant.
                 </p>
               </div>
 
               <div className="w-[50%] h-full min-h-[260px] bg-stone-50 flex aspect-video ">
                 <iframe
-                  src="https://www.youtube.com/embed/x1rH6-zX2CI"
+                  src="https://www.youtube.com/embed/z07mBAV7Nrg?si=VVK8Ib6RuZwFNDK2"
                   title="E-Lab Elevator Pitch #challenge_01"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -267,14 +235,38 @@ function Elab() {
                 ></iframe>
               </div>
             </div>
-          </div> */}
+          </div>
+          <div className="w-full h-fit max-w-[1100px] py-6">
+            <div className="flex items-start justify-between gap-10">
+              <div className="w-[50%]">
+                <h1 className="text-center font-bold text-[30px] tracking-tighter">
+                  Challenge 5
+                </h1>
+                {/* Horizontal line beside challenge title */}
+                <div className="relative flex items-center justify-center mx-6 my-2">
+                  <span className="flex-grow border-t border-gray-400"></span>
+                  <p className="font-medium text-meduim text-center border-gray-400 px-2">
+                    Our Digital Print
+                  </p>
+                  <span className="flex-grow border-t border-gray-400"></span>
+                </div>
+                <p className="font-medium max-w-[1000px] text-dark-body-color/80 text-justify max-sm:pt-2 tracking-tight leading-6 max-sm:px-5">
+                  The website highlights our E-Lab experience, featuring a clear mission statement and an articulate problem statement alongside our proposed solutions. It features think tank members' profiles and documents all six E-Lab challenges, capturing the essence of our collaborative journey and innovative solutions.
+                </p>
+              </div>
+
+              <div className="w-[50%] h-full min-h-[260px] bg-black flex">
+                <img src="src/assets/site-shot.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* footer */}
-        <Footer />
       </div>
-      );
+
+      {/* footer */}
+      <Footer />
+    </div>
+  );
 }
 
-      export default Elab;
+export default Elab;

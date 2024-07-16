@@ -311,7 +311,7 @@ export const Challenges = {
 export const gallery = {
   SectionTitle: "Gallery",
   SectionDescription:
-    "Memorable experiences. From milestones to everyday interactions and fun moments, they all capture the essence of our journey and the vibrant community we are building.",
+    "Memorable experiences. From milestones to everyday interactions and fun moments.",
   Images: [
     {
       url: gImage1,
